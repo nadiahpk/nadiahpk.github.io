@@ -1,0 +1,32 @@
+{% comment %}
+
+https://heiswayi.nrird.com/image-caption-using-liquid-syntax
+
+{% endcomment %}
+
+{% if include.caption %}
+<figure>
+    {% if include.href %}
+    <a href="{{ include.href }}">
+        <img style="max-height: 500px; max-width: 700px;" src="{{ include.src }}" alt="{{ include.caption | strip }}">
+    </a>
+    {% else %}
+    <a href="{{ include.src }}">
+        <img style="max-height: 500px; max-width: 700px;" src="{{ include.src }}" alt="{{ include.caption | strip }}">
+    </a>
+    {% endif %}
+    <figcaption><span>{{ include.caption | strip }}</span></figcaption>
+</figure>
+{% else %}
+<figure>
+    {% if include.href %}
+    <a href="{{ include.href }}">
+        <img style="max-height: 500px; max-width: 700px;" src="{{ include.src }}" alt="">
+    </a>
+    {% else %}
+    <a href="{{ include.src }}">
+        <img style="max-height: 500px; max-width: 700px;" src="{{ include.src }}" alt="">
+    </a>
+    {% endif %}
+</figure>
+{% endif %}

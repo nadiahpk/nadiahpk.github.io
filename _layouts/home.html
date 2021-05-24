@@ -1,0 +1,84 @@
+---
+layout: default
+---
+
+<style>
+    img.featured{
+        opacity: 0.5;
+        object-fit: cover; 
+        height: 100%; 
+        width: 100%;
+    }
+    div.featured{
+        background: #404040;
+        position: relative; 
+        height: 200px;
+    }
+    div.featured:hover{
+        background: black;
+    }
+</style>
+
+<div class="home">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+  {{ content }}
+
+  <!-- featured posts -->
+    <section class="container" style="max-width: 1000px; margin: auto; display: grid; align-items: center; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); grid-gap: 1rem">
+        {% for post in site.tags.featured %}
+        <div class="featured">
+                <a href="{{ post.url | relative_url }}">
+                    <img class="featured" src="{% if post.image contains "://" %}{{ post.image }}{% else %}{{ post.image | absolute_url }}{% endif %}" alt="{{ post.title }}">
+                </a>
+                <div style="position: absolute; padding: 5px; bottom: 1px; left: 10px;">
+                    <h2 style="color: white">
+                      <a class="post-link" style="color: white; text-shadow: 2px 2px black; text-decoration: none;" href="{{ post.url | relative_url }}">
+                        {{ post.title | escape }}
+                      </a>
+                    </h2>
+                </div>
+            </div>
+        {% endfor %}
+    </section>
+
+  <!-- category pages -->
+  <div class="tags" style="max-width: 1000px; margin: auto; padding-top: 20px; text-align: center;">
+        {% for category_page in site.category %}
+            <span style="background: #efefef; padding: 0.3em 1em; border-radius: 1em; font-family: courier, monospace; display: inline-block; margin: 0.5em 0;"> <a href="{{ category_page.url }}">#{{ category_page.tag }}</a> </span>
+        {% endfor %}
+    </div>
+
+  <!-- ordinary posts -->
+  {%- if site.posts.size > 0 -%}
+      {%- for post in site.posts -%}
+        <div style="padding-top: 20px; padding-bottom: 20px; overflow: hidden;">
+            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+            <span class="post-meta">{{ post.date | date: date_format }}</span>
+            <h3>
+              <a class="post-link" href="{{ post.url | relative_url }}">
+                {{ post.title | escape }}
+              </a>
+            </h3>
+            {% if post.image %}
+            <img src="{% if post.image contains "://" %}{{ post.image }}{% else %}{{ post.image | absolute_url }}{% endif %}" alt="{{ post.title }}" style="float: left; padding-bottom: 5px; padding-top: 5px; padding-right: 10px; height: 100px; width: 100px; object-fit: cover;">
+            {% endif %}
+            {{ post.content | strip_html | truncatewords:100 }}
+              {%- if post.categories -%}
+              <p style="padding-top: 5px;"><span class="post-meta">
+                Filed under:
+                {% for category in post.categories %}
+                    <a href="/category/{{ category }}">#{{ category }}</a>
+                {% endfor %}
+              </span></p>
+              {%- endif -%}
+        </div>
+      {%- endfor -%}
+
+
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  {%- endif -%}
+
+</div>
