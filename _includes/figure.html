@@ -5,27 +5,27 @@ https://heiswayi.nrird.com/image-caption-using-liquid-syntax
 {% endcomment %}
 
 {% if include.caption %}
-<figure>
+<figure style="max-width: 700px; margin: auto; padding-bottom: 20px;">
     {% if include.href %}
     <a href="{{ include.href }}">
-        <img style="max-height: 500px; max-width: 700px;" src="{{ include.src }}" alt="{{ include.caption | strip }}">
+        <img style="max-height: auto; max-width: 100%;" src="{{ include.src }}" alt="{{ include.caption | strip }}">
     </a>
     {% else %}
     <a href="{{ include.src }}">
-        <img style="max-height: 500px; max-width: 700px;" src="{{ include.src }}" alt="{{ include.caption | strip }}">
+        <img style="max-height: auto; max-width: 100%;" src="{{ include.src }}" alt="{{ include.caption | strip }}">
     </a>
     {% endif %}
     <figcaption><span>{{ include.caption | strip }}</span></figcaption>
 </figure>
 {% else %}
-<figure>
+<figure style="max-width: 700px; margin: auto;">
     {% if include.href %}
     <a href="{{ include.href }}">
-        <img style="max-height: 500px; max-width: 700px;" src="{{ include.src }}" alt="">
+        <img style="max-height: auto; max-width: 100%;" src="{{ include.src }}" alt="">
     </a>
     {% else %}
     <a href="{{ include.src }}">
-        <img style="max-height: 500px; max-width: 700px;" src="{{ include.src }}" alt="">
+        <img style="max-height: auto; max-width: 100%;" src="{{ include.src }}" alt="">
     </a>
     {% endif %}
 </figure>
