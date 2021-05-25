@@ -5,6 +5,7 @@ date: 2021-05-24T01:44:54+00:00
 author: nadiahkristensen
 layout: post
 guid: http://nadiah.org/blog/?p=2001
+image: wp-content/uploads/2021/05/panel_d.png
 permalink: /2021/05/24/intergenerational-reciprocity-and-restoration/
 categories:
   - cooperation
