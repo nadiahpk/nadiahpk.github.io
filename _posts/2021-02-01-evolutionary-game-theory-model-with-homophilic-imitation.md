@@ -16,7 +16,7 @@ about the behaviour of this kind of model.
 I am interested in this model because it involves homophily: it is a social learning model, but the probability of imitation depends not only on the
 relative payoffs between the focal player and other but also on how similar they are in wealth.
 Code can be found on Github: 
-[vasconcelos-2014-playground](https://github.com/ nadiahpk/vasconcelos-2014-playground). 
+[vasconcelos-2014-playground](https://github.com/nadiahpk/vasconcelos-2014-playground). 
 
 <h3>The model</h3>
 
