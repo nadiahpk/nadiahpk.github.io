@@ -42,7 +42,7 @@ f1m, = espresso_exprs(f1dnf)
 f1m 
 {% endhighlight %}
 
-&#8212;  
+-  
 [1] update: DNF stands for [Disjunctive Normal Form](https://github.com/cjdrake/pyeda/pull/122#issuecomment-112986517), which is an or-sum of boolean ands. It's basically what you'd have your UPCs table as. This function is also good for making the result of a fold more readable. For example,
 
 {% highlight python %}
@@ -72,7 +72,7 @@ Out[125]: Or(And(~rat_brownBooby, ~rat_cat), And(~cat_brownBooby, ~cat_rat), And
 # Much nicer
 {% endhighlight %}
 
-&#8212;  
+-  
 Update (22 July 2015)
 
 Using a fold to do a boolean product or sum, like I did above, is an ungainly way of going about it. Much better to do something like this:
@@ -89,5 +89,5 @@ myBoolSum = Or(*BoolList)
 
 The boolean sum and product above are DNFs, so no need to do `.to_dnf()`.
 
-&#8212;  
+-  
 Other keywords to help Googlers find this post, particularly sociologists: boolean analysis of questionnaire data, Quinne-McCluskey, Alain Degenne, Marie-Odile Lebeaux, ultimate canonical projections, UCP, Flament, Peter Theuns, Guttman analysis, Projection Canonique Ultime, PCU, prime implicant Martin Schrepp, Ragin, qualitative comparative analysis.

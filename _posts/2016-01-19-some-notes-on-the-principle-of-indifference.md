@@ -15,7 +15,7 @@ A classical statement of the Principle of Indifference (PI) is as follows (p. 45
 
 The various forms of PI encompass two ideas (Norton, 2008). First is a truism of evidence: if we have no grounds for distinguishing outcomes, then we should favour them equally. Here favouring can be epistemic, in the sense that it expresses our degree of belief; or it can be objective, in the sense that it expresses the extent to which our evidence supports the outcome. The second idea is that the extent of favouring is represented by a probability.
 
-**An example where PI works well &#8212; tossing a die**: If a die is tossed, we have no reason to favour any one outcome over any other. So we treat each outcome 1, 2, 3, 4, 5, and 6 equally and assign the same probability to each.
+**An example where PI works well - tossing a die**: If a die is tossed, we have no reason to favour any one outcome over any other. So we treat each outcome 1, 2, 3, 4, 5, and 6 equally and assign the same probability to each.
 
 Assigning equal probabilities to discrete outcomes can be generalised to the continuous case by assign a uniform probability distribution.
 
@@ -23,7 +23,7 @@ Assigning equal probabilities to discrete outcomes can be generalised to the con
 
 However PI gives different assignments of probability according to how we describe the outcome space, and in cases of very little little knowledge, we have no means to privilege one description as the correct one. As a consequence, PI can give mutually incompatible probability assignments depending upon the outcome space chosen and the way in which it is partitioned. A number of paradoxical examples have been devised in the literature to demonstrate how this occurs.
 
-**An example of a PI paradox &#8212; the squares factory** (adapted from Smith, 2014): Imagine a factory that manufactures square plates with a length less than 2 m. PI recommends a uniform distribution of lengths between 0 and 2 m, which results in a prior belief of $$\frac{1}{2}$$ that a plate's length will be less than 1 m. However if one reframes the problem in terms of the plates' areas, then PI recommends a uniform distribution between 0 and 4 m$$^2$$, which results in a prior belief of $$\frac{1}{4}$$ that a plate's area will be less than 1 m$$^2$$, which is equivalent to a prior belief that a plate's length will be less than 1 m.
+**An example of a PI paradox - the squares factory** (adapted from Smith, 2014): Imagine a factory that manufactures square plates with a length less than 2 m. PI recommends a uniform distribution of lengths between 0 and 2 m, which results in a prior belief of $$\frac{1}{2}$$ that a plate's length will be less than 1 m. However if one reframes the problem in terms of the plates' areas, then PI recommends a uniform distribution between 0 and 4 m$$^2$$, which results in a prior belief of $$\frac{1}{4}$$ that a plate's area will be less than 1 m$$^2$$, which is equivalent to a prior belief that a plate's length will be less than 1 m.
 
 The reason that PI does not work well in the squares factory example is because a uniform distribution in the length of the square does not transform into a uniform distribution in the area of the square (see figure). Yet we have no reason to prefer length or area as the outcome space.
 

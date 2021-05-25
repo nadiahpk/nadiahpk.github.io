@@ -108,7 +108,7 @@ $$ \frac{T_{lk}(X_l)}{T_{kl}(X_l)} = \frac{ 1+\exp( s (P_k-P_l) )}{1+\exp( -s (P
 which gives their Eq. 2:  
 $$ \rho_{kl} = \frac{1}{1 + \sum_{q=1}^{M-1} \exp( s \sum_{X_l=1}^q (P_k-P_l) )} $$
 
-&#8212;
+-
 
 Useful further reading: 
 

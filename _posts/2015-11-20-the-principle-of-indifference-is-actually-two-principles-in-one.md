@@ -31,9 +31,9 @@ The second key insight is that the paradoxes are ultimately caused by a lack of 
 
 The problem with a lack of background information is that it prevents us from choosing an outcome space upon which to apply the Principle of Indifference. There are always multiple ways to describe the outcome space, and in cases where we have very little background information, we have no means to privilege one description as the correct one.
 
-Norton (2008) has argued that a resolution to the problems above cannot discard the first of the two ideas in the principle: that outcomes over which we are indifferent must be treated the same. This is just a truism of evidence. Therefore the resolution must be to discard the second idea &#8212; that favoring is always to be represented by probabilities &#8212; and seek other, more flexible representations.
+Norton (2008) has argued that a resolution to the problems above cannot discard the first of the two ideas in the principle: that outcomes over which we are indifferent must be treated the same. This is just a truism of evidence. Therefore the resolution must be to discard the second idea - that favoring is always to be represented by probabilities - and seek other, more flexible representations.
 
-An example of a more flexible representation is given in Norton (2010a, b), where he shows that if we replace probability with a three-valued representation &#8212; such that an outcome is either (1) possible, (2) necessary, or (3) impossible &#8212; then the paradoxes no longer occur. The challenge then is whether or not anything useful can be gleaned from such an impoverished representation.
+An example of a more flexible representation is given in Norton (2010a, b), where he shows that if we replace probability with a three-valued representation - such that an outcome is either (1) possible, (2) necessary, or (3) impossible - then the paradoxes no longer occur. The challenge then is whether or not anything useful can be gleaned from such an impoverished representation.
 
 **References**
 
