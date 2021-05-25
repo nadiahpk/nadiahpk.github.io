@@ -17,9 +17,9 @@ categories:
 ---
 _Update Jan 2020: E.M. Bray suggests a more elegant solution in the comments, see: <https://ask.sagemath.org/question/7867/importing-sage-files/?answer=48947#post-id-48947>_ 
 
-&#8212;
+-
 
-Let's say that I have created a bunch of Sage code &#8212; Sage functions etc. &#8212; that I wish to reuse by importing into various Sage scripts. In straight Python, one would put these functions into their own separate file and import them using the usual  `from foo import funcname as localfuncname` type procedure. It is unclear to me what the proper procedure for doing the same in Sage is &#8212; one can't use the same syntax for a `.sage` file, and for example `attach('functions.sage')` and only works in interactive Sage and stomps local variables.
+Let's say that I have created a bunch of Sage code - Sage functions etc. - that I wish to reuse by importing into various Sage scripts. In straight Python, one would put these functions into their own separate file and import them using the usual  `from foo import funcname as localfuncname` type procedure. It is unclear to me what the proper procedure for doing the same in Sage is - one can't use the same syntax for a `.sage` file, and for example `attach('functions.sage')` and only works in interactive Sage and stomps local variables.
 
 However after some Googling and experimentation, I have found one method that behaves in the way that I need: namely that local variables aren't stomped, and Sage-style syntax, like expressing a rational as a fraction, is preserved. I don't know if this is the best way to do it, but it seems to be working, so I thought I'd share it.
 
@@ -86,5 +86,5 @@ def myfunc(y):
 
 It has been working out for me so far, but it seems a strange way to go about things. I'd welcome any commenters who know of a nicer way.
 
-&#8212;  
+-  
 Refs: [Ask Sagemath.org](http://ask.sagemath.org/question/7867/importing-sage-files/)

@@ -17,7 +17,7 @@ categories:
 ---
 Tools for solving linear programming problems are useful to me because the necessary condition for permanence in a Lotka-Volterra system can be reduced to a linear programming problem (Jansen 1987, _J. Math. Biol._; Law & Morton 1996, _Ecology_). Below, I've adapted an example from Tommi Sotinen's [ORMS 1020 lecture notes](http://lipas.uwasa.fi/~tsottine/lecture_notes/or.pdf) (p. 24-38) to demonstrate how to solve a linear programming problem in Octave.
 
-&#8212;-
+--
 
 Giapetto’s Woodcarving, Inc., manufactures two types of wooden toys: peace-keepers and trains. A peace-keeper sells for $27 and uses $10 worth of raw materials. Each peace-keeper that is manufactured increases Giapetto’s variable labor and overhead costs by $14. A train sells for $21 and uses $9 worth of raw materials. Each train built increases Giapetto’s variable labor and overhead costs by $10. The manufacture of wooden peace-keeper and trains requires two types of skilled labor: carpentry and finishing. A peace-keeper requires 2 hours of finishing labor and 1 hour of carpentry labor. A train requires 1 hour of finishing labor and 1 hour of carpentry labor. Each week, Giapetto can obtain all the needed raw material but only 100 finishing hours and 80 carpentry hours. Demand for trains is unlimited, but at most 40 peace-keepers are bought each week. Giapetto wants to maximize weekly profit (revenues-costs).
 

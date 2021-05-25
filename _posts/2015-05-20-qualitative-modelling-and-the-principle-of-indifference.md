@@ -35,7 +35,7 @@ $$ A =
 
 Then by analysing $$A$$, we can predict whether suppressing species 1 will have a positive or negative effect on the other species in the network.
 
-The challenge with this modelling approach is that it requires a lot of data that we usually don't have. Usually, we have no idea what the interaction-strength values &#8212; the $$ a_{i,j} $$ values in matrix $$A$$ &#8212; are. We don't know anything about them except their sign (positive or negative), and that the model can be scaled so that the values $$ 0 < \lvert a_{i,j} \rvert < 1 $$.
+The challenge with this modelling approach is that it requires a lot of data that we usually don't have. Usually, we have no idea what the interaction-strength values - the $$ a_{i,j} $$ values in matrix $$A$$ - are. We don't know anything about them except their sign (positive or negative), and that the model can be scaled so that the values $$ 0 < \lvert a_{i,j} \rvert < 1 $$.
 
 One QM technique for circumventing this problem is to use Monte Carlo sampling (e.g. Raymond et al. 2011). The steps are generally as follows:
 
@@ -78,7 +78,7 @@ In the hypothetical Monte Carlo simulations above, we randomised over the intera
   2. Species response is the sum of all positive and negative feedbacks, e.g. the \`weighted-predictions matrix' of Dambacher (2003). We could give each feedback equal weight and interpret those proportions as a probability instead?
   3. Or we could try to incorporate some limited background information. For example, we observe skewed interaction-strength magnitudes in nature (e.g. Neutel et al., 2002), so why not sample $$ a_{i,j} $$ from a skewed distribution?
 
-All of these seem valid ways to define the model and sample the parameters, however &#8212; just like the wine/water paradox &#8212; they will give different prediction probabilities.
+All of these seem valid ways to define the model and sample the parameters, however - just like the wine/water paradox - they will give different prediction probabilities.
 
 **References**
 

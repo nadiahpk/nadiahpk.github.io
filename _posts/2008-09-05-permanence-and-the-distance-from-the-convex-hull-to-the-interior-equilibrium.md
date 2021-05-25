@@ -284,6 +284,6 @@ disp('smallest distance = ')
 disp(mind)
 {% endhighlight %}
 
-&#8212;
+-
 
 You can download the complete example for Octave from my website: [mortongen.m](https://s3.amazonaws.com/nadiah.org/toolfiles/mortongen.m).
