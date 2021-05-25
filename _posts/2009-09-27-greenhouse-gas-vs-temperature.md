@@ -6,6 +6,7 @@ author: nadiahkristensen
 layout: post
 guid: http://nadiah.org/blog/?p=51
 permalink: /2009/09/27/greenhouse-gas-vs-temperature/
+image: /wp-content/uploads/2012/03/meehlsummary.jpg
 rumputhijau_meta_box_input_image:
   - ""
 restapi_import_id:
@@ -18,7 +19,7 @@ categories:
 
 {%
     include figure.html
-    src="https://i2.wp.com/s3.amazonaws.com/nadiah.org/images/fig1p31.jpg"
+    src="/wp-content/uploads/2009/09/fig1p31.jpg"
 %}
 
 Roughly speaking, greenhouse gases have been continually increasing since 1900. They underwent a steady increase from 1900, with a sharp acceleration around 1950, followed by continued increase at this faster rate up until now. In contrast, global temperatures have oscillated. They showed a sharp increase from 1920, plateaued and then _dropped_ around 1950, before picking up pace and increasing sharply again around 1970. 

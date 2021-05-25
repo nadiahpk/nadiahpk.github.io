@@ -6,6 +6,7 @@ author: nadiahkristensen
 layout: post
 guid: http://nadiah.org/blog/?p=23
 permalink: /2010/09/03/webworld-for-python/
+image: /wp-content/uploads/2010/09/webworlds_typical.jpg
 rumputhijau_meta_box_input_image:
   - ""
 restapi_import_id:
@@ -18,7 +19,7 @@ categories:
 ---
 {%
     include figure.html
-    src="https://i1.wp.com/s3.amazonaws.com/nadiah.org/images/webworlds_typical.jpg"
+    src="/wp-content/uploads/2010/09/webworlds_typical.jpg"
     caption="A typical Webworld food web"
 %}
 

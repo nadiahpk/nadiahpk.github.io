@@ -161,10 +161,16 @@ Fire up VS Code while in the virtual environment
 
 The first step is to choose the virtual environment's Python interpreter as our default Python interpreter. Hit `ctrl + shift + p`, and choose `./bin/python` (or wherever you put your virtual environment).
 
-_click images to make bigger_
-[<img loading="lazy" src="https://i2.wp.com/nadiah.org/wp-content/uploads/2020/02/select_python_interp.png?resize=720%2C398&#038;ssl=1" alt="select_python_interp" width="720" height="398" class="alignnone size-full wp-image-1160" srcset="https://i2.wp.com/nadiah.org/wp-content/uploads/2020/02/select_python_interp.png?w=1856&ssl=1 1856w, https://i2.wp.com/nadiah.org/wp-content/uploads/2020/02/select_python_interp.png?resize=300%2C166&ssl=1 300w, https://i2.wp.com/nadiah.org/wp-content/uploads/2020/02/select_python_interp.png?resize=1024%2C566&ssl=1 1024w, https://i2.wp.com/nadiah.org/wp-content/uploads/2020/02/select_python_interp.png?resize=768%2C425&ssl=1 768w, https://i2.wp.com/nadiah.org/wp-content/uploads/2020/02/select_python_interp.png?resize=1536%2C849&ssl=1 1536w, https://i2.wp.com/nadiah.org/wp-content/uploads/2020/02/select_python_interp.png?resize=163%2C90&ssl=1 163w, https://i2.wp.com/nadiah.org/wp-content/uploads/2020/02/select_python_interp.png?w=1440&ssl=1 1440w" sizes="(max-width: 720px) 100vw, 720px" data-recalc-dims="1" />](https://i2.wp.com/nadiah.org/wp-content/uploads/2020/02/select_python_interp.png?ssl=1){.foobox}
+{%
+    include figure.html
+    src="/wp-content/uploads/2020/02/select_python_interp.png"
+%}
 
-[<img loading="lazy" src="https://i2.wp.com/nadiah.org/wp-content/uploads/2020/02/select_python_interp_2.png?resize=720%2C398&#038;ssl=1" alt="select_python_interp_2" width="720" height="398" class="alignnone size-full wp-image-1170" srcset="https://i2.wp.com/nadiah.org/wp-content/uploads/2020/02/select_python_interp_2.png?w=1856&ssl=1 1856w, https://i2.wp.com/nadiah.org/wp-content/uploads/2020/02/select_python_interp_2.png?resize=300%2C166&ssl=1 300w, https://i2.wp.com/nadiah.org/wp-content/uploads/2020/02/select_python_interp_2.png?resize=1024%2C566&ssl=1 1024w, https://i2.wp.com/nadiah.org/wp-content/uploads/2020/02/select_python_interp_2.png?resize=768%2C425&ssl=1 768w, https://i2.wp.com/nadiah.org/wp-content/uploads/2020/02/select_python_interp_2.png?resize=1536%2C849&ssl=1 1536w, https://i2.wp.com/nadiah.org/wp-content/uploads/2020/02/select_python_interp_2.png?resize=163%2C90&ssl=1 163w, https://i2.wp.com/nadiah.org/wp-content/uploads/2020/02/select_python_interp_2.png?w=1440&ssl=1 1440w" sizes="(max-width: 720px) 100vw, 720px" data-recalc-dims="1" />](https://i2.wp.com/nadiah.org/wp-content/uploads/2020/02/select_python_interp_2.png?ssl=1){.foobox}
+{%
+    include figure.html
+    src="/wp-content/uploads/2020/02/select_python_interp_2.png"
+    caption="Click images to make them bigger"
+%}
 
 This will create the `settings.json`, which will look something like this:
 
