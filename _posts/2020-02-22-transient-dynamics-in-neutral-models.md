@@ -6,6 +6,7 @@ author: nadiahkristensen
 layout: post
 guid: https://nadiah.org/?p=1438
 permalink: /2020/02/22/transient-dynamics-in-neutral-models/
+image: /wp-content/uploads/2020/09/Hubbell_figs_511_513.png
 categories:
   - macroecology
 ---

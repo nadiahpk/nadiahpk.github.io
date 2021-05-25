@@ -6,6 +6,7 @@ author: nadiahkristensen
 layout: post
 guid: https://nadiah.org/?p=493
 permalink: /2017/08/20/comic-about-pi/
+image: /wp-content/uploads/2017/08/smbc.png
 categories:
   - qualitative_modelling
 ---

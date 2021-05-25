@@ -6,6 +6,7 @@ author: nadiahkristensen
 layout: post
 guid: https://nadiah.org/?p=2000
 permalink: /2020/10/07/using-n-player-relatedness/
+image: /wp-content/uploads/2020/10/nepotism_model.png
 categories:
   - cooperation
 ---

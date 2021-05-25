@@ -6,6 +6,7 @@ author: nadiahkristensen
 layout: post
 guid: https://nadiah.org/?p=889
 permalink: /2016/01/19/some-notes-on-the-principle-of-indifference/
+image: /wp-content/uploads/2019/02/squares.png
 categories:
   - qualitative_modelling
 ---

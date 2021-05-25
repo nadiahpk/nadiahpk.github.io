@@ -6,6 +6,7 @@ author: nadiahkristensen
 layout: post
 guid: https://nadiah.org/?p=939
 permalink: /2015/11/20/the-principle-of-indifference-is-actually-two-principles-in-one/
+image: /wp-content/uploads/2019/03/jdnorton1_memed.jpg
 categories:
   - qualitative_modelling
 ---

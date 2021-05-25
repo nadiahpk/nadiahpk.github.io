@@ -6,6 +6,7 @@ author: nadiahkristensen
 layout: post
 guid: http://nadiah.org/blog/?p=102
 permalink: /2006/07/05/portrait-of-a-scientist/
+image: /wp-content/uploads/2012/03/portraitofascientist.jpg
 rumputhijau_meta_box_input_image:
   - ""
 restapi_import_id:

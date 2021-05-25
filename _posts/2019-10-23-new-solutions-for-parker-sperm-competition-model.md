@@ -6,6 +6,7 @@ author: nadiahkristensen
 layout: post
 guid: https://nadiah.org/?p=1103
 permalink: /2019/10/23/new-solutions-for-parker-sperm-competition-model/
+image: /wp-content/uploads/2020/01/comparing_fig_2b.png
 categories:
   - other
 ---
