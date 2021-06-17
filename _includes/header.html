@@ -4,6 +4,9 @@
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+    <span style="font-size: 16px; line-height: 60px; margin-bottom: 0; margin-left: 20px; float: left;">
+    {%- include social_icons.html -%}
+    </span>
 
     {%- if page_paths -%}
       <nav style="z-index: 9999;" class="site-nav">

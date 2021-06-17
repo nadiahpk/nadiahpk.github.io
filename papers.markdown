@@ -7,6 +7,8 @@ layout: page
 guid: https://nadiah.org/?page_id=405
 ---
 
+Chang, Cc., <b>Kristensen</b>, N.P., Nghiem, T.P.L., Tan, C.L.Y., Carrasco, L.R. (2021) Having a stake in the future and perceived population density influence intergenerational cooperation, <i>Royal Society Open Science</i>, In Press.
+
 Chang, Cc., <b>Kristensen</b>, N.P., Nghiem, T.P.L., Tan, C.L.Y., Carrasco, L.R. (2021) Cooperating with the future through natural resources restoration, <i>Sustainability Science</i>, <a href="https://rdcu.be/ckJkU">In Press</a>.
 
 Valente, L., <b>Kristensen</b>, N.P., Phillimore, A. B., & Etienne, R. S. (2021) Report of programming bugs in the DAISIE R package: consequences and correction, <i>EcoEvoRxiv</i>, <a href="https://doi.org/10.32942/osf.io/w5ntf">DOI: 10.32942/osf.io/w5ntf</a>
