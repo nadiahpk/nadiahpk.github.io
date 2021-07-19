@@ -6,6 +6,7 @@ author: nadiahkristensen
 layout: post
 guid: https://nadiah.org/?p=2004
 permalink: /2021/07/16/2021-07-16-nodf-nestedness-worked-example
+image: /wp-content/uploads/2021/07/perfectly_nested_example.png
 categories:
   - macroecology
 ---
@@ -53,6 +54,7 @@ or two columns.
 
 The figure above shows the example Almeida-Neto et al. (2008) used, and we'll write some code in
 the iPython console to do the calculations.
+Here, I am following the approach used in the code provided in Strona et al. (2018).
 
 The first step is to define the presence-absence matrix
 {% highlight python %}
@@ -135,3 +137,5 @@ Out[126]: 58.3
 ### References
 
 Almeida-Neto, M., Guimaraes, P., Guimaraes Jr, P. R., Loyola, R. D. and Ulrich, W. (2008). A consistent metric for nestedness analysis in ecological systems: reconciling concept and measurement, Oikos 117(8): 1227–1239.
+
+Strona, G., Ulrich, W. and Gotelli, N. J. (2018). Bi-dimensional null model analysis of presence-absence binary matrices, Ecology 99(1): 103–115.
