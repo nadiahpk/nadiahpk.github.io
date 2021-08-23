@@ -5,7 +5,7 @@ date: 2021-08-23T01:44:54+00:00
 author: nadiahkristensen
 layout: post
 guid: http://nadiah.org/blog/?p=2006
-image: wp-content/uploads/2021/05/intergen_cprg_2.png
+image: wp-content/uploads/2021/05/intergen_cprg_2_square.png
 permalink: /2021/08/23/having-a-stake-in-the-future/
 categories:
   - cooperation
