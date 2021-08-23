@@ -5,7 +5,7 @@ date: 2021-07-16T03:28:12+00:00
 author: nadiahkristensen
 layout: post
 guid: https://nadiah.org/?p=2004
-permalink: /2021/07/16/2021-07-16-nodf-nestedness-worked-example
+permalink: /2021/07/16/nodf-nestedness-worked-example
 image: /wp-content/uploads/2021/07/perfectly_nested_example.png
 categories:
   - macroecology
