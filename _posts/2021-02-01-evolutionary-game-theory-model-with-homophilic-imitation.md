@@ -12,7 +12,10 @@ categories:
 ---
 
 The purpose of this blog post is to replicate results from Vasconcelos et al. (2014) and use it to learn
-about the behaviour of this kind of model. 
+about the behaviour of this kind of model:
+
+[Vasconcelos, V. V., Santos, F. C., Pacheco, J. M. and Levin, S. A. (2014). Climate policies under wealth inequality, Proceedings of the National Academy of Sciences 111(6): 2212–2216.](https://www.pnas.org/content/111/6/2212.full)
+
 I am interested in this model because it involves homophily: it is a social learning model, but the probability of imitation depends not only on the
 relative payoffs between the focal player and other but also on how similar they are in wealth.
 Code can be found on Github: 
