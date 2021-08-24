@@ -102,7 +102,7 @@ other members in the group: rich cooperator, poor cooperator, and defector (lump
 In these equations,
 $$i_R$$ is the number of rich cooperators and $$i_P$$ is the number of poor cooperators in the population.
 
-The social imitation dynamics is the typical classic type (c.f. Sigmund et al., 2010).
+The social imitation dynamics is the typical classic type (c.f. Sigmund et al. (2010); blog post [here](https://nadiah.org/2018/08/16/fixation-probability-of-birth-death-process/)).
 At each `step', we randomly draw one individual to be a candidate to switch their strategy,
 and we draw another individual for them to potentially imitate.
 The chance that the candidate will imitate the other's strategy is proportional to how much higher the other's payoff
