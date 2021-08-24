@@ -29,7 +29,7 @@ and defectors contribute nothing.
 
 Individuals are randomly sampled into groups of size $$N$$ to play the PGG.
 Let $$j_R$$ be the number of rich cooperators in the group and
-$$j_P$$ the number of poor cooperators (note a type in Methods section).
+$$j_P$$ the number of poor cooperators (note a typo in Methods section).
 Therefore, there are $$N - j_R - j_P$$ of defectors in the group,
 and the total contribution of the group is $$c_R j_R + c_P j_P$$.
 
@@ -127,7 +127,7 @@ Because the transitions between states depend only the proportions of different 
 we can make a Markov model for the evolutionary dynamics.
 
 First, we need to specify the imitation dynamics for the probability of transition of a single individual.
-Let $$X \rightarrow Y$$ indicate a transition in strategy from $$C$$ or $$D$$ to the \emph{opposite} type,
+Let $$X \rightarrow Y$$ indicate a transition in strategy from $$C$$ or $$D$$ to the *opposite* type,
 and let $$k$$ indicate the wealth class (rich or poor) and $$l$$ represent its opposite.
 Then the transition probabilities in the imitation dynamic
 
@@ -182,7 +182,7 @@ Then we can define the average group achievement at the stationary distribution 
 <h3>Replicating their results</h3>
 
 Fig. 1 shows the results from my attempt to replicate the results in Fig. 2 of Vasconcelos et al. (2014).
-I have chosen a smaller population size that they used to speed up the calculations.
+I have chosen a smaller population size than they used to speed up the calculations.
 In general, I am getting qualitative agreement with Vasconcelos et al. (2014).
 
 {%
@@ -192,9 +192,9 @@ In general, I am getting qualitative agreement with Vasconcelos et al. (2014).
 %}
 
 The process clarified a few points for me:
-* The transition probabilities in Eq. \ref{T_k} are for a switch in strategy only, i.e. $X \neq Y$.
-* Therefore, $\mu$ does not need to be scaled in Eq. \ref{T_k}; it is properly the chance that the candidate will flip to a <i>different</i> strategy, and there is only 1 different strategy.
-* Poor copy rich (below).
+* The transition probabilities in Eq. \ref{T_k} are for a switch in strategy only, i.e. $$X \neq Y$$.
+* Therefore, $$\mu$$ does not need to be scaled in Eq. \ref{T_k}; it is properly the chance that the candidate will flip to a <i>different</i> strategy, and there is only 1 different strategy.
+* Poor tend to copy rich, and that's central to the dynamics (below).
 
 Something that's interesting about the paper is that they chose parameter values so that,
 all else being equal,
