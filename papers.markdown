@@ -7,6 +7,7 @@ layout: page
 guid: https://nadiah.org/?page_id=405
 ---
 
+
 Chang, Cc., <b>Kristensen</b>, N.P., Nghiem, T.P.L., Tan, C.L.Y., Carrasco, L.R. (2021) Having a stake in the future and perceived population density influence intergenerational cooperation, <i>Royal Society Open Science</i>, <b>8</b>(7):210206, (<a href="https://royalsocietypublishing.org/doi/10.1098/rsos.210206">open access</a>).
 
 Chang, Cc., <b>Kristensen</b>, N.P., Nghiem, T.P.L., Tan, C.L.Y., Carrasco, L.R. (2021) Cooperating with the future through natural resources restoration, <i>Sustainability Science</i>, <b>16</b>:1285-1293, (<a href="https://rdcu.be/ckJkU">pdf</a>).
