@@ -16,6 +16,9 @@ categories:
   - climate_change
   - evolutionary_ecology
 ---
+
+*[Update: thoughts in this post contributed to <a href="https://royalsocietypublishing.org/doi/full/10.1098/rspb.2015.0288">Kristensen et al. (2015)</a>, which found mathematical conditions under which phenology may delay.]*
+
 Climate change has caused an advance in phenological events in many species. In migratory birds, the effects of warming flow causally up the trophic levels. For example, warmer temperatures lead to earlier plant phenology (e.g. budding), which leads to earlier peaks in the abundance of foods (e.g. insect larva) that are important to raising nestlings, which puts pressure upon birds to advance their own breeding timetable. In general, birds have responded to warming weather by advancing their own phenology. Migratory birds are both arriving earlier and laying earlier in recent years. However, the responses have not been uniform.
 
 Generally we expect that migratory birds will arrive earlier with warming temperatures. However there have been a few studies in which a delay in arrival time has been reported as a response to advancing phenology (Mason 1995, Huin & Sparks, Sparks & Braslavsk ́2001, Penuelas et al. 2002, Butler 2003, Cotton 2003, Gordo et al. 2005, Primack et al. 2009, Swanson & Palmer 2009, Ellwood et al. 2010, Lee et al. 2011, Gordo & Doi 2012). These studies typically look to factors like e.g. temperatures in other parts of the year as an explanation (Gordo et al. 2005, Swanson & Palmer 2009).

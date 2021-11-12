@@ -15,6 +15,9 @@ original_post_id:
 categories:
   - evolutionary_ecology
 ---
+
+*[Update: thoughts in this post contributed to <a href="https://royalsocietypublishing.org/doi/full/10.1098/rspb.2015.0288">Kristensen et al. (2015)</a>]*
+
 Food availability at the breeding site often has a peaked temporal profile such that food is very abundant for a short period of time. Therefore, migratory birds must also time their arrival such that there is adequate time to gather the resources needed for egg production, and time their nesting and laying so that nestlings can take advantage of these food peaks. Failure to do so leads to a \`mismatch', and presumably a suboptimal nestling health and fledging rate.
 
 The benefits of early laying include match to the food peak, a more favourable environment for nestlings (Verhulst & Nilsson 2008), and the possibility of raising a second brood (Tinbergen & Daan 1990, Brinkhof et al. 2002). However the laying date that maximises reproductive success is typically earlier than the laying date in most birds (Lack 1968; Perrins 1970; Perrins & Moss 1975) (Drent 2006). This suggests that there must be some counter-acting disadvantage to early breeding that predates climate change effects. There is a growing literature suggesting that phenological mismatch may be adaptive (Singer & Parmesan 2010, Visser et al. 2012, Johansson & Jonzen 2012).

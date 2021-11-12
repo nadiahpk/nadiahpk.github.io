@@ -9,6 +9,9 @@ permalink: /2018/12/24/relationship-between-species-discovery-and-extinction-pro
 categories:
   - undiscovered_extinctions
 ---
+
+*[Update: thoughts in this post contributed to <a href="https://conbio.onlinelibrary.wiley.com/doi/abs/10.1111/cobi.13499">Kristensen et al. (2020)</a>.]*
+
 What is the relationship between a plant's historical probability of having being discovered and its probability that it went extinct?
 
 All else being equal, species with low abundance are less likely to be collected, and low abundance is both theoretically (e.g. McCarthy et al., 2014) and empirically cited as a good predictor of extinction probability. The empirical relationship has been observed both in general (McKinney, 1997) and specifically for plants (Sutton and Morgan, 2009; Matthies et al., 2004). It has also been found in the context of habitat fragmentation (Table 2 of Henle et al., 2004), which is particularly relevant to the tropics and development continues.

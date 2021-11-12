@@ -9,6 +9,9 @@ permalink: /2017/05/10/comparing-e-msy-and-chisholm-method/
 categories:
   - undiscovered_extinctions
 ---
+
+*[Update: thoughts in this post contributed to <a href="https://conbio.onlinelibrary.wiley.com/doi/abs/10.1111/cobi.13499">Kristensen et al. (2020)</a>.]*
+
 Historical data (e.g. sighting records) can be used to estimate historical extinction rates in a variety of ways. The Chisholm et al. (2016) method ([earlier post](https://nadiah.org/2017/03/31/estimating-undetected-extinctions/)) uses the data to estimate yearly extinction probabilities. The extinctions per million species-years (E/MSY) approach (Pimm et al., 2014) estimates they extinction probability averaged over species-years. Below, I use two small examples to illustrate the similarities and differences between them. 
 
 #### Chisholm $$ = $$ E/SY when extinction constant

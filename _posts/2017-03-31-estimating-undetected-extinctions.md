@@ -9,6 +9,9 @@ permalink: /2017/03/31/estimating-undetected-extinctions/
 categories:
   - undiscovered_extinctions
 ---
+
+*[Update: thoughts in this post contributed to <a href="https://conbio.onlinelibrary.wiley.com/doi/abs/10.1111/cobi.13499">Kristensen et al. (2020)</a>.]*
+
 The purpose of this blog post is to give a simplified account of how the [Chisholm et al. (2016)](https://conbio.onlinelibrary.wiley.com/doi/abs/10.1111/cobi.12640) method works for estimating undetected extinctions.
 
 To estimate the historical extinction rate within a taxonomic group, a naive approach would be to divide the number of species known to be extinct by the total number of species. However, this does not account for the historical process of species discovery and temporal fluctuations in the extinction rate. The approach can be improved by estimating the cumulative probability of persistence over the time period of interest. This is equivalent to accounting for species that went extinct before we had a chance to discover them.
