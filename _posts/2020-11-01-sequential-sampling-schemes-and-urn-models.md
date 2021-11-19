@@ -40,7 +40,8 @@ or, in the island models below, immigration from the mainland.
 A coalescence model is equivalent to a sequential sampling scheme for reasons explained in
 the genetics literature (reviewed in Donnelly, 1986).
 
-Each event in the coalescence, either a coalescence or a point-speciation,
+Each event in the coalesence tree, 
+either a coalescence of two lineages in a common ancestor or a point-speciation,
 corresponds to a draw from the sequential sampling scheme.
 To generate a random sample of individuals from the metacommunity, the $$j$$th
 individual drawn is labelled as a new species (different from the $$j-1$$ previously sampled) with probability
