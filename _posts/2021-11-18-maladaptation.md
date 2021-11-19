@@ -16,8 +16,8 @@ They do this in one-shot games, where there is no chance the other could punish 
 and in games with anonymous strangers, for whom they have no material reason to care.
 We see this cooperative tendency typically in the initial rounds of experimental public goods games (e.g., Offerman et al. 1996),
 but also in real-world common-resource problems (Ostrom 2000).
-From naive versions of both the economic and Darwinian perspectives,
-which expect humans to behave in a mostly rational and self-interested way,
+From a naive economic or Darwinian perspective,
+which expects humans to behave in a mostly rational and self-interested way,
 this behaviour is puzzling.
 
 One explanation is that this cooperative behaviour is basically a mistake,
@@ -99,14 +99,14 @@ There are examples of this in the review by Cadsby and Maynes (1999),
 where participants in threshold PGGs seemed to adjust their behaviour over rounds towards the Nash Equilibrium.
 
 The best evidence for social heuristics comes from cross-cultural studies,
-here game behaviour can often be connected to daily-life experience (Henrich et al., 2005).
+where game behaviour can often be connected to daily-life experience (Henrich et al., 2005).
 For example,
 the Orma connected the experimental PGG to *harambee*,
 which is their real-life cultural practice for raising funds for community projects.
 They correspondingly made higher contributions in the experimental PGG than comparable cultures 
 without a similar cultural practice.
 
-The cross-cultural studies are also important in that they highlight three points.
+The cross-cultural studies highlight three points.
 First, 
 they demonstrate that cultural environment is important to determining behaviour in one-shot games / initial rounds.
 Variation between cultures was probably not because intrinsic altruistic preferences varied,
