@@ -224,6 +224,9 @@ So far, I read one paper by Rusch (2018) who did something like that.
 They used the relatedness measured in hunter-gatherers horticulturalist societies 
 (including that of Hill et al., (2011) cited above) to parameterise a linear one-shot PGG model,
 and found that cooperation can be maintained in group sizes much larger than previously be thought.
+But most models I've read have a fixed scenario,
+and this question needs a model that looks at scenario variability and some kind of 
+cue-response / phenotypic plasticity.
 
 **(4) Regarding kin selection**
 Strong reciprocity theorists raised a series of objections against kin-selection explanations specifically. 
