@@ -12,7 +12,7 @@ categories:
 ---
 
 [Archetti (2018)](https://www.mdpi.com/2073-4336/9/2/17/htm) 
-provides a quick way to characterise the replicator dynamics of two-strategy nonlinear 
+provides a neat way to characterise the replicator dynamics of two-strategy nonlinear 
 public goods games with random group formation.
 The purpose of this blog post is to use their paper to teach myself more about the topic.
 
@@ -196,7 +196,7 @@ Fig. 4 shows how $$\beta(x)$$ is drawn as a Bezier curve using the $$\Delta b_i$
     caption="Figure 4: Drawing the n=5 Bezier curve at x=1/4 and x=1/2."
 %}
 
-<h3>Quickly characterising the dynamics</h3>
+<h3>Characterising the dynamics</h3>
 
 On page 5, 
 Archetti (2018) detail how the Bernstein approach can be used to characterise
