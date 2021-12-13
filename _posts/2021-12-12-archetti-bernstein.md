@@ -14,7 +14,9 @@ categories:
 [Archetti (2018)](https://www.mdpi.com/2073-4336/9/2/17/htm) 
 provides a quick way to characterise the replicator dynamics of two-strategy nonlinear 
 public goods games with random group formation.
-They consider replicator dynamics in a population of producers (cooperators) and defectors.
+The purpose of this blog post is to use their paper to teach myself more about the topic.
+
+Archetti (2018) considered replicator dynamics in a population of producers (cooperators) and defectors.
 The probability that $$i$$ of the $$n-1$$ other members in your group are cooperators is
 
 $$
