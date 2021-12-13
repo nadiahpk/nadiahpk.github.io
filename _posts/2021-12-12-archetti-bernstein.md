@@ -6,6 +6,7 @@ author: nadiahkristensen
 layout: post
 guid: http://nadiah.org/blog/?p=2009
 permalink: /2021/12/12/archetti-bernstein
+image: /wp-content/uploads/2021/12/sigmund_replicator.png
 categories:
   - cooperation
 ---
