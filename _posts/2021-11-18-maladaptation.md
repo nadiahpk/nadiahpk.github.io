@@ -239,7 +239,7 @@ Humans and other animals use three cues to identify kin:
 (3) proximity of residence (reviewed in Kurland and Gaulin 2005; cited in Krebs (2015)).
 However, kin recognition can misfire.
 Boyd and Richerson (2006) give two examples of misfiring,
-both cases where raising unrelated children together triggers their incest avoidance cue:
+both cases where raising unrelated children together triggers their incest avoidance cue-response:
 the reluctance of Israeli Kibbutz age mates to marry;
 and the low reproductive success of Taiwanese minor marriages,
 where parents arrange a future spouse for their child by adopting an opposite-sex child and rearing them together.
@@ -268,13 +268,13 @@ the maladaptation hypothesis predicts that nonhuman primates should "mistakenly"
 I note that it is possible that this literature is out of date now and that cooperation with strangers occurs in other primates
 (e.g., Schmelz et al. (2017) to read),
 though it's obviously not to the degree that humans do.
-This highlights that a good explanation of human cooperation should also explain
-why the same degree of cooperation did not also evolve in other, closely related primates.
+A good explanation for human cooperation should also explain
+why the same degree of cooperation did not evolve in them too.
 
 **(5) Coexistence of different types**
 The final argument is that
 the maladaptation hypothesis doesn't explain the observed inter-individual variability in cooperative behaviour.
-Specifically, Fehr and Henrich (2003) observe that
+Fehr and Henrich (2003) observe that
 human populations seem to be split into
 a certain proportion of individuals who are strong reciprocators and another proportion who are selfish. 
 They ask: "How can the maladaptation account explain the existence of completely self-interested behavior?
@@ -295,15 +295,15 @@ Therefore, there doesn't seem to be anything about coexistence of different type
 However, some authors (e.g., Sober and Wilson) use the label 'group selection'
 for mechanisms similar to what we might model using Wright's Infinite Islands.
 The mechanism is still individual selection --- and that's how you model it --- 
-but there is a sense that the islands are groups that are competing.
+but there is perhaps a sense that the islands are groups that are competing.
 Actually, the mechanism is usually that competition between individuals is being exported outside the group
 (Taylor 1992; West et al., 2006),
 and the kinds of social-learning type models that can produce polymorphism 
 (a recent example might be García & Traulsen (2019))
 also work by exporting competition (imitation is global).
-Therefore, what I think Fehr and Henrich (2003) are saying is that the polymorphism that is observed 
-in real humans looks similar to what is predicted by 'group selection' models;
-therefore, the likely explanation probably involves a groups-based mechanism.
+Therefore, I think what Fehr and Henrich (2003) are saying is that the polymorphism that is observed 
+in real humans looks similar to what is predicted by these 'group selection' models;
+therefore, the likely explanation probably involves a similar mechanism.
 
 
 **I took home 5 key messages from the strong-reciprocity debate**:
