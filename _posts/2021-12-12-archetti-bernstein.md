@@ -10,7 +10,8 @@ categories:
   - cooperation
 ---
 
-Archetti (2018) provides a quick way to characterise the replicator dynamics of two-strategy nonlinear 
+[Archetti (2018)](https://www.mdpi.com/2073-4336/9/2/17/htm) 
+provides a quick way to characterise the replicator dynamics of two-strategy nonlinear 
 public goods games with random group formation.
 They consider replicator dynamics in a population of producers (cooperators) and defectors.
 The probability that $$i$$ of the $$n-1$$ other members in your group are cooperators is
@@ -326,7 +327,7 @@ the $$X$$-$$V$$ and $$Y$$-$$V$$ axes.
 
 <h3>References</h3>
 
-Archetti, M. (2018). How to analyze models of nonlinear public goods, Games 9(2): 17.
+Archetti, M. (2018). [How to analyze models of nonlinear public goods](https://www.mdpi.com/2073-4336/9/2/17/htm), Games 9(2): 17.
 
 Bayad, A., Kim, T., Lee, S. H., & Dolgy, D. V. (2011). A note on the generalized Bernstein polynomials. Honam Mathematical Journal, 33(3), 431-439.
 
