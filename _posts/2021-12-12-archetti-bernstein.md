@@ -325,7 +325,8 @@ the $$X$$-$$V$$ and $$Y$$-$$V$$ axes.
     include figure.html
     src="/wp-content/uploads/2021/12/sigmund_bernstein.png"
     caption="Figure 7: Comparing the linear mesh formed of the Bernstein coefficients (black) and the surface
-    of the beta (blue) for the Sigmund model example."
+    of the beta (blue) for the Sigmund model example. The flat triangle is the simplex axes where the coefficients
+    and beta equal 0."
 %}
 
 <h3>References</h3>
