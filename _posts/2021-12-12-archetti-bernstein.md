@@ -264,7 +264,8 @@ $$
     \label{interior_bernstein}
 $$
 
-Again we see that the Bernstein coefficient is related to the change in payoffs when an individual switches strategy.
+Again we see that the Bernstein coefficient is related to the change in payoffs when an individual switches strategy,
+which provides some kind of connection to the NE.
 
 <h4>An example</h4>
 
