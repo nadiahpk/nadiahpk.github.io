@@ -6,7 +6,7 @@ author: nadiahkristensen
 layout: post
 guid: http://nadiah.org/blog/?p=2010
 permalink: /2021/12/12/sundaic-birds
-image: /wp-content/uploads/2021/12/sigmund_replicator.png
+image: /wp-content/uploads/2022/01/sunda_map.png
 categories:
   - macroecology
 ---
