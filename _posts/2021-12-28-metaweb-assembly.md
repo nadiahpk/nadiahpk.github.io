@@ -15,7 +15,7 @@ What determines the structure of a food web?
 It has long been theorised that food-web assembly is a _selective_ process,
 allowing only certain species and interactions to persist in the face of 
 dynamical stability constraints.
-In [Leo Sararvia's](https://twitter.com/larysar) recent paper in 
+In [Leo Saravia's](https://twitter.com/larysar) recent paper in 
 [Journal of Animal Ecology](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2656.13652),
 we used a novel test to see if we could detect the signal of this selection.
 We compared the structure of real food webs to those of webs randomly assembled from the regional metaweb.
