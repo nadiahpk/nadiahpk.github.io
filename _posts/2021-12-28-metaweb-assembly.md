@@ -35,7 +35,7 @@ which provides an ultimate constraint on which species and interactions are poss
 1. a complex combination of local selective processes, 
 which constrains which species and interactions can persist locally.
 
-Real food web structure should reflect these factors.
+Real food web structure should reflect both these factors.
 
 The food-web assembly process is theorised to be a selective process.
 Which regional species can arrive and persist in a web is influenced by
@@ -48,7 +48,7 @@ leading to an over-representation of stabilising structures in real food webs.
 Food webs do tend to have properties that promote stability.
 For example, they tend to have a skewed distribution of interaction strengths
 and a high frequency of stabilising 3-node sub-networks (motifs).
-However, these properties can arise for other reasons.
+However, these properties can arise also for other reasons.
 Furthermore, without an appropriate baseline for comparison,
 it is unclear whether their observed frequency is unusual or unexpected.
 
@@ -64,6 +64,12 @@ we found that there were almost no differences between empirical webs
 and those resulting from the null assembly model. 
 Few empirical food webs showed significant differences in their network properties, 
 motif representations or topological roles.
+Furthermore, 
+real webs did not display any consistent tendency to deviate from expectation in the direction predicted by theory,
+particularly when the lakes dataset was included.
+For example,
+Weddell Sea seems to have unusually high stability,
+but the result looks less unusual when the whole dataset is compared (MEing, Fig. 2).
 
 {%
     include figure.html
