@@ -26,7 +26,8 @@ As a consequence, larger islands and islands with greater connectance to the mai
 
 However, these general species-richness relationships assume static conditions.
 If an island has recently decreased in size or connectance to the mainland,
-then we would expect it to have more species than similar islands that have not changed.
+then we would expect it to have more species than similar islands that have not changed
+(see [previous blog post](https://nadiah.org/2020/02/22/transient-dynamics-in-neutral-models/)).
 This is because it takes time for species diversity to decline to reach its new, lower stochastic-equilibrium value.
 The mechanism is similar to extinction debt, where there is a time delay between habitat fragmentation and species extinction.
 
