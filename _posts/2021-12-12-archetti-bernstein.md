@@ -11,10 +11,12 @@ categories:
   - cooperation
 ---
 
-[Archetti (2018)](https://www.mdpi.com/2073-4336/9/2/17/htm) 
-provides a neat way to characterise the replicator dynamics of two-strategy nonlinear 
-public goods games with random group formation.
-The purpose of this blog post is to use their paper to teach myself more about the topic.
+A series of papers by [Jorge Peña](https://jorgeapenas.wordpress.com/) and others
+provide a neat way to characterise the replicator dynamics of two-strategy nonlinear 
+public goods games with random group formation
+(Peña et al. 2014, Peña et al. 2015, Peña & Nöldeke 2016, Nöldeke & Peña 2016, Peña & Nöldeke 2018, Nöldeke & Peña 2020).
+I this blog post, I used a paper by [Archetti (2018)](https://www.mdpi.com/2073-4336/9/2/17/htm) 
+to teach myself more about the topic.
 
 Archetti (2018) considered replicator dynamics in a population of producers (cooperators) and defectors.
 The probability that $$i$$ of the $$n-1$$ other members in your group are cooperators is
@@ -332,11 +334,25 @@ the $$X$$-$$V$$ and $$Y$$-$$V$$ axes.
 
 <h3>References</h3>
 
+
+
 Archetti, M. (2018). [How to analyze models of nonlinear public goods](https://www.mdpi.com/2073-4336/9/2/17/htm), Games 9(2): 17.
 
 Bayad, A., Kim, T., Lee, S. H., & Dolgy, D. V. (2011). A note on the generalized Bernstein polynomials. Honam Mathematical Journal, 33(3), 431-439.
 
 Dahmen, W. (1991). Convexity and Bernstein-Bézier polynomials, in P.-J. Laurent, A. Le Méhauté and L. L. Schumaker (eds), Curves and Surfaces, Academic Press, pp. 107–134.
+
+Nöldeke, G. & Peña, J. (2016). The symmetric equilibria of symmetric voter participation games with complete information. Games and Economic Behavior, 99, 71–81.
+
+Nöldeke, G. & Peña, J. (2020). Group size and collective action in a binary contribution game. Journal of Mathematical Economics, 88, 42–51.
+
+Peña, J., Lehmann, L. & Nöldeke, G. (2014). Gains from switching and evolutionary stability in multi-player matrix games. Journal of Theoretical Biology, 346, 23–33.
+
+Peña, J., Nöldeke, G. & Lehmann, L. (2015). Evolutionary dynamics of collective action in spatially structured populations. Journal of Theoretical Biology, 382, 122–136.
+
+Peña, J., & Nöldeke, G. (2016). Variability in group size and the evolution of collective action. Journal of Theoretical Biology, 389, 72-82.
+
+Peña, J., & Nöldeke, G. (2018). Group size effects in social evolution. Journal of Theoretical Biology, 457, 211-220.
 
 Sauer, T. (1991). Multivariate Bernstein polynomials and convexity, Computer Aided Geometric Design 8(6): 465–478.
 
