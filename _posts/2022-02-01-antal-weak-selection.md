@@ -32,7 +32,7 @@ evolve: $$\frac{b}{c} > 1 + \frac{2}{\sqrt{3}}$$.
 
 
 They assume a Cooperator only cooperates with a matching-tag partner,
-payoing cost $$c$$ to provide a benefit $$b$$ to the partner;
+paying cost $$c$$ to provide a benefit $$b$$ to the partner;
 otherwise, it behaves like a Defector.
 The Defector contributes nothing;
 it receives $$b$$ from a partner who cooperators and $$0$$ from a partner who defects.
@@ -50,8 +50,8 @@ $$
     f_D = \frac{\sum_i (n_i - m_i) b m_i }{N - \sum_i m_i}.
 $$
 
-Cooperators have higher fitness than defectors if $$f_C > f_D$$,
-which is
+Selection favours cooperation if Cooperators have higher fitness than Defectors,
+$$f_C > f_D$$, which is
 
 $$
     b \sum_i m_i^2 - c \sum_i m_i n_i > \frac{(b-c)}{N} \sum_{ij} m_i m_j n_j.
@@ -221,7 +221,7 @@ $$
 \end{align}
 $$
 
-Eq.~\ref{neut} indicates an average taken over configurations at the neutral steady state, i.e.,
+Eq. \ref{neut} indicates an average taken over configurations at the neutral steady state, i.e.,
 
 $$
     \bigl\langle \Delta p(s) \bigr\rangle
@@ -244,7 +244,7 @@ $$
 $$
 
 Remember that, for selection to favour cooperators, we want our invasion condition $$\langle \Delta p(s) \rangle > 0$$ 
-(Eq.~\ref{invasion_condition}), i.e.,
+(Eq. \ref{invasion_condition}), i.e.,
 
 $$
     \biggl\langle \sum_i m_i \left. \frac{d w_{C_i}}{d\delta} \right|_{\delta=0} \biggr \rangle_0 > 0
