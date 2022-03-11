@@ -7,10 +7,13 @@ layout: page
 guid: https://nadiah.org/?page_id=405
 ---
 
+Sin, Y.C.K., <b>Kristensen</b>, N.P., Gwee, C.Y., Chisholm, R.A., Rheindt, F.E. (2022) Bird diversity on shelf islands does not benefit from recent land‐bridge connections, <i>Journal of Biogeography</i>, <b>49</b>(1):189-200, (<a href="https://nadiah.org/2021/12/12/sundaic-birds">blog</a>), (<a href="https://nadiah.org/wp-content/uploads/2022/02/Sin21-Bird_diversity_shelf_islands_doesnt_benefit_recent_connection.pdf">pdf</a>).
 
-Chang, Cc., <b>Kristensen</b>, N.P., Nghiem, T.P.L., Tan, C.L.Y., Carrasco, L.R. (2021) Having a stake in the future and perceived population density influence intergenerational cooperation, <i>Royal Society Open Science</i>, <b>8</b>(7):210206, (<a href="https://royalsocietypublishing.org/doi/10.1098/rsos.210206">open access</a>).
+Saravia, L.A., Marina, T.I., <b>Kristensen</b>, N.P., De Troch, M., Momo, F.R. (2022). Ecological network assembly: How the regional metaweb influences local food webs, <i>Journal of Animal Ecology</i>, <b>91</b>:630-642, (<a href="https://nadiah.org/2021/12/28/metaweb-assembly">blog</a>), (<a href="https://nadiah.org/wp-content/uploads/2022/02/Saravia22-Metaweb_determines_local_food_webs.pdf">pdf</a>).
 
-Chang, Cc., <b>Kristensen</b>, N.P., Nghiem, T.P.L., Tan, C.L.Y., Carrasco, L.R. (2021) Cooperating with the future through natural resources restoration, <i>Sustainability Science</i>, <b>16</b>:1285-1293, (<a href="https://rdcu.be/ckJkU">pdf</a>).
+Chang, Cc., <b>Kristensen</b>, N.P., Nghiem, T.P.L., Tan, C.L.Y., Carrasco, L.R. (2021) Having a stake in the future and perceived population density influence intergenerational cooperation, <i>Royal Society Open Science</i>, <b>8</b>(7):210206, (<a href="https://nadiah.org/2021/08/23/having-a-stake-in-the-future/">blog</a>), (<a href="https://royalsocietypublishing.org/doi/10.1098/rsos.210206">open access</a>).
+
+Chang, Cc., <b>Kristensen</b>, N.P., Nghiem, T.P.L., Tan, C.L.Y., Carrasco, L.R. (2021) Cooperating with the future through natural resources restoration, <i>Sustainability Science</i>, <b>16</b>:1285-1293, (<a href="https://nadiah.org/2021/05/24/intergenerational-reciprocity-and-restoration/">blog</a>), (<a href="https://rdcu.be/ckJkU">pdf</a>).
 
 Valente, L., <b>Kristensen</b>, N.P., Phillimore, A. B., & Etienne, R. S. (2021) Report of programming bugs in the DAISIE R package: consequences and correction, <i>EcoEvoRxiv</i>, <a href="https://doi.org/10.32942/osf.io/w5ntf">DOI: 10.32942/osf.io/w5ntf</a>
 
