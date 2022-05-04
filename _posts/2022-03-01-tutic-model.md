@@ -143,7 +143,7 @@ as Tutić (2021) reports.
     Parameters \(h=5\) and \(w=0.8\)."
 %}
 
-When a Markov chain spends a long time in transient states,
+When an absorbing Markov chain spends a long time in transient states,
 the quasi-stationary behaviour can be characterised using the methods reviewed in van Doorn and Pollett
 (2013) and used in e.g., Day and Possingham's (1995) paper about metapopulation persistence. 
 Following Day and Possingham (1995),
