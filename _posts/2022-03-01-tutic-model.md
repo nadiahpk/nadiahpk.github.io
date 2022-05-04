@@ -83,7 +83,7 @@ $$
 $$
 
 To find cooperator fixation probabilities,
-I instead decided to use the general Markov approach.
+I decided instead to use the general Markov approach.
 Warren Weckesser at Colgate University has made available some [nice lecture notes](http://math.colgate.edu/~wweckesser/math312Spring05/handouts/MarkovChains.pdf),
 but note that my transition matrix $$P$$ is the transpose of what Weckesser uses,
 to match the convention used in some other references below.
@@ -157,7 +157,8 @@ then the dynamics will exhibit quasi stationary behaviour,
 i.e., relatively fast convergence to the limiting conditional distribution, and eventual evanescence after a much longer time.
 
 Fig. 3 shows the quasi-stationary distribution found from the leading left eigenvector of $$Q$$.
-The expected value matches the expected value observed in simulations (compare with Fig. 6 in Tutić (2021)).
+The expected value matches the expected value Tutić (2021) observed in simulations
+(compare with Fig. 6 in Tutić (2021)).
 I found $$\mu_1 = 0.9999989$$,
 which is close to 1 and indicates the transient dynamics will continue a long time before fixation.
 I found $$\gamma = 5.5 \times 10^{-3}$$ and $$\alpha = 1 \times 10^{-6}$$,
@@ -171,9 +172,7 @@ which indicates quasi-stationary behaviour.
 
 The model assumes that, if there is more than one cooperator in the group,
 then they will all pay the cost $$\gamma$$ to provide the public good.
-It's a little strange that, if one volunteer has already done the job,
-then other volunteers will redo the job and waste their efforts.
-I wondered, what might happen if only one cooperator provided the good,
+I wondered, what would happen if only one cooperator provided the good,
 e.g., if they draw straws or one is randomly chosen to do the job first,
 or if they split the costs between them?
 
@@ -212,7 +211,7 @@ A population with an initially modest number of cooperators is now more likely t
 However,
 the quasi-stationary distribution still spends most of its time near the all-defect absorbing state (Fig. 6).
 Therefore, while there is a better chance in the new model that the population will be absorbed to the all-cooperator state,
-the general story that the original Tutić (2021) model tells is still true:
+the overall story that the original Tutić (2021) model tells is still true:
 cooperation becomes harder to maintain as group size increases.
 
 {%
