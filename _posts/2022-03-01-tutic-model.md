@@ -12,7 +12,7 @@ categories:
 ---
 
 The purpose of this blog post is to use a recent paper by Tutić (2021) to teach myself about stochastic
-evolutionary dynamics.
+evolutionary game theory.
 
 Tutić's (2021) model concerns the Volunteer’s Dilemma, which is a public goods game where the public
 good is provided if at least one group member cooperates. In the replicator dynamics, cooperators
