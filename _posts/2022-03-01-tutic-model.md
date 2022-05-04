@@ -18,7 +18,7 @@ Tutić's (2021) model concerns the Volunteer’s Dilemma, which is a public good
 good is provided if at least one group member cooperates. In the replicator dynamics, cooperators
 can always invade a population of defectors. However, as the group size increases, the proportion
 of cooperators in the population at the evolutionary steady-state declines (see Tutić (2021) Fig. 6),
-which increases the risk that cooperators will be lost from finite populations where stochastic forces are strong.
+which increases the risk that cooperators will be lost from a finite population where stochastic forces are strong.
 
 The game payoffs to defectors are 0 if no other group members are cooperators (no public good produced),
 and $$\beta$$ if there is at least one.
