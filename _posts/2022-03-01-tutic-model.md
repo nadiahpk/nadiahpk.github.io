@@ -159,6 +159,9 @@ i.e., relatively fast convergence to the limiting conditional distribution, and 
 Fig. 3 shows the quasi-stationary distribution found from the leading left eigenvector of $$Q$$.
 The expected value matches the expected value Tutić (2021) observed in simulations
 (compare with Fig. 6 in Tutić (2021)).
+The systems spends most of its time near the all-defector state,
+which puts it at risk of eventually losing the cooperators from the population.
+
 I found $$\mu_1 = 0.9999989$$,
 which is close to 1 and indicates the transient dynamics will continue a long time before fixation.
 I found $$\gamma = 5.5 \times 10^{-3}$$ and $$\alpha = 1 \times 10^{-6}$$,
