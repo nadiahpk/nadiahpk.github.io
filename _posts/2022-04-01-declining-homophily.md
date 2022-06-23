@@ -1,6 +1,6 @@
 ---
 id: 2014
-title: Human cooperation and nonkin interactions over time
+title: Human cooperation and social network expansion over time
 date: 2022-04-01T04:44:54+00:00
 author: nadiahkristensen
 layout: post
