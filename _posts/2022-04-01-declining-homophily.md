@@ -13,7 +13,7 @@ categories:
 
 It is generally held that human cooperation first evolved in our ancestral past,
 when we tended to live in small groups composed mostly of family members,
-and when cooperation could be selected for by kin selection.
+and when cooperation could therefore be selected for by kin selection.
 This narrative is also sometimes invoked to explain the origin of cooperative mechanisms that are primarily about 
 cooperation between nonkin.
 For example,
@@ -21,8 +21,9 @@ in the iterated Prisoner's Dilemma,
 cooperation between nonkin can be maintained by the tit-for-tat strategy,
 and a population of tit-for-tat players can resist invasion by defectors.
 However, tit-for-tat strategists cannot invade a population of defectors (presumably the primordial strategy),
-and so Axelrod & Hamilton (1981) proposed that one way it may have got started 
-was if dispersal was low enough in the past that cooperative types tended to cluster together.
+and so the question remains how it got started in the first place.
+Axelrod & Hamilton (1981) proposed that one way could have been if
+dispersal was low enough in the past that cooperative types tended to cluster together.
 
 Over the course of the human lineage, 
 there is a general pattern expanding social networks and declining relatedness between interacting individuals.
@@ -33,7 +34,7 @@ In industrialised societies,
 falling mortality and fertility has also reduced the size of kin networks (David-Barrett, 2019), 
 motivating new bases for social identity (David-Barrett, 2020).
 In the popular imagination,
-hunter-gatherer lifeways represent our closest analogue to what the deep ancestral past must have been like;
+the lifeways of hunter-gatherer people represent our closest analogue to what the deep ancestral past must have been like;
 however, modern hunter-gatherers also maintain expansive social networks with hundreds of unrelated individuals
 (Hill et al., 2011; Bird et al., 2019), 
 and groups congregate seasonally for communal hunting and socialising (Kelly, 2013; Balme, 2018). 
@@ -43,17 +44,17 @@ and so inferences must be made on the basis of fossils and other material eviden
 One potential indicator of social structure is the distance that materials were transported from their source.
 Before around 1.6 Ma, raw-material transport distances are comparable to chimpanzee home-range sizes (∼ 13 km), 
 indicating relatively isolated social groups composed mostly of kin (Marwick, 2003). 
-Distances and occurrences of material transport increased from there over the course of the Early and Middle Stone Age.
+Distances and occurrences of material transport subsequently increased over the course of the Early and Middle Stone Age.
 For example,
 approximately 295-320 ka, obsidian and ochre were transported 25-50 km (as the crow flies) (Brooks et al., 2018).
 After ~130 ka, raw-material transport distances frequently exceeded 300 km (Marwick, 2003).
 These distances may be indicative of networks of exchange, 
 which implies increased language abilities (Marwick, 2003) and notions of relatedness beyond genetic kin (Moutsiou, 2012). 
 However, we must also be cautious when trying to infer what these exchanges meant,
-because humans can be quirky and transport materials over long distances for unexpected reasons (Graeber and Wengrow, 2018).
+because humans are quirky and sometimes transport materials over long distances for unexpected reasons (Graeber and Wengrow, 2018).
 
 The types of materials that are found can also be indicative of something social.
-Tool sophistication and symbolic development may be indicative of cognitive development,
+Tool sophistication and symbolic development may be indicative of cognitive and social development,
 and their stylistic diversity indicative of cultures and the flow of information between them.
 In the early period (~1.5-0.4 Ma), 
 evidence of material innovation is scarce;
@@ -81,7 +82,7 @@ large-scale collective action (Graeber and Wengrow, 2021).
 For example,
 the use of nets is an indicator of communal hunting,
 particularly of the integration of labour from women, children, and the elderly (Soffer et al., 2001).
-Evidence of large-scale fishing operations from 27 ka in Australia (Balme, 1995). 
+Evidence of large-scale fishing operations occur from 27 ka in Australia (Balme, 1995). 
 
 Acquiring meat may have been one of our ancestors' first collaborative activities,
 and collaborative foraging in general has been linked to the early stages of human cooperation
