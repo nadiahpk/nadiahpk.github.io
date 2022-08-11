@@ -27,7 +27,7 @@ about the evolution of [cooperation](https://nadiah.org/category/cooperation) in
 
 Previously,
 I have worked on [nonparametric methods for estimating undetected extinctions](/category/undiscovered_extinctions).
-Before that, I was [at University of Queensland](http://x-ed.net/), Australia, working on the [Qualitative Modelling](https://nadiah.org/category/conservation/qualitative-modelling-conservation/) framework in the context of pest control. 
+Before that, I was [at University of Queensland](http://x-ed.net/), Australia, working on the [Qualitative Modelling](https://nadiah.org/category/qualitative_modelling) framework in the context of pest control. 
 Before that, I was in [Lund, Sweden](https://www.biology.lu.se/research/research-groups/theoretical-population-ecology-and-evolution-group), using adaptive dynamics to model the phenological response of migratory birds to climate change. 
 And before that, I did a post-doc at CSIRO Entomology in Canberra, and did my PhD with Hugh Possingham at the University of Queensland. 
 Both of these focused on complex systems, mathematical ecology and modelling.
