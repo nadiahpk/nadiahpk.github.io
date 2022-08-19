@@ -34,6 +34,12 @@ Both of these focused on complex systems, mathematical ecology and modelling.
 
 <!-- I am also working on theoretical models for evolution of partnership / cooperation with [Hanna Kokko](https://en.wikipedia.org/wiki/Hanna_Kokko) at University of Zurich.-->
 
+{%
+    include figure.html
+    src="/wp-content/uploads/2017/07/toivo_birthday.png"
+    caption="Toivo, Carlo and me celebrating Toivo's birthday."
+%}
+
 I have a son, Toivo, who was born in the Czech Republic while my [partner](https://carlo-hamalainen.net/) did his first post-doc there. While on an extended parenting leave I volunteered at [the local rodinné centrum (family centre)](http://www.rcletna.cz/), I started my own Fair Trade business, volunteered to organise and run two children&#8217;s playgroups including one that served the large refugee community in Annerley/Moorooka ([Junction Park Playgroup](http://junctionparkplaygroup.blogspot.com.au/), [Monday Melodies Playgroup](http://mondaymelodiesplaygroup.blogspot.com/)), volunteered to organise Fair Trade events including the annual Fair Trade Christmas Market for the [Qld Fair Trade Collective](https://www.facebook.com/qldfairtrade/), and volunteered for the [Stones Corner Community Kindergarten](http://www.stonescornerkindergarten.com.au/) committee.
 
 In my spare time I enjoy hanging out with my kid, reading genre fiction and pop-science, and listening to death metal.

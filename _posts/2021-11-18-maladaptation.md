@@ -101,7 +101,7 @@ where participants in threshold PGGs seemed to adjust their behaviour over round
 The best evidence for social heuristics comes from cross-cultural studies,
 where game behaviour can often be connected to daily-life experience (Henrich et al., 2005).
 For example,
-the Orma connected the experimental PGG to *harambee*,
+Orma people connected an experimental PGG to *harambee*,
 which is their real-life cultural practice for raising funds for community projects.
 They correspondingly made higher contributions in the experimental PGG than comparable cultures 
 without a similar cultural practice.
@@ -112,7 +112,7 @@ they demonstrate that cultural environment is important to determining behaviour
 Variation between cultures was probably not because intrinsic altruistic preferences varied,
 but because the cognitive heuristics resulting from the cultural environment varied (Heintz, 2005).
 Second, framing matters. 
-It was the Orma themselves who started calling the PGG the *harambee game*,
+It was Orma people themselves who started calling the PGG the *harambee game*,
 and they behaved accordingly.
 This mirrors framing effects observed with Western subjects.
 For example, 
@@ -211,7 +211,7 @@ The third objection is that the typical assumption
 --- that humans evolved in isolated groups with close kin and known individuals (e.g., Johnson et al. (2003)) 
 --- is wrong.
 Phillips (2015) cites Hill et al. (2011) saying that,
-in modern hunter/gatherer societies, "most individuals are unrelated and regularly change membership of groups".
+in modern hunter-gatherer societies, "most individuals are unrelated and regularly change membership of groups".
 Fehr and Henrich (2003) also argue that encounters with strangers were common,
 pointing to evidence such as the existence of rituals used to bring strangers peacefully into a camp.
 If the relevant human ancestral environmental offered a wide range of social scenarios 
