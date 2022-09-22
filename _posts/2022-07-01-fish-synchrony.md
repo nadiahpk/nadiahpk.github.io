@@ -21,9 +21,8 @@ and from stream to lake in spring.
 In the lake in spring, zooplankton numbers peak,
 and arriving too late may mean missing out on foraging and also mating opportunities.
 However, 
-lake pike and piscivorous birds present a high predation risk,
-which roach can only reduce by arriving when there already many other roach in the lake to provide 'safety in numbers' (predator dilution effect).
-
+lake pike and piscivorous birds present a high predation risk.
+Individuals can reduce their predation risk by arriving later than the others, when there already many other roach in the lake. This provides 'safety in numbers', also known as the predator dilution effect.
 
 {%
     include figure.html
