@@ -446,7 +446,7 @@ $$
 = {n-1 \choose k-1} (1-p)^{n-k-1} p^{k-2} \bigl( (k-1)(1-p) + (k-n) p \bigr).
 $$
 
-The peak is located where $\frac{d(f_C(p) - f_D(p))}{dp} = 0$
+The peak is located where $$\frac{d(f_C(p) - f_D(p))}{dp} = 0$$
 that is
 
 $$
