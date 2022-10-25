@@ -104,7 +104,7 @@ $$
 In the threshold game, a group is formed with $$n$$ players (different to $$n$$) above,
 and if the group contains $$k$$ or more cooperators,
 then they provide a benefit $$b$$.
-The benefit $b$ is received by all group members regardless of whether that member was a cooperator or defector
+The benefit $$b$$ is received by all group members regardless of whether that member was a cooperator or defector
 
 $$
 b_i =
@@ -225,13 +225,6 @@ $$
 \pi_k = {n-1 \choose k-1} p^{k-1} (1-p)^{n-k}.
 $$
 
-Why is this point significant? If I am in a game and I know that I am the pivotal player,
-then it is in my interests to be a cooperator.
-If I was a defector and could switch strategies, I would want to switch to cooperate.
-We can also intuit that,
-if it is likely that I will be the pivotal player, 
-then it may be in my interests to be a cooperator... we'll return to this point soon.
-
 {% highlight python %}
 pi_k_fnc = lambda p, k, n: binom(n-1, k-1) * p**(k-1) * (1-p)**(n-k)
 
@@ -260,11 +253,24 @@ plt.xticks(range(7))
 plt.show()
 {% endhighlight %}
 
+Why is the pivot probability significant? 
+First, consider just a single game,
+and imagine I know that I am the pivotal player.
+If I am a cooperator, then it is in my interests to remain a cooperator
+because if I switch then I will reduce my own payoff.
+If I am defector and I have the option of switching strategies,
+I would want to switch to cooperate.
+
 {%
     include figure.html
     src="/wp-content/uploads/2022/08/show_pivot.png"
     caption="Payoff to cooperators and defectors in the threshold game as a function of the number of cooperators among the other members of the group. If I am the pivotal player, then it is in my interests to cooperate (marked with an arrow)."
 %}
+
+We can also intuit that,
+if the probability that I will end up in a game where I am the pivotal player is high,
+then assuming I have a fixed strategy that I play all the time,
+it might be in my interests to be a cooperator... We'll return to this point soon.
 
 <h3>First example of the threshold game</h3>
 
