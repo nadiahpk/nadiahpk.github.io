@@ -25,7 +25,7 @@ Jones introduces a situation he calls "conditional nepotism": Ivan proposes to A
 
 <h3>Approach</h3>
 
-I will now work through the sexual haploid case in the first appendix. However, instead of using Jones' method, I will try performing the calculations using the framework provided in Ohtsuki (2014; Proc R Soc B). This will give me a fuller description of the evolutionary dynamics.
+I will now work through the sexual haploid case in the first appendix. However, instead of using Jones' method, I will try performing the calculations using the framework provided in Ohtsuki (2014; Proc R Soc B). 
 
 Ohtsuki's method allows us to describe the replicator dynamics of two strategies $$A$$ and $$B$$ in nonlinear games played between kin by taking into account the *higher-order genetic associations* between group members, beyond their dyadic relatedness. Dyadic relatedness $$r$$ above is the probability that 2 individuals randomly drawn without replacement from the group will have strategies that are identical by descent, denoted $$\theta_{2 \rightarrow 1}$$ in Ohtsuki's scheme. We can also say in shorthand that the two individuals "share a common ancestor". Higher-order relatedness generalises this concept to larger samples. For example, $$\theta_{3 \rightarrow 1}$$ is the probability that three individuals randomly drawn share a common ancestor, and in general, $$\theta_{l \rightarrow m}$$ is the probability that, if we draw $$l$$ individuals from the group, they share $$m$$ common ancestors.
 
