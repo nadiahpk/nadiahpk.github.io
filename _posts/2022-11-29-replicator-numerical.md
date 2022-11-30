@@ -122,6 +122,9 @@ to the equations above.
 
 To plot the dynamics, we create a `simplex_dynamics` object called `dynamics`, and use the method `plot_simplex()`:
 {% highlight python %}
+import egtsimplex
+import matplotlib.pyplot as plt
+
 dynamics = egtsimplex.simplex_dynamics(calc_dotps)
 
 fig,ax = plt.subplots()
