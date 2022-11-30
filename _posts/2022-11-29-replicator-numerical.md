@@ -6,7 +6,7 @@ author: nadiahkristensen
 layout: post
 guid: http://nadiah.org/blog/?p=2017
 permalink: /2022/11/29/replicator-numerical
-image: /wp-content/uploads/2022/11/summary.png
+image: /wp-content/uploads/2022/11/plot_dynamics.png
 categories:
   - cooperation
 ---
