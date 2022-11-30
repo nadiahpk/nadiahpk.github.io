@@ -250,8 +250,8 @@ Each element of the Jacobian matrix
 
 $$
 \begin{equation}
-J_{i,k} = \left. \frac{d \dot{p}_i}{d p_k} \right|_{\boldsymbol{p}^*} = \left. [f_i - \overline{f}] \right|_{\boldsymbol{p}^*}
-+ p_i^* \left( \left. \frac{df_i}{d p_k} \right|_{\boldsymbol{p}^*} - \left. \frac{d \overline{f}}{d p_k} \right|_{\boldsymbol{p}^*} \right)
+J_{i,k} = \left. \frac{\partial \dot{p}_i}{\partial p_k} \right|_{\boldsymbol{p}^*} = \left. [f_i - \overline{f}] \right|_{\boldsymbol{p}^*}
++ p_i^* \left( \left. \frac{\partial f_i}{\partial p_k} \right|_{\boldsymbol{p}^*} - \left. \frac{\partial \overline{f}}{\partial p_k} \right|_{\boldsymbol{p}^*} \right)
 \end{equation}
 $$
 
@@ -259,7 +259,7 @@ At $$\boldsymbol{p}^*$$, $$f_i = \overline{f}$$, so
 
 $$
 \begin{equation}
-J_{i,k} = p_i^* \left( \left. \frac{df_i}{d p_k} \right|_{\boldsymbol{p}^*} - \left. \frac{d \overline{f}}{d p_k} \right|_{\boldsymbol{p}^*} \right)
+J_{i,k} = p_i^* \left( \left. \frac{\partial f_i}{\partial p_k} \right|_{\boldsymbol{p}^*} - \left. \frac{\partial \overline{f}}{\partial p_k} \right|_{\boldsymbol{p}^*} \right)
 \tag{1}
 \end{equation}
 $$
@@ -280,7 +280,7 @@ Therefore:
 
 $$
 \begin{equation}
-\left. \frac{d f_i}{d p_k} \right|_{\boldsymbol{p}^*} = \pi(i \mid k) - \pi(i \mid m)
+\left. \frac{\partial f_i}{\partial p_k} \right|_{\boldsymbol{p}^*} = \pi(i \mid k) - \pi(i \mid m)
 \tag{left-hand term of (1)}
 \end{equation}
 $$
@@ -301,8 +301,8 @@ The first term:
 
 $$
 \begin{align}
-\left. \frac{d}{d p_k} \left[ \sum_{j=1, j \neq k}^{m-1} p_j f_j \right] \right|_{\boldsymbol{p}^*} &= 
-\sum_{j=1, j \neq k}^{m-1} p_j^* \left. \frac{d f_j}{d p_k} \right|_{\boldsymbol{p}^*} \\
+\left. \frac{\partial}{\partial p_k} \left[ \sum_{j=1, j \neq k}^{m-1} p_j f_j \right] \right|_{\boldsymbol{p}^*} &= 
+\sum_{j=1, j \neq k}^{m-1} p_j^* \left. \frac{\partial f_j}{\partial p_k} \right|_{\boldsymbol{p}^*} \\
 &=\sum_{j=1, j \neq k}^{m-1} p_j^* [\pi(j \mid k) - \pi(j \mid m)]
 \end{align}
 $$
@@ -311,8 +311,8 @@ The second term:
 
 $$
 \begin{align}
-\left. \frac{d \left[ p_k f_k \right]}{d p_k}  \right|_{\boldsymbol{p}^*} &= 
-\left. f_k \right|_{\boldsymbol{p}^*} + p_k^* \left. \frac{df_k}{d p_k} \right|_{\boldsymbol{p}^*} \\
+\left. \frac{\partial \left[ p_k f_k \right]}{\partial p_k}  \right|_{\boldsymbol{p}^*} &= 
+\left. f_k \right|_{\boldsymbol{p}^*} + p_k^* \left. \frac{\partial f_k}{\partial p_k} \right|_{\boldsymbol{p}^*} \\
 &= \left[ \sum_{j=1}^m p^*_j \pi(k \mid j) \right] + p_k^* [\pi(k \mid k) - \pi(k \mid m)]
 \end{align}
 $$
@@ -321,9 +321,9 @@ The third term:
 
 $$
 \begin{align}
-\left. \frac{d \left[ p_m f_m \right]}{d p_k}  \right|_{\boldsymbol{p}^*} &= 
-\left. \frac{d }{d p_k} \left[1-\sum_{j=1}^{m-1} p_j \right] \right|_{\boldsymbol{p}^*} \left. f_m \right|_{\boldsymbol{p}^*} +
-p_m^* \left. \frac{d f_m}{d p_k} \right|_{\boldsymbol{p}^*} \\ 
+\left. \frac{\partial \left[ p_m f_m \right]}{\partial p_k}  \right|_{\boldsymbol{p}^*} &= 
+\left. \frac{\partial }{\partial p_k} \left[1-\sum_{j=1}^{m-1} p_j \right] \right|_{\boldsymbol{p}^*} \left. f_m \right|_{\boldsymbol{p}^*} +
+p_m^* \left. \frac{\partial f_m}{\partial p_k} \right|_{\boldsymbol{p}^*} \\ 
 &= - \left[ \sum_{j=1}^m p_j^* \pi(m \mid j) \right] + p_m^* [\pi(m \mid k) - \pi(m \mid m)]
 \end{align}
 $$
@@ -332,7 +332,7 @@ So summing them together to get the right-hand term in the Jacobian element:
 
 $$
 \begin{equation}
-    \left. \frac{d \overline{f}}{d p_k} \right|_{\boldsymbol{p}^*}
+    \left. \frac{\partial \overline{f}}{\partial p_k} \right|_{\boldsymbol{p}^*}
     = \sum_{j=1}^m p_j^* [ \pi(j \mid k) - \pi(j \mid m) + \pi(k \mid j) - \pi(m \mid j) ]
 \tag{right-hand term of (1)}
 \end{equation}
@@ -350,7 +350,7 @@ ps = fp_ba_tidy[2] # recall the interior steady state was the third element
 Code the right-hand term of (1),
 $$
 \begin{equation}
-    \left. \frac{d \overline{f}}{d p_k} \right|_{\boldsymbol{p}^*}
+    \left. \frac{\partial \overline{f}}{\partial p_k} \right|_{\boldsymbol{p}^*}
 \end{equation}
 $$
 
