@@ -7,6 +7,8 @@ layout: page
 guid: https://nadiah.org/?page_id=405
 ---
 
+<b>Kristensen</b>, N.P., Ohtsuki, H., Chisholm, R.A. (2022) Ancestral social environments plus nonlinear benefits can explain cooperation in human societies, <i>Scientific Reports</i>, <b>12</b>: 20252, (<a href="https://doi.org/10.1038/s41598-022-24590-y">open access</a>).
+
 Sin, Y.C.K., <b>Kristensen</b>, N.P., Gwee, C.Y., Chisholm, R.A., Rheindt, F.E. (2022) Bird diversity on shelf islands does not benefit from recent land‐bridge connections, <i>Journal of Biogeography</i>, <b>49</b>(1):189-200, (<a href="https://nadiah.org/2021/12/12/sundaic-birds">blog</a>), (<a href="https://nadiah.org/wp-content/uploads/2022/02/Sin21-Bird_diversity_shelf_islands_doesnt_benefit_recent_connection.pdf">pdf</a>).
 
 Saravia, L.A., Marina, T.I., <b>Kristensen</b>, N.P., De Troch, M., Momo, F.R. (2022). Ecological network assembly: How the regional metaweb influences local food webs, <i>Journal of Animal Ecology</i>, <b>91</b>:630-642, (<a href="https://nadiah.org/2021/12/28/metaweb-assembly">blog</a>), (<a href="https://nadiah.org/wp-content/uploads/2022/02/Saravia22-Metaweb_determines_local_food_webs.pdf">pdf</a>).
