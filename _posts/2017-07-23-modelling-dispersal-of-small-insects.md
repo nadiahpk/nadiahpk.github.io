@@ -9,7 +9,6 @@ permalink: /2017/07/23/modelling-dispersal-of-small-insects/
 image: /wp-content/uploads/2017/07/results.png
 categories:
   - dispersal
-tags: [featured]
 ---
 
 ### Background to the work
