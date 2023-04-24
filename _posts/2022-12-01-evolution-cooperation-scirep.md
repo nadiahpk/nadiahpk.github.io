@@ -88,9 +88,8 @@ where
 
 $$
 \begin{equation}
-    \Delta p \propto 
-    \sum_{k=0}^{n-1} \sum_{l=k}^{n-1} (-1)^{l-k} {l \choose k} {n-1 \choose l}
-    \left[ (1-\rho_1) \rho_{l+1} a_k - \rho_1(\rho_l - \rho_{l+1}) b_k \right].
+    \rho_l = \sum_{m=1}^l \theta_{l \rightarrow m} p^m.
+    \label{rho_l}
     \tag{2}
 \end{equation}
 $$
