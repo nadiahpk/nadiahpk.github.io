@@ -11,7 +11,9 @@ categories:
   - cooperation
 ---
 
-For the past 5 weeks, I've been visiting Hisashi Ohtsuki at SOKENDAI in Japan to work on our evolutionary game theory project. We've been putting the final touches on our extension of the higher-order genetic associations approach, to extend the scenario to games with many different strategies, and I'll be here for another month so we can explore some new ideas we have for modelling homophilic group formation.
+For the past 5 weeks, I've been visiting Hisashi Ohtsuki at SOKENDAI in Japan to work on our evolutionary game theory project. We've been collaborating with Hisashi over the past couple of years exploring questions related to the evolution of cooperation using a novel mathematical framework that accounts for higher-order genetic associations. This work resulted in a [publication](https://doi.org/10.1038/s41598-022-24590-y) a few months ago.
+
+We've been putting the final touches on our extension of the higher-order genetic associations approach, to extend the scenario to games with many different strategies, and I'll be here for another month so we can explore some new ideas we have for modelling homophilic group formation.
 
 {%
     include figure.html
