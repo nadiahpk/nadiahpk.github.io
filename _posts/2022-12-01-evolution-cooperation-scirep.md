@@ -16,20 +16,22 @@ When people play public goods games in lab-based experiments,
 they often cooperate even though it goes against their self interest.
 Many authors have pointed out the ways in which such experiments can be unrealistic, 
 e.g., by enforcing anonymity between participants,
-and have discussed how the incentives in a one-shot encounter differ from when interactions are repeated within the same group.
+and they have discussed how the incentives in a one-shot encounter differ from when interactions are repeated within the same group.
 In our [recent paper](https://www.nature.com/articles/s41598-022-24590-y),
 we focused on another common assumption that has received less attention:
 the benefits in real-life public goods games are almost never linear.
 We were interested in the implications of this nonlinearity for the evolution of human cooperation.
 
-Consider, for example, the method used by Australian Aborigines in southwestern Victoria
-to hunt kangaroos.
-As discussed in Balme (2018),
-in the early nineteenth century,
-communal gatherings were associated with mass-scale communal hunting of kangaroos and emus.
-People would form a large circle to encircle the animals.
+Consider, for example, the method used by Australian Aborigines in southwestern Victoria to hunt kangaroos.
+As discussed in Balme (2018), in the early nineteenth century,
+communal gatherings were associated with mass-scale hunting of kangaroos and emus.
+People would form a large circle 25-30 km in diameter.
 Then they would then move inwards, yelling to frighten the animals,
 until they were concentrated in a small area where they could be killed.
+Obviously, these were modern hunter gatherers, 
+and the hunts were just one small part of the activities that attracted participants from hundreds of kilometres away.
+Nevertheless, we can imagine that our much earlier ancestors might have struck upon a similar but
+much smaller-scale method of hunting.
 
 {%
     include figure.html
@@ -63,7 +65,7 @@ This threshold game is an $$n$$-player generalisation of the 2-player
 We expect that a group who hunts together will include some family members;
 however, modelling kin selection in groups is difficult when the benefits function is nonlinear.
 In short, unlike 2-player interactions,
-where the model can parameterised with single relatedness factor \(r\) (i.e., Hamilton's \(r\)),
+where the model can parameterised with single relatedness factor (i.e., Hamilton's $$r$$),
 in group interactions,
 the model must account for all possible combinations of types within the group,
 which means accounting for all possible kin + nonkin combinations.
@@ -129,21 +131,22 @@ However, the ancestral state was presumably a population of all defectors,
 and it can also be shown cooperators cannot invade a population of all defectors,
 which raises the question of how cooperation got started in the first place.
 
-To understand why cooperators can persist but cannot invade,
-we can take the threshold game scenario as an example (Fig. 2).
-Even if you are in a group with complete strangers,
-so you have no kinship or friendship incentives to cooperate,
-the interaction is anonymous, so you have no reputational incentives,
-and you know that you will never meet these people again,
-so you have no reciprocity / fear-of-punishment incentives,
+To understand why cooperators can persist but cannot invade, 
+we can think about the one-shot threshold game as an example (Fig. 2).
+If you are in a group with complete strangers,
+you have no kinship or friendship incentives to cooperate.
+If the interaction is anonymous, you have no reputational incentives.
+If the game is a one-shot interaction,
+you know that you will never meet these people again,
+so you have no reciprocity / fear-of-punishment incentives, either.
+Nevertheless, 
 it can still make sense to cooperate in a threshold game.
-Cooperation may be in your self interest
-if you know that enough others will cooperate because
-your contribution might be the one to push the public-goods benefit above the threshold.
-However, if cooperation is rare in the population,
-then few others are likely to cooperate,
-and therefore it never makes sense to cooperate because your contribution is unlikely to make a difference.
-This implies that the first cooperators could never gain a foothold in the population and thus cooperation could never evolve.
+If others in your group are likely to be cooperators,
+then cooperation may be in your self interest because your contribution might be the one to push the public-goods benefit above the threshold.
+Thus, cooperation can persist evolutionarily.
+However, if cooperation is very rare in the population such that you're likely to be the only cooperator in the group,
+then it doesn't make sense to cooperate because your lone contribution will not be enough to obtain the public good.
+Therefore, the first cooperators could never gain a foothold in the population and thus cooperation could never evolve.
 
 However, the reasoning above assumes groups are formed at random with non-family members / strangers.
 In our paper, we showed that if groups in the past tended to include family members,
@@ -155,12 +158,12 @@ This positive assortment between cooperators means that cooperation can gain a f
 and cooperation can evolve.
 
 In addition, once cooperation has evolved by kin selection,
-then even if circumstances change and recruitment of strangers to the group becomes more common,
+then even if circumstances change and recruitment of strangers becomes more common,
 cooperation can nevertheless persist.
 Whether or not it persists depends on how much homophily is lost and the parameter values in the game
-(Fig. main one),
+(Fig. 4),
 but it is possible for cooperation to persist in some circumstances even if homophily is lost altogether 
-(Fig. (b)).
+(Fig. 4(b)).
 
 {%
     include figure.html
