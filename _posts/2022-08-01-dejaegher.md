@@ -9,6 +9,7 @@ permalink: /2022/08/01/dejaegher
 image: /wp-content/uploads/2022/08/threshold_dpdt.png
 categories:
   - cooperation
+  - teaching
 ---
 
 Last month, 

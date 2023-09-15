@@ -1,0 +1,24 @@
+---
+id: 2021
+title: Lecture notes for LSM4255 Game Theory and Adaptive Dynamics
+date: 2017-11-07T05:41:25+00:00
+author: nadiahkristensen
+layout: post
+guid: https://nadiah.org/?p=2021
+permalink: /2017/11/07/game-theory-adaptive-dynamics-lecture/
+image: /wp-content/uploads/2017/11/toc.png
+categories:
+  - teaching
+---
+
+These are the lecture slides for LSM4255 Game Theory and Adaptive Dynamics.
+This is the short version with the point-by-point transitions removed.
+
+Download: <a href="/wp-content/uploads/2017/11/game_theory_ad_upload.pdf">game_theory_ad_upload.pdf</a>
+
+
+{%
+    include figure.html
+    src="/wp-content/uploads/2017/11/lecture_preview.png"
+    caption="Preview of lecture notes."
+%}

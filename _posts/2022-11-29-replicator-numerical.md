@@ -9,6 +9,7 @@ permalink: /2022/11/29/replicator-numerical
 image: /wp-content/uploads/2022/11/plot_dynamics.png
 categories:
   - cooperation
+  - teaching
 ---
 
 Recently, I set a task for a student to use Python to analyse the replicator dynamics of a game with three strategies,
