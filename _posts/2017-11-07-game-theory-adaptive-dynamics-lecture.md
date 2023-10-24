@@ -14,7 +14,11 @@ categories:
 These are the lecture slides for LSM4255 Game Theory and Adaptive Dynamics.
 This is the short version with the point-by-point transitions removed.
 
-Download: <a href="/wp-content/uploads/2017/11/game_theory_ad_upload.pdf">game_theory_ad_upload.pdf</a>
+Downloads: 
+<ul>
+<li> 2023: <a href="/wp-content/uploads/2023/10/game_theory_ad2_upload.pdf">game_theory_ad2_upload.pdf</a> </li>
+<li> 2017: <a href="/wp-content/uploads/2017/11/game_theory_ad_upload.pdf">game_theory_ad_upload.pdf</a> </li>
+</ul>
 
 
 {%
