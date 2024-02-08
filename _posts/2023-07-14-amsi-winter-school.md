@@ -9,6 +9,7 @@ permalink: /2023/07/14/amsi-winter-school
 image: /wp-content/uploads/2023/07/amsi_students.jpeg
 categories:
   - teaching
+  - cooperation
 ---
 
 For 2 weeks, I've been teaching at and attending the 
