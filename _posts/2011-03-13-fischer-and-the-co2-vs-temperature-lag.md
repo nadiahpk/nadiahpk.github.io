@@ -45,7 +45,7 @@ The Fischer et al. (1999) result has not only been strengthened by recent result
 
 This literature starts over 20 years ago, when Lorius et al.'s (1990) hypothesised that natural temperature perturbations caused changes to oceanic processes which in turn released CO2 into the atmosphere. This theme continued in the literature, when the lag was even acknowledged by the IPCC's Assessment Report in 2007:
 
-> High-resolution ice core records of temperature proxies and CO2 during deglaciation indicates that antarctic temperature starts to rise several hundred years before CO2 ...  
+> High-resolution ice core records of temperature proxies and CO2 during deglaciation indicates that antarctic temperature starts to rise several hundred years before CO2 ...
 > ([Chapter 6 p 444](https://www.ipcc.ch/report/ar4/syr/))
 
 The IPCC cites studies like Caillon et al. (2003) who "_confirms that CO2 is not the forcing that initially drives the climatic system during a deglaciation_", and that observation continues to be upheld by more recent studies, (e.g. Clark (2009)).
@@ -62,7 +62,7 @@ The significance of the Milankovitch cycles to climate is that the wobbles cause
 
 Way back in 1976, building on the then-decades-old knowledge of the Milankovitch cycles, Hays et al. produced strong statistical modelling evidence linking the Milankovitch cycles to the succession of glaciations, and concluded that the Milankovitch cycles were the fundamental cause of the glacial transitions. The theory that Milankovitch cycles initiate glacial transitions can be traced in its development and confirmation through the literature - including the papers we've read above (Losius et al., 1990, Fischer et al. 1999, and Clark 2009) - and remains the theory with the strongest evidence, albeit incompletely understood. It is so well-accepted that the IPCC even acknowledged it as the strongest theory in its most recent report (see [FAQ 6.1](https://www.ipcc.ch/report/ar4/syr/)):
 
-> there is strong evidence that [the ice ages] are linked to regular variations in the Earth's orbit around the Sun, the so-called Milankovitch cycles ... These cycles change the amount of solar radiation received at each latitude in each season ... and they can be calculated with astronomical precision ... Climate model simulations confirm that an Ice Age can indeed be started in this way... 
+> there is strong evidence that [the ice ages] are linked to regular variations in the Earth's orbit around the Sun, the so-called Milankovitch cycles ... These cycles change the amount of solar radiation received at each latitude in each season ... and they can be calculated with astronomical precision ... Climate model simulations confirm that an Ice Age can indeed be started in this way...
 
 **Aside: How do oceanic processes release CO2 into the atmosphere?**
 
@@ -72,9 +72,9 @@ In the IPCC's words (Box 6.2 p 446) "The exact mechanisms behind the interplay b
 
 **If CO2 followed temperature changes, doesn't that prove that CO2 doesn't cause temperature changes?**
 
-So in summary, Milankovitch cycles change the distribution of solar energy hitting the earth, this causes temperature increases, and in turn the temperature increase causes a release of CO2 due largely to oceanic processes. This explains why CO2 increases follow temperature increases, and even the IPCC admits that all of this is true, so that's the end of the story, right? 
+So in summary, Milankovitch cycles change the distribution of solar energy hitting the earth, this causes temperature increases, and in turn the temperature increase causes a release of CO2 due largely to oceanic processes. This explains why CO2 increases follow temperature increases, and even the IPCC admits that all of this is true, so that's the end of the story, right?
 
-Well, not quite. 
+Well, not quite.
 
 Let's continue to read what [Fischer et al. (1990)](http://ruby.fgcu.edu/courses/twimberley/EnviroPhilo/IceCoreRecords2.pdf) had to say about the lag in the very study that denialists are quoting:
 
@@ -118,7 +118,7 @@ The science behind CO2 and the greenhouse effect was already well-established by
 
 **Further reading:**
 
-A page-turner of an account of the history of the study of glacial/interglacial transitions and how they shed light on the role of CO2 and the greenhouse effect: <http://www.aip.org/history/climate/cycles.htm#L_018>.
+A page-turner of an account of the history of the study of glacial/interglacial transitions and how they shed light on the role of CO2 and the greenhouse effect: <https://history.aip.org/climate/cycles.htm>.
 
 A review by Sigman & Boyle (2000) which provides an easy-to-follow summary of the state of recent theory regarding the mechanisms behind CO2 response to temperature: <a href="http://www.up.ethz.ch/education/biogeochem_cycles/reading_list/sigman_nat_00.pdf" rel="nofollow">http://www.up.ethz.ch/education/biogeochem_cycles/reading_list/sigman_nat_00.pdf</a>.
 
@@ -130,14 +130,14 @@ An article from the popular science press basically laying out the same argument
 
 Caillon, N., Severinghaus, J.P., Jouzel, J., Barnola, J.-M., Kang, J. and Lipenkov, V.Y. (2003) "Timing of atmospheric CO2 and Antarctic temperature changes across Termination III." Science 299: 1728-1731.
 
-[Clark](http://www.geology.wisc.edu/~acarlson/Other/clark_science_2009_LGM.pdf), P.U. (2009) "The Last Glacial Maximum", Science 325:710-714 
+[Clark](http://www.geology.wisc.edu/~acarlson/Other/clark_science_2009_LGM.pdf), P.U. (2009) "The Last Glacial Maximum", Science 325:710-714
 
-[Fischer](http://ruby.fgcu.edu/courses/twimberley/EnviroPhilo/IceCoreRecords2.pdf), H., Wahlen, M., Smith, J., Mastroianni, D. and Deck, B. (1999) "Ice core records of atmospheric CO2 around the last three glacial terminations", Science 283(5408):1712 
+[Fischer](http://ruby.fgcu.edu/courses/twimberley/EnviroPhilo/IceCoreRecords2.pdf), H., Wahlen, M., Smith, J., Mastroianni, D. and Deck, B. (1999) "Ice core records of atmospheric CO2 around the last three glacial terminations", Science 283(5408):1712
 
-[Hays](http://www.whoi.edu/science/GG/paleoseminar/ps/hays76.ps), J.D., Imbrie, J., Shackleton, N.J. (1976). "Variations in the Earth's Orbit: Pacemaker of the Ice Ages". Science 194 (4270): 1121-1132 
+[Hays](http://www.whoi.edu/science/GG/paleoseminar/ps/hays76.ps), J.D., Imbrie, J., Shackleton, N.J. (1976). "Variations in the Earth's Orbit: Pacemaker of the Ice Ages". Science 194 (4270): 1121-1132
 
 Imbrie, J. and Imbrie, J.Z. (1980) "Modeling the climatic response to orbital variations", Science 207:943-953
 
-[Lorius](http://www.atmos.washington.edu/2003Q4/211/articles_required/Lorius90_ice-core.pdf), C., Jouzel, J., Raynaud, D., Hansen, J. and Le Treut, H. (1990) "The ice-core record: climate sensitivity and future greenhouse warming", Nature 347:139-145 
+[Lorius](http://www.atmos.washington.edu/2003Q4/211/articles_required/Lorius90_ice-core.pdf), C., Jouzel, J., Raynaud, D., Hansen, J. and Le Treut, H. (1990) "The ice-core record: climate sensitivity and future greenhouse warming", Nature 347:139-145
 
 Sigman, D.M. and Boyle, E.A. (2000) "Glacial/interglacial variations in atmospheric carbon dioxide", Nature 407:859-869
