@@ -26,5 +26,12 @@ layout: default
     {{ content }}
   </div>
 
+  <h2>Feedback</h2>
+
+  <p> Send me email! Even if you don’t think your work is super-related, I love hearing from new people. </p>
+
+  {% include emailjs.html %}
+
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+
 </article>
