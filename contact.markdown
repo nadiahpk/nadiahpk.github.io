@@ -9,8 +9,6 @@ guid: https://nadiah.org/?page_id=3
 
 You can find me at National University of Singapore, Block S3 Level 1.
 
-Email me at <a href="mailto:nadiah@nadiah.org ">nadiah@nadiah.org</a> or use the form below.
+Send me email!  Email me at <a href="mailto:nadiah@nadiah.org ">nadiah@nadiah.org</a>
 
-<p> Even if you don’t think your work is super-related, I love hearing from new people. </p>
-
-{% include emailjs.html %}
+Even if you don’t think your work is super-related, I love hearing from new people.
