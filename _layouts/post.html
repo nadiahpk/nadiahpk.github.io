@@ -26,5 +26,10 @@ layout: default
     {{ content }}
   </div>
 
+  <h2>Leave a Comment on this post</h2>
+
+  {% include emailjs.html %}
+
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+
 </article>
