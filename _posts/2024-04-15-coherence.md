@@ -108,7 +108,7 @@ The model is simulated as follows.
             a_j(t+1) = a_j(t) (1 - \theta) +
                 \begin{cases}
                     \text{net}_j (\text{max} - a_j(t)) & \text{if } \text{net}_j > 0, \\
-                    \text{net}_j (a_j(t) - \text{min} - a_j(t)) & \text{otherwise.}
+                    \text{net}_j (a_j(t) - \text{min}) & \text{otherwise.}
                 \end{cases}
             \label{E:a_j_update}
         $$
