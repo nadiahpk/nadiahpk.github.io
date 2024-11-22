@@ -15,7 +15,7 @@ https://heiswayi.nrird.com/image-caption-using-liquid-syntax
         <img style="max-height: auto; max-width: 100%;" src="{{ include.src }}" alt="{{ include.caption | strip }}">
     </a>
     {% endif %}
-    <figcaption><span>{{ include.caption | strip }}</span></figcaption>
+    <figcaption><span>{{ include.caption | markdownify }}</span></figcaption>
 </figure>
 {% else %}
 <figure style="max-width: 700px; margin: auto;">
