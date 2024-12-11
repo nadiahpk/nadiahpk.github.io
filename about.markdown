@@ -17,7 +17,7 @@ I am interested in modelling <a href="/category/cooperation">cooperation</a> par
 and how game theory and related techniques can give us insights into the 
 <a href="https://www.ats.aq/index_e.html">Antarctic Treaty System</a>.
 Other interests include
-<a href="/category/evolutionary_ecology">ecoevolutionary models</a>
+<a href="/category/evolutionary_ecology">eco-evolutionary models</a>
 and <a href="/category/food_webs">food webs</a>.
 
 {%
