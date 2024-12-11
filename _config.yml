@@ -25,6 +25,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://nadiah.org"
 github_username: nadiahpk
 #twitter_username: NadiahKrist
+bluesky_username: nadiah.bsky.social
 mastodon:
   - username: nadiah
     instance: fediscience.org

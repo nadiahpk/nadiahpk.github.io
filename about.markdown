@@ -8,16 +8,17 @@ guid: https://nadiah.org/?page_id=439
 image: /wp-content/uploads/2017/07/nadiah_full.jpg
 ---
 
-I am a research scientist specialising in evolutionary and ecological modelling, currently at <a href="https://ryanchisholm.com/">The Chisholm Lab</a> at National University of Singapore. 
+I am a research scientist specialising in evolutionary and ecological modelling, 
+currently working with the <a href="https://arcsaef.com/">Securing Antarctica's Environmental Future</a>
+team in the <a href="https://qutameg.wordpress.com/">Applied Mathematical Ecology Group</a>
+at <a href="https://www.qut.edu.au/">QUT</a>.
 
-I am interested in <a href="/category/evolutionary_ecology">ecoevolutionary models</a>, 
-<a href="/category/cooperation">evolution of cooperation</a>, 
-<a href="/category/food_webs">food webs</a>, 
-and <a href="/category/dispersal">dispersal</a>.
-
-I have just started a
-a project in collaboration with <a href="http://www.esb.soken.ac.jp/english/research/hisashi_ohtsuki.html">Hisashi Ohtsuki</a>
-about the evolution of [cooperation](https://nadiah.org/category/cooperation) in conservation-relevant scenarios.
+I am interested in modelling <a href="/category/cooperation">cooperation</a> particularly,
+and how game theory and related techniques can give us insights into the 
+<a href="https://www.ats.aq/index_e.html">Antarctic Treaty System</a>.
+Other interests include
+<a href="/category/evolutionary_ecology">ecoevolutionary models</a>
+and <a href="/category/food_webs">food webs</a>.
 
 {%
     include figure.html
@@ -26,13 +27,25 @@ about the evolution of [cooperation](https://nadiah.org/category/cooperation) in
 %}
 
 Previously,
-I have worked on [nonparametric methods for estimating undetected extinctions](/category/undiscovered_extinctions).
+I was at the <a href="https://ryanchisholm.com/">The Chisholm Lab</a> at National University of Singapore,
+and collaborated 
+with <a href="http://www.esb.soken.ac.jp/english/research/hisashi_ohtsuki.html">Hisashi Ohtsuki</a>
+on modelling the evolution of [cooperation](https://nadiah.org/category/cooperation).
+I also worked on [neutral theory type models](https://nadiah.org/category/macroecology) 
+and statistical models for [estimating dark extinctions](https://nadiah.org/category/undiscovered_extinctions).
+
+{%
+    include figure.html
+    src="/wp-content/uploads/2023/10/Hisashi_Ryan_me_cropped.jpg"
+    caption="Hisashi, Ryan, and me at NUS."
+%}
+
+Before that, 
+I worked on [nonparametric methods for estimating undetected extinctions](/category/undiscovered_extinctions).
 Before that, I was [at University of Queensland](http://x-ed.net/), Australia, working on the [Qualitative Modelling](https://nadiah.org/category/qualitative_modelling) framework in the context of pest control. 
 Before that, I was in [Lund, Sweden](https://www.biology.lu.se/research/research-groups/theoretical-population-ecology-and-evolution-group), using adaptive dynamics to model the phenological response of migratory birds to climate change. 
 And before that, I did a post-doc at CSIRO Entomology in Canberra, and did my PhD with Hugh Possingham at the University of Queensland. 
 Both of these focused on complex systems, mathematical ecology and modelling.
-
-<!-- I am also working on theoretical models for evolution of partnership / cooperation with [Hanna Kokko](https://en.wikipedia.org/wiki/Hanna_Kokko) at University of Zurich.-->
 
 {%
     include figure.html
@@ -45,7 +58,7 @@ I have a son, Toivo, who was born in the Czech Republic while my [partner](https
 {%
     include figure.html
     src="/wp-content/uploads/2017/07/toivo_birthday.png"
-    caption="Toivo, Carlo and me celebrating Toivo's birthday."
+    caption="Carlo, Toivo, and me celebrating Toivo's birthday."
 %}
 
-In my spare time I enjoy hanging out with my kid, reading genre fiction and pop-science, and listening to death metal.
+In my spare time, I enjoy hiking with my family, riding my bike, and listening to death metal.

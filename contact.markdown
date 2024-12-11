@@ -7,8 +7,14 @@ layout: page
 guid: https://nadiah.org/?page_id=3
 ---
 
-You can find me at National University of Singapore, Block S3 Level 1.
+You can find me at Queensland University of Technology, Block P, Level 7, Room P742.
 
-Email me nadiah@nadiah.org
+Email me at nadiah@nadiah.org
 
 Send me email! Even if you don't think your work is super-related, I love hearing from new people.
+
+{%
+    include figure.html
+    src="/wp-content/uploads/2024/11/qut_tree.jpg"
+%}
+
