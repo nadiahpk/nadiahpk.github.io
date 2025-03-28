@@ -83,7 +83,7 @@ $$
 Qualitative modelling typically starts with the community matrix $$A$$,
 which represents the dynamics linearised around the steady state.
 In the case where the underlying dynamics are Lotka-Volterra,
-the relationship between the original dynamical system and the scaled system has some useful properties:
+the relationship between the original dynamical system and the scaled system has some noteworthy properties:
 
 (1). Each $$A$$ corresponds to a family of Lotka-Volterra systems with different $$B$$ and $$n$$ satisfying Eq. 6. This matters if you are uncertain about the parameter values but want to make some probabilistic predictive statements about how the system is likely to behave.
 For example, if you want to say something "80% of the time, the predictions of the press-perturbation
