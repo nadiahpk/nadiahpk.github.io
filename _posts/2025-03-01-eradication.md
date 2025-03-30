@@ -555,7 +555,7 @@ print(A)
  [-0.61570883 -0.13198533 -0.50207895]]
 ```
 
-So $$(A_{i \neq k, j \neq k})^{-1}$$ is:
+So $$A_{i \neq k, j \neq k}$$ is:
 ```python
 A_rem = A[1:S, 1:S]
 print(A_rem)
