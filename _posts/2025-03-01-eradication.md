@@ -545,9 +545,38 @@ Can we get the same $$\delta$$ using Eq. 15 above? Let's try.
 
 Recall Eq. 15 says: $$\delta = (A_{i \neq k, j \neq k})^{-1} \; A_{i \neq k, k}.$$
 
+Recall our $$A$$ was:
+```python
+print(A)
+```
+```
+[[-0.82841072  0.70448243  0.22261481]
+ [-0.00439125 -0.28067929  0.38998372]
+ [-0.61570883 -0.13198533 -0.50207895]]
+```
+
+So $$(A_{i \neq k, j \neq k})^{-1}$$ is:
 ```python
 A_rem = A[1:S, 1:S]
-delta_eq_15 = np.linalg.inv(A_rem) @ A[:, 0][1:S]
+print(A_rem)
+```
+```
+[[-0.28067929  0.38998372]
+ [-0.13198533 -0.50207895]]
+```
+
+And $$A_{i \neq k, k}$$ is:
+```python
+A_col = A[:, 0][1:S]
+print(A_col)
+```
+```
+[-0.00439125 -0.61570883]
+```
+
+Applying Eq. 15:
+```python
+delta_eq_15 = np.linalg.inv(A_rem) @ A_col
 print("Proportional change from Eq 15:")
 print(delta)
 ```
