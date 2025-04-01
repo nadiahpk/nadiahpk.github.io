@@ -7,7 +7,9 @@ layout: page
 guid: https://nadiah.org/?page_id=405
 ---
 
-Chisholm, R.A., <b>Kristensen</b>, N.P., Rheindt, F.E., Chong, K.Y., Ascher, J.S., Lim, K.K.P., Ng, P.K.L., Yeo, D.C.J., Meier, Meier, R., Tan, H.H., Giam, X., Yeoh, Y.S., Seah, W.W., Berman, L.M., Tan, H.Z., Sadanandan, K.R., Theng, M., Jusoh, W.F.A, Jain, A., Huertas, B., Tan, D.J.X., Ng, A.C.R, Teo, A., Yiwen, Z., Cho, T.J.Y., and Sin, Y.C.K (2023) Two centuries of biodiversity discovery and loss in Singapore, <i>Proceedings of the National Academy of Sciences</i>, <b>120</b>:e2309034120, (<a href="https://github.com/nadiahpk/MODGEE-dark-extinctions-estimator">github</a>), (<a href="https://nadiah.org/2023/12/15/chisholm-pnas">blog</a>).
+<b>Kristensen</b>, N.P., Chisholm, R.A., and Ohtsuki, H. (2025) Many-strategy games in groups with relatives and the evolution of coordinated cooperation, <i>Journal of Theoretical Biology</i>, <b>605</b>:112089, (<a href="https://github.com/nadiahpk/homophilic-many-strategy-PGG">github</a>), (<a href="/wp-content/uploads/2025/03/Kristensen25-Many_strategy_group_games_with_relatives_and_coordinated_cooperation.pdf">pdf</a>).
+
+Chisholm, R.A., <b>Kristensen</b>, N.P., Rheindt, F.E., Chong, K.Y., Ascher, J.S., Lim, K.K.P., Ng, P.K.L., Yeo, D.C.J., Meier, Meier, R., Tan, H.H., Giam, X., Yeoh, Y.S., Seah, W.W., Berman, L.M., Tan, H.Z., Sadanandan, K.R., Theng, M., Jusoh, W.F.A, Jain, A., Huertas, B., Tan, D.J.X., Ng, A.C.R, Teo, A., Yiwen, Z., Cho, T.J.Y., and Sin, Y.C.K. (2023) Two centuries of biodiversity discovery and loss in Singapore, <i>Proceedings of the National Academy of Sciences</i>, <b>120</b>:e2309034120, (<a href="https://github.com/nadiahpk/MODGEE-dark-extinctions-estimator">github</a>), (<a href="https://nadiah.org/2023/12/15/chisholm-pnas">blog</a>).
 
 Manenti, R., <b>Kristensen</b>, N., Cogliati, P., Barzaghi, B., Melotto, A., Ficetola, G.F. (2023) Larval development and poor trophic resource availability: Local adaptations and plasticity in a widespread amphibian species, <i>Journal of Evolutionary Biology</i>, <b>36</b>(3), 529-541.
 
