@@ -13,9 +13,13 @@ categories:
 
 When conservation decision-makers attempt to predict the outcomes of management interventions, they frequently encounter uncertainty about the underlying ecosystem structure. Consider the example in Fig. 1, where experts are unsure whether species 4 and 5 interact. This uncertainty produces two possible structural configurations that could serve as model inputs.
 
-How might we determine which structure more accurately reflects reality? Melbourne-Thomas et al. (2012) proposed a Bayesian methodology to address this type of structural uncertainty. However, as I will discuss in this blog post, their approach favours simpler structures over more complex ones. 
-An important consequence is that 
-models based on overly simplified structures may fail to capture the full range of potential outcomes from management interventions, including precisely those negative unintended consequences that Qualitative Modelling aims to identify.
+How might we determine which structure more accurately reflects reality? Melbourne-Thomas et al. (2012) proposed a Bayesian method to address this type of structural uncertainty. However, as I will discuss in this blog post, their approach favours simpler structures over more complex ones. 
+Simpler structures predict fewer possible species-response outcomes.
+Therefore,
+an important consequence of favouring simpler structures is that,
+when models based on them are used to predict the consequences of future management interventions,
+they will predict fewer possibilities,
+including precisely those negative unintended consequences that Qualitative Modelling aims to identify.
 
 {%
     include figure.html
@@ -35,10 +39,10 @@ A press-perturbation is defined as an infinitesimally small,
 continuous removal or addition of species from a system
 (Bender et al., 1984; Yodzis, 1988; Nakajima, 1992).
 For example,
-consider species 5 in Fig. 1 as a pest subject to a control programme removing 10 individuals weekly. This intervention constitutes a press-perturbation. 
+consider Species 5 in Fig. 1 as a pest subject to a control programme removing 10 individuals weekly. This intervention constitutes a press-perturbation. 
 Such a perturbation shifts the population equilibrium to a new steady-state.
-Continuing our example,
-by comparing the population sizes before and during the pest-control programme, 
+By comparing the population sizes before and during the pest-control programme, 
+for example,
 researchers can use the directional changes observed (whether populations increased or decreased) as historical data points.
 It's worth noting that this framework relies on 'near-equilibrium assumptions' 
 (Abrams, 2001; Justus, 2006), including
@@ -65,8 +69,9 @@ which assessed how successfully their approach identified the true network struc
 from among five candidates (Fig. 2a). 
 For each trial, they designated one structure as the "correct" structure, 
 randomly selected one species as the target for press-perturbation, 
-and randomly chose two (or three) additional species to provide the response observations. 
-They then calculated likelihoods for all candidate structures (including the true structure) and determined the proportion of instances ($$P$$) in which each candidate structure (rows) 
+and randomly chose two (or three) additional species to provide the response "observations". 
+Then they calculated likelihoods of all candidate structures as described above
+and determined the proportion of instances ($$P$$) in which each candidate structure (rows) 
 achieved the highest likelihood for each correct structure (columns)
 (Fig 2b). 
 In all scenarios except one (when Structure IV was the "correct" model), 
@@ -129,12 +134,12 @@ produces the following effects on population sizes:
 - Species C: increase ($$+$$)
 - Species D: decrease ($$-$$)
 
-Because species' responses to press-perturbations 
+Because the signs of species' responses to press-perturbations 
 are entirely deterministic within a food chain 
 (Usmani 1994; see also <a href="/2015/12/15/896/">this blog post</a>), 
 modellers would assign the food chain structure depicted in Fig. 3a a likelihood of 1.
-Moreover, if they subsequently employed this structure within the Qualitative Modelling framework to forecast the consequences of a management intervention, 
-they would would assign the highest certainty level --- a probability of 1 --- 
+Moreover, if they subsequently employed this structure within the Qualitative Modelling framework to forecast the consequences of a future management intervention, 
+they would assign the highest certainty level --- a probability of 1 --- 
 to all predictions, including erroneous ones.
 
 {%
@@ -170,29 +175,29 @@ My selection of candidate structures was guided by two considerations.
 First, 
 I designed the candidate structures to have high similarity to one another, 
 thereby more accurately reflecting the nature of structural uncertainty 
-typically encountered in real-world ecological modelling scenarios. 
+typically encountered in real-world modelling scenarios. 
 Second, 
 I aimed to investigate how structural complexity influences the method's performance. 
 For this purpose, 
 the number of interactions in each structure provides a 
-reasonably comparable metric of structural complexity across candidates.
+rough but reasonably comparable metric of structural complexity across candidates.
 
 Two key observations can be made from the tabulated results of the simulation experiment
 (Fig. 4b).
 First,
 the frequency with which 
 the candidate structure with the highest $$P$$ value corresponded to the "correct" structure
-has declined from the 80% observed by Melbourne-Thomas et al. to 50% in this experiment.
+declined from the 80% observed by Melbourne-Thomas et al. to 50% in this experiment.
 
 Second,
-the P values for structurally simpler candidates when the target is complex 
+the $$P$$ values for structurally simpler candidates when the target is complex 
 (below the diagonal) 
 are generally higher than 
-the P values for structurally complex candidates when the target is simple
+the $$P$$ values for structurally complex candidates when the target is simple
 (above the diagonal).
 The latter result confirms our intuition that the 
 Melbourne-Thomas et al. (2012) method systematically favours 
-structurally simpler network structures.
+simpler network structures.
 
 {%
     include figure.html
@@ -222,8 +227,8 @@ this approach classifies parameter values and outcomes using a
 straightforward three-valued logical system: 
 (1) possible, (2) necessary, or (3) impossible.
 
-When applying this three-valued system to structural uncertainty problems, 
-we operate from a fundamental premise: 
+To apply this three-valued system to structural uncertainty problems, 
+I operate from a fundamental premise: 
 if a species response pattern observed in the 'correct' structure 
 is impossible within a candidate structure, 
 then that candidate structure itself must be impossible. 
@@ -231,7 +236,7 @@ This perspective represents a significant shift in focus:
 instead of calculating how frequently a candidate structure 
 can reproduce the 'observed' species responses across parameter space, 
 we examine when a candidate structure *cannot* reproduce the observation *regardless of* the parameter values. 
-This distinction is crucial to overcoming the inherent bias 
+This distinction also overcomes the inherent bias 
 of the probabilistic approach towards simpler structures.
 
 Fig. 5 tabulates the frequency $$Q$$ with which each candidate structure is identified as impossible,
@@ -240,11 +245,11 @@ First, the method never favours an incorrect candidate structure
 over the 'correct' structure (i.e., all $$Q$$ values on the diagonal of Fig. 5 are equal to zero).
 Second, 
 the Boolean method favours more complex network structures,
-which also produce a greater number of possible species-response combinations
 (i.e., lower $$Q$$ values above the diagonal than below).
 In particular,
 it is often unable to exclude structurally complex 
 candidate structures (i.e., columns of zeros on the right-hand side of Fig. 5).
+More complex structures also predict a greater number of possible species-response combinations.
 
 {%
     include figure.html
@@ -265,12 +270,26 @@ candidate structures (i.e., columns of zeros on the right-hand side of Fig. 5).
 
 ## Discussion 
 
+The Melbourne-Thomas method favours simpler network structures.
+The thought experiment shows that a food-chain structure will always 
+have the maximum likelihood.
+Although the thought experiment is contrived,
+it demonstrates that there is something paradoxical about
+using likelihood as the sole criterion to resolve structural uncertainty.
+This conclusion is reinforced by our replication of the simulation experiment
+where incorrect simpler structures were given a higher $$P$$ score 
+than several of the more complex structures (i.e. structures 1, 6, 8, 10)
+--- a result attributable to the fact that the method disadvantages
+structurally-complex networks.
+
 The tendency of the Melbourne-Thomas method to favour simpler structures 
-may not be desirable from
-a conservation management perspective for two reasons;
-first, 
-because selecting for simpler network structures leads to less conservative predictions, 
-and second,
+may not be desirable from a conservation management perspective
+for both pragmatic and philosophical reasons.
+First, 
+because
+selecting for simpler network structures leads to models that make less conservative predictions
+about the outcomes of future management interventions.
+Second,
 because the philosophical grounds for preferring simpler structures is unclear.
 
 Because the likelihood measure favours simpler structures that produce fewer 
@@ -282,26 +301,14 @@ for conservation management within the Qualitative Modelling framework,
 the probability assigned to those predictions will be higher.
 For example, the simple chain structure can only predict one species-response combination--
 and it makes that prediction 100% of the time.
-However, another interpretation of this high probability 
-is that the structure is too simple to predict alternatives. 
+However, another interpretation is that a food chain is too simple to predict alternatives. 
 If the purpose of using Qualitative Modelling to support decision-making 
 is a cautious one --- to warn us about what might possibly go wrong 
 when we interfere with ecosystems --- then we should not favour models
-that predict fewer possibilities without a compelling reason to do so.
+that warn us about fewer possible outcomes without a compelling reason to do so.
 
-There is no obvious reason to presuppose that real ecological systems 
-have a tendency to structure themselves to be simple. 
-The thought experiment shows that a food-chain structure will always 
-have the maximum likelihood.
-Although the thought experiment is contrived,
-it demonstrates that there is something paradoxical about
-using likelihood as the sole criterion to resolve structural uncertainty.
-This conclusion is reinforced by our replication of the simulation experiment
-where incorrect simpler structures were given a higher P score 
-than several of the more complex structures (i.e. structures 1, 6, 8, 10)
---- a result attributable to the fact that the method disadvantages
-structurally-complex networks.
-
+There is no obvious reason why real ecological systems 
+might have a tendency to structure themselves to be simple. 
 Nevertheless, one might argue that favouring structurally simpler networks 
 is in accordance with the Principle of Parsimony. 
 This is a philosophically complicated topic
