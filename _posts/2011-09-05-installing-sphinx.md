@@ -23,7 +23,7 @@ Many times I have found someone's log of an installation of some new software in
       3. make html
     This gave me a basic html page with no content
     
-  1. I Created a python program with some rst in the docstrings, called [intercept.py](https://s3.amazonaws.com/nadiah.org/toolfiles/intercept.py), which went into the source directory
+  1. I Created a python program with some rst in the docstrings, called [intercept.py](/s3/intercept.py), which went into the source directory
   1. I added these lines to ./source/index.rst:  
        1. `.. automodule:: intercept`
        1. `:members:` 

@@ -96,5 +96,5 @@ If I had to guess, I'd say that this contrast between the two models, the relati
 
 Additional bits:
 
-  * My code for the second figure: [distributions.m](https://s3.amazonaws.com/nadiah.org/toolfiles/distributions.m)
+  * My code for the second figure: [distributions.m](/s3/distributions.m)
   * Bookmark to read later: [Stouffer, 2010 Functional Ecology](http://www.stoufferlab.org/pdfs/Stouffer-2010-Funct.Ecol.-24-44.pdf).

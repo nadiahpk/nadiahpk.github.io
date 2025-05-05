@@ -26,7 +26,7 @@ Roughly speaking, greenhouse gases have been continually increasing since 1900. 
 
 Recently I was asked by someone, if greenhouse gases drive global temperatures, why haven't temperatures shown the same pattern of increase as greenhouse gases?
 
-The work of [Meehl et al. (2004, _Journal of Climate_)](https://s3.amazonaws.com/nadiah.org/papers/meehl_additivity.pdf), particularly the figures, provide a straightforward answer. The paper is a few years old (and doesn't talk about the more complicated feedbacks present) however the same basic story is being told by the newer models (e.g. summary figures on p 40 of the [IPCC report](https://www.ipcc.ch/report/ar4/syr/)).
+The work of [Meehl et al. (2004, _Journal of Climate_)](/s3/meehl_additivity.pdf), particularly the figures, provide a straightforward answer. The paper is a few years old (and doesn't talk about the more complicated feedbacks present) however the same basic story is being told by the newer models (e.g. summary figures on p 40 of the [IPCC report](https://www.ipcc.ch/report/ar4/syr/)).
 
 Figure 1e of Meehl et al (2004) basically reiterates the point. When greenhouse gases are used to predict the global temperature, they predict a general increase in temperature over the past ~100 years, particularly at the end of the last century. But they cannot account for the oscillation in the temperature around the middle of the century, nor much of the increase at the start of the last century when their concentrations were still very low.
 

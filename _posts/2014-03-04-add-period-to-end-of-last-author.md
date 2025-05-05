@@ -71,4 +71,4 @@ FUNCTION {add.period}
 
 The .bst file now produced what I needed.
 
-You can find the .bst files here: [biologyletters.bst](https://s3.amazonaws.com/nadiah.org/toolfiles/biologyletters.bst), [biologyletters.dbj](https://s3.amazonaws.com/nadiah.org/toolfiles/biologyletters.dbj).
+You can find the .bst files here: [biologyletters.bst](/s3/biologyletters.bst), [biologyletters.dbj](/s3/biologyletters.dbj).

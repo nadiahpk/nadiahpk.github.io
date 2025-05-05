@@ -40,7 +40,7 @@ An alternative way of describing the system, pursued in an unpublished paper by 
 
 **Example**
 
-You can download the complete example for Octave from my website: [mortongen.m](https://s3.amazonaws.com/nadiah.org/toolfiles/mortongen.m).
+You can download the complete example for Octave from my website: [mortongen.m](/s3/mortongen.m).
 
 Consider the four-species system shown in Figure 2 with the parameter values below, adapted from an unpublished paper by Richard Law and R. Daniel Morton, with:  
 
@@ -286,4 +286,4 @@ disp(mind)
 
 -
 
-You can download the complete example for Octave from my website: [mortongen.m](https://s3.amazonaws.com/nadiah.org/toolfiles/mortongen.m).
+You can download the complete example for Octave from my website: [mortongen.m](/s3/mortongen.m).
