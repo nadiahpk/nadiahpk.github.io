@@ -6,7 +6,7 @@ author: nadiah_kristensen
 layout: post
 guid: http://nadiah.org/blog/?p=2032
 permalink: /2025/05/08/online-evol-gt-workshop
-image: /wp-content/uploads/2025/05/dini_wang.png
+image: /wp-content/uploads/2025/05/dini_wang_hypergraph.png
 categories:
   - cooperation
 ---
