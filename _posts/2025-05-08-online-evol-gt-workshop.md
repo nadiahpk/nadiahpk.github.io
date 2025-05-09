@@ -14,13 +14,12 @@ categories:
 This morning,
 I attended an engaging virtual workshop on modelling and applications of evolutionary game theory.
 
-I extend my sincere thanks to the organisers
----
+I extend my sincere thanks to the organisers --
 <a href="https://datascience.unc.edu/person/alex-mcavoy/">Alex McAvoy</a>,
 <a href="https://www.brynmawr.edu/inside/people/olivia-j-chu">Olivia Chu</a>,
 and <a href="https://publish.illinois.edu/danielbcooney/">Daniel Cooney</a>
 (<a href="https://bsky.app/profile/danielcooney1.bsky.social">bsky</a>)
---- for their kind invitation and organising the workshop.
+-- for their kind invitation and organising the workshop.
 The presentations in my session were all very interesting.
 
 <h3>Maria Kleshnina's talk</h3>
