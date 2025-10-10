@@ -14,11 +14,11 @@ categories:
 Today,
 I gave a talk at <a href="https://www.griffith.edu.au/">Griffith University's</a> Nathan Campus,
 which is a lovely campus nestled in <a href="https://tooheyforesteec.eq.edu.au/">Toohey Forest</a>.
-I have taken an adjunct position there,
+I have taken an adjunct position there in addition to my position at 
+<a href="https://www.qut.edu.au/">QUT</a>,
 and I was visiting to talk about my two most recent papers about the evolution of cooperation,
 published in <a href="https://www.nature.com/articles/s41598-022-24590-y">Scientific Reports</a> 
 and <a href="https://www.sciencedirect.com/science/article/pii/S0022519325000554">Journal of Theoretical Biology</a>.
-
 
 {%
     include figure.html
