@@ -16,7 +16,6 @@ I gave a talk at <a href="https://www.griffith.edu.au/">Griffith University's</a
 about my two most recent papers about the evolution of cooperation,
 published in <a href="https://www.nature.com/articles/s41598-022-24590-y">Scientific Reports</a> 
 and <a href="https://www.sciencedirect.com/science/article/pii/S0022519325000554">Journal of Theoretical Biology</a>.
-
 You can download the full slide deck here: <a href="/wp-content/uploads/2025/09/evoln_coopn.pdf">evoln_coopn.pdf</a>.
 
 {%
