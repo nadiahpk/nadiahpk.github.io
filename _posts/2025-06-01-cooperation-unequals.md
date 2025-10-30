@@ -194,10 +194,10 @@ $$
         \begin{align*}
             \Phi & = 
             \begin{pmatrix}
+                -0.10 & 0.10 & 0.10 & 0.10 \\
                 0.10 & -0.10 & 0.10 & 0.10 \\
                 0.10 & 0.10 & -0.10 & 0.10 \\
-                0.10 & 0.10 & 0.10 & -0.10 \\
-                -0.67 & 0.33 & 0.33 & 0.33 \\
+                0.33 & 0.33 & 0.33 & -0.67 \\
             \end{pmatrix} \\
             &=
             \underbrace{
@@ -907,4 +907,3 @@ Meyer, C. D. (2000). Matrix analysis and applied linear algebra, Society for Ind
 
 Staab, M., Kleshnina, M., Hübner, V., Hilbe, C. and Chatterjee, K. (2022). Optimal sharing in social
 dilemmas. URL: [http://manuelstaab.com/research/optimal sharing soc dilemma.pdf](http://manuelstaab.com/research/optimal sharing soc dilemma.pdf)
-
