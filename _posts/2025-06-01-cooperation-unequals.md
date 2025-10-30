@@ -755,7 +755,7 @@ $$
 $$
 
 From my eigenvalue equation,
-I know that $$\delta_{\text{min}} = 0$$ when $$h_0(0) = 0$$,
+I know that $$\delta_{\text{min}} = 0$$ when $$h(0) = 0$$,
 which occurs when
 
 $$
