@@ -6,7 +6,7 @@ author: nadiah_kristensen
 layout: post
 guid: http://nadiah.org/blog/?p=2033
 permalink: /2025/06/01/cooperation-unequals
-image: /wp-content/uploads/2025/05/dini_wang_hypergraph.png
+image: /wp-content/uploads/2025/06/example_1.png
 categories:
   - cooperation
 ---
