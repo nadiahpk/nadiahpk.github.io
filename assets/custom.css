@@ -14,3 +14,8 @@
   font-family: inherit;
   border: 1px solid #e8e8e8;
 }
+
+.narrow-table {
+  max-width: 400px;
+  margin: 0 auto;
+}
