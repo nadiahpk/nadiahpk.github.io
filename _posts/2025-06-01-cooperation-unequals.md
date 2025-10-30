@@ -686,6 +686,7 @@ when $$r_i = 2$$,
 the situation is on the cusp of transition from PD to mutualism.
 The payoff matrix is
 
+{: .narrow-table}
 |   | C | D |
 |---|----------|----------|
 | C | 1, 1     | 0.1, 1   |
