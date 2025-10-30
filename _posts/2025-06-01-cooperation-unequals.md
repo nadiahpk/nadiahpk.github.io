@@ -618,7 +618,7 @@ to a single point.
 In Fig. 1,
 this point occurs when $$\delta = \delta_{\text{min}} = 0.13$$,
 which corresponds to payoffs $$(\pi_1^*, \pi_2^*) \approx (0.58, 1.02)$$ on the frontier,
-with sharing agreement $$(f_1^*, f_2^*) \approx (0.26, 0.64)$$.
+with sharing agreement $$(f_1^*, f_2^*) \approx (0.36, 0.64)$$.
 
 
 
