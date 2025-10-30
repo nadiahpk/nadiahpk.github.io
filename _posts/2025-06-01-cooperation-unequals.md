@@ -12,7 +12,7 @@ categories:
 ---
 
 In an unpublished paper, 
-[Staab et al. (2002)](http://manuelstaab.com/research/optimal sharing soc dilemma.pdf)
+[Staab et al. (2022)](http://manuelstaab.com/research/optimal sharing soc dilemma.pdf)
 studied the effects of heterogeneity in endowments and
 productivities on cooperation. They were particularly interested in the effect of allowing players to
 share the jointly produced goods unequally. Surprisingly, they found that unequal sharing can promote
