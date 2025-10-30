@@ -19,7 +19,7 @@ share the jointly produced goods unequally. Surprisingly, they found that unequa
 cooperation.
 
 In this blog post,
-first, I offer a proof of one of their results.
+first, I offer a proof of one of their propositions.
 Then I try thinking about their model a little differently to how they presented it,
 working through some small examples to try to get a visual intuition for what it means.
 
