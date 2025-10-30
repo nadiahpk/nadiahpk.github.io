@@ -12,7 +12,7 @@ categories:
 ---
 
 In an unpublished paper, 
-[Staab et al. (2002)](http://manuelstaab.com/research/optimal sharing soc dilemma.pdf)
+[Staab et al. (2022)](http://manuelstaab.com/research/optimal sharing soc dilemma.pdf)
 studied the effects of heterogeneity in endowments and
 productivities on cooperation. They were particularly interested in the effect of allowing players to
 share the jointly produced goods unequally. Surprisingly, they found that unequal sharing can promote
@@ -194,10 +194,10 @@ $$
         \begin{align*}
             \Phi & = 
             \begin{pmatrix}
+                -0.10 & 0.10 & 0.10 & 0.10 \\
                 0.10 & -0.10 & 0.10 & 0.10 \\
                 0.10 & 0.10 & -0.10 & 0.10 \\
-                0.10 & 0.10 & 0.10 & -0.10 \\
-                -0.67 & 0.33 & 0.33 & 0.33 \\
+                0.33 & 0.33 & 0.33 & -0.67 \\
             \end{pmatrix} \\
             &=
             \underbrace{
@@ -618,7 +618,7 @@ to a single point.
 In Fig. 1,
 this point occurs when $$\delta = \delta_{\text{min}} = 0.13$$,
 which corresponds to payoffs $$(\pi_1^*, \pi_2^*) \approx (0.58, 1.02)$$ on the frontier,
-with sharing agreement $$(f_1^*, f_2^*) \approx (0.26, 0.64)$$.
+with sharing agreement $$(f_1^*, f_2^*) \approx (0.36, 0.64)$$.
 
 
 
@@ -755,7 +755,7 @@ $$
 $$
 
 From my eigenvalue equation,
-I know that $$\delta_{\text{min}} = 0$$ when $$h_0(0) = 0$$,
+I know that $$\delta_{\text{min}} = 0$$ when $$h(0) = 0$$,
 which occurs when
 
 $$
@@ -907,4 +907,3 @@ Meyer, C. D. (2000). Matrix analysis and applied linear algebra, Society for Ind
 
 Staab, M., Kleshnina, M., Hübner, V., Hilbe, C. and Chatterjee, K. (2022). Optimal sharing in social
 dilemmas. URL: [http://manuelstaab.com/research/optimal sharing soc dilemma.pdf](http://manuelstaab.com/research/optimal sharing soc dilemma.pdf)
-
