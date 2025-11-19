@@ -17,17 +17,17 @@ I've been working in my spare time through a very interesting paper by
 The paper concerns an evolutionary game theory model
 where individuals play an iterated Prisoner's Dilemma with an environmental feedback.
 In a [previous post](https://nadiah.org/2024/11/20/kleshnina_2023),
-I experimented with a method to automate the identification of the sub-game perfect Nash equilibria
+I experimented with a method to automate the identification of the subgame-perfect Nash equilibria
 and their parameter-value conditions.
 In this post,
 I'll show how the stationary distribution of actions taken during a repeated interaction can be found 
 analytically and solved algorithmically using [SymPy](https://www.sympy.org/en/index.html).
 
-Kleshnina at al.'s paper concerns pairwise interactions that repeat over a number of rounds.
+Kleshnina et al.'s paper concerns pairwise interactions that repeat over a number of rounds.
 The action that each player takes in each round is governed by their strategy,
 and it is a function of the actions in the previous round and the environmental state.
 If we assume that the probability $$\delta$$ that the game continues for another round is high,
-then we can approximate the payoff each strategy receives from interacting with another strategy.
+then the payoff each strategy receives from interacting with each other strategy can be approximated.
 The approximation is made based on the stationary distribution of environment+action states 
 when those two strategies interact.
 
@@ -50,7 +50,7 @@ which gives the stationary distribution.
 {%
     include figure.html
     src="/wp-content/uploads/2024/11/cycle_example.png"
-    caption="**Figure 1**. An example scenario that is not irreducible, where 'good' and 'bad' refer to the environment state, and the node labels refer to the players' actions, 'C' for cooperate and 'D' for defect. The arrows indicate the transitions between environment+action states. For example, if the first round is in a good environment and Player 1 defects and Player 2 cooperates (DC), then the next round will also be in a good environment, and both players will defect. This scenario is reducible because some states cannot be reached from others. For example, the state gCC cannot reach nor be reached from any other state."
+    caption="**Figure 1**. An example scenario that is not irreducible, where 'good' and 'bad' refer to the environment state, and the node labels refer to the players' actions, 'C' for cooperate and 'D' for defect. The arrows indicate the transitions between environment+action states. For example, if the first round is in a good environment and Player 1 defects and Player 2 cooperates (DC), then the next round will also be in a good environment, and both players will defect. This scenario is reducible because some states cannot be reached from others. For example, the state good-CC can neither reach nor be reached from any other state."
 %}
 
 Once all the stationary distributions between all pairs of strategies are found,
@@ -58,12 +58,12 @@ the evolutionary dynamics can be solved.
 Each stationary distribution determines the payoff that both strategies 
 receive when interacting with each other. 
 These payoffs are then input to the evolutionary model, 
-which describes how strategy frequencies change over time.
+which describes how the population moves from fixation of one strategy to another over time.
 It is also a Markov chain model,
 and its stationary distribution gives the evolutionary steady state.
 
 Fig. 2 below reproduces Fig. 3a from their paper,
-which shows the frequencies of selected strategies at the evolutionary steady state.
+which shows the proportion of time selected strategies are at fixation at the evolutionary steady state.
 Some nodes in the figure are labelled with a binary string,
 which is a code that defines that strategy,
 while WSLS refers to the "win-stay lose-shift" strategy,
@@ -72,30 +72,32 @@ and ALLD refers to "always defect".
 {%
     include figure.html
     src="/wp-content/uploads/2025/11/Kleshnina_Fig3a.png"
-    caption="**Figure 2**. Adapted from Fig. 3a from Kleshnina et al. (2023), calculated for $$\varepsilon = 0.01$$. The nodes are selected strategies, and the percentages are the proportion of each strategy found in the population at the evolutionary steady state."
+    caption="**Figure 2**. Adapted from Fig. 3a from Kleshnina et al. (2023), calculated for $$\varepsilon = 0.01$$. The nodes are selected strategies, and the percentages are the proportion of time in the long-term that the population spends with that strategy at fixation."
 %}
 
-The strategy frequencies in Fig. 2 were calculated based on $$\varepsilon = 0.01$$,
-and those frequencies will change when $$\varepsilon$$ changes (Fig. 3).
+The strategy proportions in Fig. 2 were calculated based on $$\varepsilon = 0.01$$,
+and those proportions will change when $$\varepsilon$$ changes (Fig. 3).
 In particular,
 as $$\varepsilon$$ approaches zero,
-the proportion of the population that pursues the most frequent strategy almost halves,
-and the relative ordering of the strategy frequencies changes as well.
+the proportion of time the population that pursues the most frequent strategy almost halves,
+and the relative ordering of the time proportions changes as well.
 
 {%
     include figure.html
     src="/wp-content/uploads/2025/11/eps_v_stationary_distn.png"
-    caption="**Figure 3**. How the proportion of each strategy in Fig. 2 varies as a function of $$\varepsilon$$. Note that the purple line that seems to correspond to ALLD in Fig. 2 is in fact strategy $$\boldsymbol{p} = (0, 0, 0, 0; -, 0, 0, 0)$$. ALLD, which has strategy $$\boldsymbol{p} = (0, 0, 0, 0; 0, 0, 0, 0)$$, has half the frequency of the purple line shown. I couldn't figure out the reason for the discrepancy."
+    caption="**Figure 3**. How the proportion of time spent at each strategy in Fig. 2 varies as a function of $$\varepsilon$$. Note that the purple line that seems to correspond to ALLD in Fig. 2 is in fact strategy $$\boldsymbol{p} = (0, 0, 0, 0; -, 0, 0, 0)$$, where the hyphen refers to a wildcard (can be 0 for defect or 1 for cooperate). ALLD, which has strategy $$\boldsymbol{p} = (0, 0, 0, 0; 0, 0, 0, 0)$$, has half the proportion of the purple line shown. I couldn't figure out the reason for the discrepancy."
 %}
 
-Exploring the effects of different parameter values on the model
-is computationally expensive,
-and setting $$\varepsilon$$ to some specific value may be valid depending on the question being asked.
+Setting $$\varepsilon$$ to some specific value may be valid depending on the question being asked.
 Nonetheless,
 in situations where $$\varepsilon$$ is simply intended to represent "some small chance"
 of a mistake, 
 then an intuitively attractive choice would be to find the solution as $$\varepsilon$$ approaches zero.
 But that's not something that's easy to solve using numerical methods.
+It's not obvious how close to $$\varepsilon = 0$$ is "close enough",
+and exploring the effects of different parameter values on the model is already computationally expensive.
+Furthermore,
+the smaller the value chosen for $$\varepsilon$$ is, the more likely we are to run into numerical issues.
 
 Instead,
 in the sections below,
@@ -104,20 +106,19 @@ can be found analytically.
 In general, 
 when the stationary distributions are found analytically,
 the evolutionary component of the model can predict quite different
-strategy frequencies (Fig. 4).
+strategy proportions (Fig. 4).
 This also means that any conclusions we reach about which strategies are favoured by natural selection 
 can depend on the method used.
 
 {%
     include figure.html
     src="/wp-content/uploads/2025/11/compare_analytic_approx.png"
-    caption="**Figure 4**. Comparing the strategy frequency distribution at the evolutionary steady state when the analytic and approximate methods are used. Only the top 12 most frequent strategies are shown. Strategies are grouped into payoff-equivalent pairs, where a hyphen indicates that either cooperate or defect can be played."
+    caption="**Figure 4**. Comparing the evolutionary steady state when the analytic and approximate methods are used. Only the top 12 strategies are shown. Strategies are grouped into payoff-equivalent pairs, where a hyphen indicates that either cooperate or defect can be played."
 %}
 
 
 The underlying principle to the analytic solution is illustrated in Example 1 below.
-Example 1 describes a somewhat different Markov-chain scenario to the type they modelled,
-which I chose for its clarity.
+Example 1 describes a somewhat different Markov chain scenario from the type they modelled, which I chose for its clarity.
 The section below works through a real example from their model,
 both by hand and in Python using [SymPy](https://www.sympy.org/en/index.html).
 
@@ -254,8 +255,6 @@ $$
 
 ### Worked example
 
-#### Worked example by hand
-
 Consider a game played in the timeout environment
 
 $$
@@ -263,7 +262,7 @@ $$
 $$
 
 between two players,
-an All-D strategist
+an All-Defect strategist
 
 $$\boldsymbol{p}_0 = ((0, 0, 0, 0), (0, 0, 0, 0))$$
 
@@ -272,6 +271,9 @@ mostly-defecting strategy who only cooperates
 when the previous action was DD 
 
 $$\boldsymbol{p}_1 = ((0, 0, 0, 1), (0, 0, 0, 1)).$$
+
+#### Worked example by hand
+
 
 Index the states:
 (1) gCC, (2) gCD, (3) gDC, (4) gDD, (5) bCC, (6) bCD, (7) bDC, (8) bDD.
@@ -701,8 +703,7 @@ And so the stationary distribution as $$\varepsilon \rightarrow 0$$ is `stationa
 ### Future work 
 
 One thing I'm unclear about is how to determine the maximum power `max_pwr` that is needed to find the solution.
-My intuition tells me that the maximum power is probably the maximum number of errors needed to escape
-one attractor for another such that all attractors are eventually reachable. 
+My intuition tells me that the maximum power is probably the maximum number of errors needed to escape from one attractor to another, such that all attractors are eventually reachable.
 One could check only the states in each attractor
 for their shortest route to other basins.
 However, the shortest route of escape might pass through a transient state in the attractor's own basin.
@@ -714,9 +715,9 @@ I'm sure that someone has used this method before,
 but I haven't been able to find it in the literature.
 I found a book Kato (1980),
 which has Chapter 2 dedicated to perturbation theory;
-however, the form of perturbation they consider is a different from my own.
+however, the form of perturbation it considers is different from the one I use here.
 I also found Kandori et al. (1993),
-which has a very similar looking polynomial;
+which has a very similar-looking polynomial;
 however, 
 their method seems to require finding all possible structures they call "z-trees",
 which is computationally expensive.
