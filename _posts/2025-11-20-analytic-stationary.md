@@ -19,9 +19,14 @@ where individuals play an iterated Prisoner's Dilemma with an environmental feed
 In a [previous post](https://nadiah.org/2024/11/20/kleshnina_2023),
 I experimented with a method to automate the identification of the subgame-perfect Nash equilibria
 and their parameter-value conditions.
+
 In this post,
 I'll show how the stationary distribution of actions taken during a repeated interaction can be found 
 analytically and solved algorithmically using [SymPy](https://www.sympy.org/en/index.html).
+The typical approach requires choosing a specific value for $$\varepsilon$$, 
+which is the probability that players make implementation errors. 
+However, this choice is somewhat arbitrary if $$\varepsilon$$ is introduced purely as a mathematical device to make the model tractable. 
+My method avoids this arbitrariness by finding the limiting stationary distribution as $$\varepsilon \rightarrow 0$$.
 
 Kleshnina et al.'s paper concerns pairwise interactions that repeat over a number of rounds.
 The action that each player takes in each round is governed by their strategy,
