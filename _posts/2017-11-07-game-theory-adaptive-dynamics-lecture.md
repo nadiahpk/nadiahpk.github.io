@@ -16,6 +16,7 @@ This is the short version with the point-by-point transitions removed.
 
 Downloads: 
 <ul>
+<li> 2025: <a href="/wp-content/uploads/2025/11/game_theory_ad4_shorter.pdf">game_theory_ad4_shorter.pdf</a> </li>
 <li> 2023: <a href="/wp-content/uploads/2023/10/game_theory_ad2_upload.pdf">game_theory_ad2_upload.pdf</a> </li>
 <li> 2017: <a href="/wp-content/uploads/2017/11/game_theory_ad_upload.pdf">game_theory_ad_upload.pdf</a> </li>
 </ul>
