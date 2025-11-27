@@ -86,7 +86,7 @@ The theorem can be proved by analysing the characteristic polynomial of $$\Phi$$
 using a similar approach to Meyer (2000, Ex. 7.1.22).
 
 {% include content_highlight.html content="
-**Theorem.** Let $$\Phi$$ be the matrix defined by Eq. \ref{phi_ij}. Then:
+Let $$\Phi$$ be the matrix defined by Eq. \ref{phi_ij}. Then:
 1. At least $$n-1$$ eigenvalues of $$\Phi$$ are negative.
 2. The largest eigenvalue $$\lambda_1$$ of $$\Phi$$ is positive if and only if
     the reciprocal productivity condition from Assumption 1 
