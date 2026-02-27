@@ -14,6 +14,8 @@ guid: https://nadiah.org/?page_id=405
 <b>
 <b>
 
+Lerner, I., Botelho, L.L., <b>Kristensen</b>, N.P., Bode, M. (2026) Voting Systems Influence Conservation Outcomes for International Fisheries, <i>Conservation Letters</i>, <b>19</b>(1):e70016, (<a href="https://conbio.onlinelibrary.wiley.com/doi/full/10.1111/con4.70016">open access</a>), (<a href="https://github.com/IriLrnr/RFMO">github</a>).
+
 <b>Kristensen</b>, N.P., Chisholm, R.A., and Ohtsuki, H. (2025) Many-strategy games in groups with relatives and the evolution of coordinated cooperation, <i>Journal of Theoretical Biology</i>, <b>605</b>:112089, (<a href="https://github.com/nadiahpk/homophilic-many-strategy-PGG">github</a>), (<a href="/wp-content/uploads/2025/03/Kristensen25-Many_strategy_group_games_with_relatives_and_coordinated_cooperation.pdf">pdf</a>).
 
 Chisholm, R.A., <b>Kristensen</b>, N.P., Rheindt, F.E., Chong, K.Y., Ascher, J.S., Lim, K.K.P., Ng, P.K.L., Yeo, D.C.J., Meier, Meier, R., Tan, H.H., Giam, X., Yeoh, Y.S., Seah, W.W., Berman, L.M., Tan, H.Z., Sadanandan, K.R., Theng, M., Jusoh, W.F.A, Jain, A., Huertas, B., Tan, D.J.X., Ng, A.C.R, Teo, A., Yiwen, Z., Cho, T.J.Y., and Sin, Y.C.K. (2023) Two centuries of biodiversity discovery and loss in Singapore, <i>Proceedings of the National Academy of Sciences</i>, <b>120</b>:e2309034120, (<a href="https://github.com/nadiahpk/MODGEE-dark-extinctions-estimator">github</a>), (<a href="https://nadiah.org/2023/12/15/chisholm-pnas">blog</a>).
