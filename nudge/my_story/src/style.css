@@ -1,0 +1,298 @@
+/*HTML*/
+.sc-docu body {
+    background-color:#fff;
+    color:#111;
+}
+    /*Headers*/
+h1 {
+    text-align: center;
+}
+#passages h1 {
+    background: #0b1f0b;
+    border-radius: 5px;
+    padding: 0.5em;
+}
+.sc-docu #passages h1 {
+    background-color: #ccc;
+}
+h3 {
+    margin-top: 2em;
+}
+h4 {
+    margin-left: 3em;
+    font-size: 115%;
+}
+    /* Blockcode */
+blockquote {
+    border-left: 4px #0b1f0b solid;
+    padding: 5px;
+}
+.sc-docu blockquote {
+    border-left-color: #88f;
+}
+    /* Code */
+code, pre {
+    font-family:monospace,monospace;
+    font-size:1em;
+    background: #03350369;
+    border-radius: 1em;
+    padding: 0.2em 0.5em;
+}
+.sc-docu code, .sc-docu pre {
+    background: #8888ff69;
+}
+pre {
+    overflow:auto;
+    white-space: pre-wrap;
+}
+code {
+    display: inline-block;
+}
+pre code {
+    background: transparent !important;
+    border-radius: 0;
+    padding: 0;
+}
+h4 code, h3 code {
+    background-color: #013c01;
+}
+.sc-docu h4 code, .sc-docu h3 code {
+    background: #89a6ff;
+}
+
+/*SideBar*/
+.sc-docu #ui-bar {
+    background: #f5f5f5;
+    border-right-color: purple;
+}
+
+.sc-docu #ui-bar-history [id|="history"], .sc-docu #ui-bar-toggle {
+    color: #1d005e;
+}
+.sc-docu #ui-bar-history [id|="history"]:disabled {
+    color: #80008036;
+}
+.sc-docu #ui-bar-history [id|="history"], .sc-docu #ui-bar-toggle {
+    border-color: purple;
+}
+
+.sc-docu #menu li a {
+    color: #111;
+}
+.sc-docu #menu li a:hover {
+    color: #eee;
+    background: #88f;
+}
+.sc-docu #menu ul {
+    border-color: purple;
+}
+.sc-docu #menu li:not(:first-child) {
+    border-color: purple;
+}
+.sc-docu #menu-core li[id|="menu-item"] a::before, .sc-docu #ui-bar-history [id|="history"], .sc-docu #ui-bar-toggle::before {
+    color: #1d005e;
+}
+
+/*Popups*/
+#ui-dialog {
+    max-width: 750px;
+}
+.sc-docu #ui-dialog-titlebar {
+    background: #ccc;
+}
+#ui-dialog-title {
+    padding: 0.2em;
+}
+#ui-dialog-close {
+    height: 100%;
+}
+.sc-docu #ui-dialog-close {
+    color: #4722cc;
+}
+.sc-docu #ui-dialog-body {
+    background-color:#fff;
+}
+#ui-dialog-body.settings div[id|="header-body"] {
+    margin: 1em 0 0 0;
+    text-align: center;
+}
+.sc-docu #ui-dialog-body.saves button.save::before {
+    color: purple;
+}
+.sc-docu #ui-dialog-body.saves > h2 {
+    background-color: unset;
+    padding: .2em .6em;
+    text-align: right;
+    color: purple;
+    text-shadow: 0 0 10px #e1a6f7;
+    font-size: 1.2em;
+}
+
+/*Settings Font*/
+html.serif {
+    font-family: serif;
+}
+html.mono {
+    font-family: monospace;
+}
+html.cursive {
+    font-family: cursive;
+}
+
+/*Macros + Triggered by Macros*/
+.sc-docu a {
+    color: #4722cc;
+}
+.sc-docu a:hover {
+    color: #8822cc;
+}
+.sc-docu #menu li a:hover {
+    color: #eee;
+    background: #88f;
+}
+.sc-docu button {
+    background: purple;
+    border-color: #b70bb7;
+}
+.sc-docu button:not([disabled]):hover {
+    background: #b70bb7;
+    border-color: purple;
+}
+.sc-docu button:disabled {
+    background-color: #444;
+    border: 1px solid #666;
+}
+
+.sc-docu select {
+    color: #111;
+}
+.sc-docu select:not(:disabled):focus, 
+.sc-docu select:not(:disabled):hover {
+    color: #eee;
+    background-color: #88f;
+}
+
+
+/*TODO: EDIT BECAUST NOT EVERYTHING FITS*/
+/*Added Changes:*/
+img {
+    width: 100%;
+}
+
+/* =============================
+   Light mode (default)
+   ============================= */
+body {
+    background-color: #fff;
+    color: #111;
+}
+a {
+    color: #4722cc;
+}
+a:hover {
+    color: #8822cc;
+}
+#ui-bar {
+    background: #f5f5f5;
+    border-right-color: #ccc;
+}
+#ui-bar a,
+#ui-bar-toggle::before,
+#ui-bar-history [id|="history"]::before {
+    color: #111;
+}
+#ui-bar-history [id|="history"]:disabled::before {
+    color: #999;
+}
+#menu ul {
+    border-color: #ccc;
+}
+#menu li:not(:first-child) {
+    border-top-color: #ccc;
+}
+#menu li a {
+    color: #111;
+}
+#menu li a:hover {
+    color: #fff;
+    background: #4722cc;
+}
+#ui-dialog-titlebar {
+    background: #eee;
+    color: #111;
+}
+#ui-dialog-body {
+    background: #fff;
+    color: #111;
+}
+#passages h1 {
+    background: #eee;
+}
+button {
+    background: #4722cc;
+    border-color: #3618a0;
+    color: #fff;
+}
+button:not([disabled]):hover {
+    background: #3618a0;
+    border-color: #4722cc;
+}
+
+/* =============================
+   Dark mode (toggled via Settings)
+   ============================= */
+html.dark body {
+    background-color: #1a1a1a;
+    color: #ddd;
+}
+html.dark a {
+    color: #8ab4f8;
+}
+html.dark a:hover {
+    color: #aecbfa;
+}
+html.dark #ui-bar {
+    background: #222;
+    border-right-color: #444;
+}
+html.dark #ui-bar a,
+html.dark #ui-bar-toggle::before,
+html.dark #ui-bar-history [id|="history"]::before {
+    color: #ccc;
+}
+html.dark #ui-bar-history [id|="history"]:disabled::before {
+    color: #555;
+}
+html.dark #menu ul {
+    border-color: #444;
+}
+html.dark #menu li:not(:first-child) {
+    border-top-color: #444;
+}
+html.dark #menu li a {
+    color: #ccc;
+}
+html.dark #menu li a:hover {
+    color: #fff;
+    background: #555;
+}
+html.dark #ui-dialog-titlebar {
+    background: #333;
+    color: #ddd;
+}
+html.dark #ui-dialog-body {
+    background: #1a1a1a;
+    color: #ddd;
+}
+html.dark #passages h1 {
+    background: #333;
+}
+html.dark button {
+    background: #555;
+    border-color: #666;
+    color: #ddd;
+}
+html.dark button:not([disabled]):hover {
+    background: #666;
+    border-color: #777;
+}

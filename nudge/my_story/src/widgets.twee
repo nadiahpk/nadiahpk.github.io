@@ -1,0 +1,5 @@
+:: Widgets [widget]
+
+<<widget "mathjax">>
+  <<run requestAnimationFrame(function() { MathJax.typesetPromise([document.querySelector('.passage')]); })>>
+<</widget>>

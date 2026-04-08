@@ -1,0 +1,69 @@
+::StoryTitle
+
+Testing
+
+:: StoryData
+{
+	"ifid": "79FC17B8-8C95-4946-964F-E97A80576B5F",
+  "start": "Start"
+}
+
+:: Start
+
+Start text
+
+/*[img[small.jpg]]*/
+
+When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
+
+<nowiki>
+  $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+</nowiki>
+
+Can we get a decent looking matrix in here?
+
+<nowiki>
+  $$\begin{pmatrix} 1 & 2 & 3 & 5 & | & b_1\\ 0 & 0 & 2 & 2 & | & b_2 - 2b_1\\ 0 & 0 & -2 & -2 & | & b_3 - 3b_1 \end{pmatrix}$$
+</nowiki>
+
+<<nobr>>
+<strong>Hint 1:</strong> 
+<<linkreplace "Reveal" t8n>> 
+It's a hint. 
+<</linkreplace>> 
+<</nobr>>
+
+<<nobr>>
+<<linkappend "<strong>Hint 2:</strong>" t8n>>
+  It's a hint with an equation \(x = 1\)
+  <<mathjax>>
+<</linkappend>>
+<</nobr>>
+
+What's with all the vertical space?
+Does every new line 
+get a br?
+
+<<nobr>>
+What's with all the vertical space?
+Does every new line 
+get a br?
+<</nobr>> 
+
+Options?
+
+[[Go 1 -> one]]
+
+[[Go 0 -> Start]]
+
+[[Go 2 -> two]]
+
+:: one
+this is one
+
+Restart: [[Start]]
+
+:: two
+this is two
+
+Restart: [[Start]]
