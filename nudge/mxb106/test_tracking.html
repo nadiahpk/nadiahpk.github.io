@@ -454,7 +454,7 @@ Setting.addToggle("darkMode", {
 });
 
 /* Click-path tracking: fire a POST whenever the learner clicks a CONTINUE link. */
-var TRACK_ENDPOINT = "https://hamalainen.dev/posts/progress";
+var TRACK_ENDPOINT = "https://nudge.nadiah.org/posts/progress";
 var TRACK_STORY    = "mxb106_test_tracking";
 
 function trackSessionId() {
@@ -474,33 +474,17 @@ function trackSessionId() {
 	return sid;
 }
 
-/* Capture-phase listener: runs BEFORE SugarCube's bubble-phase click handler
-   updates State.passage, so State.passage still reflects the source passage. */
-document.addEventListener("click", function (ev) {
-	var el = ev.target.closest && ev.target.closest("a.link-internal");
-	if (!el) return;
-
-	var label = (el.textContent || "").trim();
-	var to    = el.getAttribute("data-passage");
-	console.log("[track] internal link click (capture): label=", label, "from=", State.passage, "to=", to);
-
-	if (!/^CONTINUE\b/i.test(label)) {
-		console.log("[track] label does not match CONTINUE filter, skipping");
-		return;
-	}
-
+function trackEvent(fields) {
 	var sid     = trackSessionId();
-	var payload = {
+	var payload = Object.assign({
 		sid:   sid,
 		story: TRACK_STORY,
-		from:  State.passage,
-		to:    to,
-		label: label,
 		ts:    new Date().toISOString()
-	};
+	}, fields);
 	var url = TRACK_ENDPOINT +
 	          "?sid="   + encodeURIComponent(sid) +
-	          "&story=" + encodeURIComponent(TRACK_STORY);
+	          "&story=" + encodeURIComponent(TRACK_STORY) +
+	          "&kind="  + encodeURIComponent(payload.kind || "");
 	console.log("[track] POST", url, payload);
 
 	fetch(url, {
@@ -510,9 +494,37 @@ document.addEventListener("click", function (ev) {
 		keepalive: true,
 		mode:      "cors"
 	}).then(function (res) {
-		console.log("[track] POST returned status", res.status, "for sid", sid, "from", payload.from, "to", payload.to);
+		console.log("[track] POST", payload.kind, "status", res.status, "sid", sid);
 	}).catch(function (err) {
 		console.log("[track] POST failed (best-effort, ignoring):", err);
+	});
+}
+
+/* kind=passage — fires on every passage display (initial load, links, Back button, Engine.play). */
+$(document).on(":passagedisplay", function () {
+	console.log("[track] :passagedisplay event, passage=", State.passage);
+	trackEvent({ kind: "passage", passage: State.passage });
+});
+
+/* kind=click — capture phase so State.passage still points to the source passage
+   before SugarCube navigates. Matches any <a> inside a rendered passage — so
+   [[passage links]] and <<linkreplace>> hints are both captured. */
+document.addEventListener("click", function (ev) {
+	var el = ev.target.closest && ev.target.closest(".passage a");
+	if (!el) {
+		console.log("[track] click not inside a passage <a>, ignoring");
+		return;
+	}
+
+	var label = (el.textContent || "").trim().replace(/\s+/g, " ").slice(0, 200);
+	var to    = el.getAttribute("data-passage");  /* null for <<linkreplace>> */
+	console.log("[track] click (capture): passage=", State.passage, "label=", label, "to=", to);
+
+	trackEvent({
+		kind:    "click",
+		passage: State.passage,
+		label:   label,
+		to:      to
 	});
 }, true);
 </script><tw-passagedata pid="1" name="StoryAuthor" tags="" position="100,100" size="100,100">&lt;center&gt;&lt;span style=&quot;color: lightgray;&quot;&gt;Author: Nadiah Kristensen (nadiah.org)&lt;/span&gt;&lt;/center&gt;</tw-passagedata><tw-passagedata pid="2" name="Start" tags="" position="225,100" size="100,100">&lt;center&gt;&lt;strong&gt;(a)&lt;/strong&gt; &lt;span style=&quot;color: lightgray;&quot;&gt; -- (b) -- (c.i) -- (c.ii) -- (d) -- (e.i) -- (e.ii) -- (end) &lt;/span&gt; &lt;/center&gt;
