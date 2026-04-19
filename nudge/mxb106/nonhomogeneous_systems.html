@@ -452,6 +452,81 @@ Setting.addToggle("darkMode", {
 	onInit   : darkModeHandler,
 	onChange  : darkModeHandler
 });
+
+/* Click-path tracking: fire a POST whenever the learner clicks a CONTINUE link. */
+var TRACK_ENDPOINT = "https://nudge.nadiah.org/posts/progress";
+var TRACK_STORY    = "mxb106_test_tracking";
+
+function trackSessionId() {
+	var sid = sessionStorage.getItem("sid");
+	if (sid) {
+		console.log("[track] reusing sid from sessionStorage:", sid);
+		return sid;
+	}
+	if (crypto && crypto.randomUUID) {
+		sid = crypto.randomUUID();
+		console.log("[track] minted sid via crypto.randomUUID:", sid);
+	} else {
+		sid = Date.now().toString(36) + Math.random().toString(36).slice(2);
+		console.log("[track] minted sid via fallback (no crypto.randomUUID):", sid);
+	}
+	sessionStorage.setItem("sid", sid);
+	return sid;
+}
+
+function trackEvent(fields) {
+	var sid     = trackSessionId();
+	var payload = Object.assign({
+		sid:   sid,
+		story: TRACK_STORY,
+		ts:    new Date().toISOString()
+	}, fields);
+	var url = TRACK_ENDPOINT +
+	          "?sid="   + encodeURIComponent(sid) +
+	          "&story=" + encodeURIComponent(TRACK_STORY) +
+	          "&kind="  + encodeURIComponent(payload.kind || "");
+	console.log("[track] POST", url, payload);
+
+	fetch(url, {
+		method:    "POST",
+		headers:   { "Content-Type": "application/json" },
+		body:      JSON.stringify(payload),
+		keepalive: true,
+		mode:      "cors"
+	}).then(function (res) {
+		console.log("[track] POST", payload.kind, "status", res.status, "sid", sid);
+	}).catch(function (err) {
+		console.log("[track] POST failed (best-effort, ignoring):", err);
+	});
+}
+
+/* kind=passage — fires on every passage display (initial load, links, Back button, Engine.play). */
+$(document).on(":passagedisplay", function () {
+	console.log("[track] :passagedisplay event, passage=", State.passage);
+	trackEvent({ kind: "passage", passage: State.passage });
+});
+
+/* kind=click — capture phase so State.passage still points to the source passage
+   before SugarCube navigates. Matches any <a> inside a rendered passage — so
+   [[passage links]] and <<linkreplace>> hints are both captured. */
+document.addEventListener("click", function (ev) {
+	var el = ev.target.closest && ev.target.closest(".passage a");
+	if (!el) {
+		console.log("[track] click not inside a passage <a>, ignoring");
+		return;
+	}
+
+	var label = (el.textContent || "").trim().replace(/\s+/g, " ").slice(0, 200);
+	var to    = el.getAttribute("data-passage");  /* null for <<linkreplace>> */
+	console.log("[track] click (capture): passage=", State.passage, "label=", label, "to=", to);
+
+	trackEvent({
+		kind:    "click",
+		passage: State.passage,
+		label:   label,
+		to:      to
+	});
+}, true);
 </script><tw-passagedata pid="1" name="StoryAuthor" tags="" position="100,100" size="100,100">&lt;center&gt;&lt;span style=&quot;color: lightgray;&quot;&gt;Author: Nadiah Kristensen (nadiah.org)&lt;/span&gt;&lt;/center&gt;</tw-passagedata><tw-passagedata pid="2" name="Start" tags="" position="225,100" size="100,100">&lt;center&gt;&lt;strong&gt;(a)&lt;/strong&gt; &lt;span style=&quot;color: lightgray;&quot;&gt; -- (b) -- (c.i) -- (c.ii) -- (d) -- (e.i) -- (e.ii) -- (end) &lt;/span&gt; &lt;/center&gt;
 
 &lt;h2&gt;Part a&lt;/h2&gt;
@@ -529,12 +604,12 @@ so that \(A\mathbf{x} = \mathbf{b}\) becomes a triangular system \(U\mathbf{x} =
     &lt;p&gt;
         &lt;strong&gt;(a)&lt;/strong&gt;
         \( U = \begin{bmatrix} 1 &amp; 2 &amp; 3 &amp; 5 \\ 0 &amp; 0 &amp; 2 &amp; 2 \\ 0 &amp; 0 &amp; -2 &amp; -2 \end{bmatrix} \), \(\mathbf{c} = \begin{bmatrix} b_{1} \\ b_{2} - 2b_{1} \\ b_{3} - 3b_{1} \end{bmatrix} \)
-        [[Choose -&gt; parta_incorrect]]
+        [[Choose (a) -&gt; parta_incorrect]]
     &lt;/p&gt;
     &lt;p&gt;
         &lt;strong&gt;(b)&lt;/strong&gt;
         \( U = \begin{bmatrix} 1 &amp; 2 &amp; 3 &amp; 5 \\ 0 &amp; 0 &amp; 2 &amp; 2 \\ 0 &amp; 0 &amp; 0 &amp; 0 \end{bmatrix} \),  \( \mathbf{c} = \begin{bmatrix} b_{1} \\ b_{2} - 2b_{1} \\ b_{3} + b_{2} - 5b_{1} \end{bmatrix} \)
-        [[Choose -&gt; parta_correct]]
+        [[Choose (b) -&gt; parta_correct]]
     &lt;/p&gt;
 &lt;&lt;mathjax&gt;&gt; &lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="3" name="parta_incorrect" tags="" position="350,100" size="100,100">&lt;center&gt;&lt;strong&gt;(a)&lt;/strong&gt; &lt;span style=&quot;color: lightgray;&quot;&gt; -- (b) -- (c.i) -- (c.ii) -- (d) -- (e.i) -- (e.ii) -- (end) &lt;/span&gt; &lt;/center&gt;
 
@@ -606,14 +681,14 @@ so that \(A\mathbf{x} = \mathbf{b}\) becomes a triangular system \(U\mathbf{x} =
     &lt;p&gt;
         &lt;strong&gt;(a)&lt;/strong&gt;
         Row 3, column 4
-        &lt;&lt;linkreplace &quot;Choose&quot; t8n&gt;&gt; 
+        &lt;&lt;linkreplace &quot;Choose (a)&quot; t8n&gt;&gt; 
             &lt;p&gt; Incorrect. Please try again. &lt;/p&gt;
         &lt;&lt;mathjax&gt;&gt; &lt;&lt;/linkreplace&gt;&gt;
     &lt;/p&gt;
     &lt;p&gt;
         &lt;strong&gt;(b)&lt;/strong&gt;
         Row 3, column 3
-        &lt;&lt;linkreplace &quot;Choose&quot; t8n&gt;&gt; 
+        &lt;&lt;linkreplace &quot;Choose (b)&quot; t8n&gt;&gt; 
             &lt;p&gt; Correct! &lt;/p&gt;
             &lt;p&gt;You want to turn the -2 highlighted in red below into a 0.
                 &lt;nowiki&gt; $$
@@ -634,14 +709,14 @@ so that \(A\mathbf{x} = \mathbf{b}\) becomes a triangular system \(U\mathbf{x} =
             &lt;p&gt;
                 &lt;strong&gt;(a)&lt;/strong&gt;
                 \(R_3 - R_2 \to R_3&#39;\)
-                &lt;&lt;linkreplace &quot;Choose&quot; t8n&gt;&gt; 
+                &lt;&lt;linkreplace &quot;Choose (a)&quot; t8n&gt;&gt; 
                     &lt;p&gt; Incorrect; that would turn the -2 into a -4. &lt;/p&gt;
                 &lt;&lt;mathjax&gt;&gt; &lt;&lt;/linkreplace&gt;&gt;
             &lt;/p&gt;
             &lt;p&gt;
                 &lt;strong&gt;(b)&lt;/strong&gt;
                 \(R_3 + R_2 \to R_3&#39;\)
-                &lt;&lt;linkreplace &quot;Choose&quot; t8n&gt;&gt; 
+                &lt;&lt;linkreplace &quot;Choose (b)&quot; t8n&gt;&gt; 
                     &lt;p&gt; Correct! &lt;/p&gt;
                     &lt;p&gt;
                         The resulting augmented matrix is:
@@ -858,22 +933,22 @@ so that \(A\mathbf{x} = \mathbf{b}\) becomes a triangular system \(U\mathbf{x} =
     &lt;p&gt;
         &lt;strong&gt;(a)&lt;/strong&gt;
         \(b_3 = b_2 = b_1 = 0\)
-        [[Choose -&gt; partb_too_strict]]
+        [[Choose (a) -&gt; partb_too_strict]]
     &lt;/p&gt;
     &lt;p&gt;
         &lt;strong&gt;(b)&lt;/strong&gt;
         \(b_3 + b_2 - 5b_1 = 0\)
-        [[Choose -&gt; partb_correct]]
+        [[Choose (b) -&gt; partb_correct]]
     &lt;/p&gt;
     &lt;p&gt;
         &lt;strong&gt;(c)&lt;/strong&gt;
         \(b_2 - 2b_1 = 0\)
-        [[Choose -&gt; partb_wrong_row]]
+        [[Choose (c) -&gt; partb_wrong_row]]
     &lt;/p&gt;
     &lt;p&gt;
         &lt;strong&gt;(d)&lt;/strong&gt;
         No condition is needed; the system always has a solution.
-        [[Choose -&gt; partb_no_condition]]
+        [[Choose (d) -&gt; partb_no_condition]]
     &lt;/p&gt;
 &lt;&lt;mathjax&gt;&gt; &lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="7" name="partb_correct" tags="" position="850,100" size="100,100">&lt;center&gt;(a) -- &lt;strong&gt;(b)&lt;/strong&gt; &lt;span style=&quot;color: lightgray;&quot;&gt; -- (c.i) -- (c.ii) -- (d) -- (e.i) -- (e.ii) -- (end) &lt;/span&gt; &lt;/center&gt;
 
@@ -1096,12 +1171,12 @@ so that \(A\mathbf{x} = \mathbf{b}\) becomes a triangular system \(U\mathbf{x} =
 
 &lt;&lt;linkreplace &quot;&lt;p&gt;I&#39;m ready to answer&lt;/p&gt;&quot; t8n&gt;&gt; 
     &lt;strong&gt;Answer&lt;/strong&gt;: 
-    &lt;p&gt; &lt;strong&gt;(a)&lt;/strong&gt; 2 [[&quot;Choose&quot; -&gt; partci_no_explanation]] &lt;/p&gt;
-    &lt;p&gt; &lt;strong&gt;(b)&lt;/strong&gt; 1 [[&quot;Choose&quot; -&gt; partci_incorrect]] &lt;p&gt;
-    &lt;p&gt; &lt;strong&gt;(c)&lt;/strong&gt; 3 [[&quot;Choose&quot; -&gt; partci_incorrect]] &lt;p&gt;
-    &lt;p&gt; &lt;strong&gt;(d)&lt;/strong&gt; 4 [[&quot;Choose&quot; -&gt; partci_incorrect]] &lt;p&gt;
-    &lt;p&gt; &lt;strong&gt;(e)&lt;/strong&gt; 5 [[&quot;Choose&quot; -&gt; partci_incorrect]] &lt;p&gt;
-    &lt;p&gt;&lt;strong&gt;(f)&lt;/strong&gt; 2 because there are 2 pivots. [[Choose -&gt; partci_correct]] &lt;/p&gt;
+    &lt;p&gt; &lt;strong&gt;(a)&lt;/strong&gt; 2 [[&quot;Choose (a)&quot; -&gt; partci_no_explanation]] &lt;/p&gt;
+    &lt;p&gt; &lt;strong&gt;(b)&lt;/strong&gt; 1 [[&quot;Choose (b)&quot; -&gt; partci_incorrect]] &lt;p&gt;
+    &lt;p&gt; &lt;strong&gt;(c)&lt;/strong&gt; 3 [[&quot;Choose (c)&quot; -&gt; partci_incorrect]] &lt;p&gt;
+    &lt;p&gt; &lt;strong&gt;(d)&lt;/strong&gt; 4 [[&quot;Choose (d)&quot; -&gt; partci_incorrect]] &lt;p&gt;
+    &lt;p&gt; &lt;strong&gt;(e)&lt;/strong&gt; 5 [[&quot;Choose (e)&quot; -&gt; partci_incorrect]] &lt;p&gt;
+    &lt;p&gt;&lt;strong&gt;(f)&lt;/strong&gt; 2 because there are 2 pivots. [[Choose (f) -&gt; partci_correct]] &lt;/p&gt;
 &lt;&lt;mathjax&gt;&gt; &lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="12" name="partci_correct" tags="" position="225,225" size="100,100">&lt;center&gt;(a) -- (b) -- &lt;strong&gt;(c.i)&lt;/strong&gt; &lt;span style=&quot;color: lightgray;&quot;&gt; -- (c.ii) -- (d) -- (e.i) -- (e.ii) -- (end) &lt;/span&gt; &lt;/center&gt;
 
 &lt;h2&gt;Correct!&lt;/h2&gt;
@@ -1286,12 +1361,12 @@ where the pivots have been bolded.
     &lt;p&gt;
         &lt;strong&gt;(a)&lt;/strong&gt;
         \(\text{basis}(C(A)) = \left\{\begin{bmatrix}1\\0\\0\end{bmatrix}, \begin{bmatrix}3\\2\\0\end{bmatrix}\right\}\)
-        [[Choose -&gt; partcii_incorrect]]
+        [[Choose (a) -&gt; partcii_incorrect]]
     &lt;/p&gt;
     &lt;p&gt;
         &lt;strong&gt;(b)&lt;/strong&gt;
         \(\text{basis}(C(A)) = \left\{\begin{bmatrix}1\\2\\3\end{bmatrix}, \begin{bmatrix}3\\8\\7\end{bmatrix}\right\}\)
-        [[Choose -&gt; partcii_correct]]
+        [[Choose (b) -&gt; partcii_correct]]
     &lt;/p&gt;
 &lt;&lt;mathjax&gt;&gt; &lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="16" name="partcii_correct" tags="" position="725,225" size="100,100">&lt;center&gt;(a) -- (b) -- (c.i) -- &lt;strong&gt;(c.ii)&lt;/strong&gt; &lt;span style=&quot;color: lightgray;&quot;&gt; -- (d) -- (e.i) -- (e.ii) -- (end) &lt;/span&gt; &lt;/center&gt;
 
@@ -1309,7 +1384,7 @@ where the pivots have been bolded.
 &lt;p&gt; And how many dimensions does the columnspace have? In what dimension is it embedded?&lt;/p&gt;
 &lt;p&gt;
     &lt;strong&gt;(b.1)&lt;/strong&gt; : The columnspace is 2-dimensional and is embedded in 3 dimensions 
-    &lt;&lt;linkreplace &quot;Choose&quot; t8n&gt;&gt;
+    &lt;&lt;linkreplace &quot;Choose (b.1)&quot; t8n&gt;&gt;
         &lt;p&gt;
             Correct! The columnspace is a plane embedded in \( \mathbb{R}^3 \).
             &lt;nowiki&gt; $$
@@ -1336,7 +1411,7 @@ where the pivots have been bolded.
 &lt;/p&gt;
 &lt;p&gt;
     &lt;strong&gt;(b.2)&lt;/strong&gt; : The columnspace is 3-dimensional and is embedded in 2 dimensions 
-    &lt;&lt;linkreplace &quot;Choose&quot; t8n&gt;&gt;
+    &lt;&lt;linkreplace &quot;Choose (b.2)&quot; t8n&gt;&gt;
         &lt;p&gt;Incorrect.&lt;/p&gt; 
         &lt;p&gt;
             To determine the dimension of the columnspace,
@@ -1505,17 +1580,17 @@ b_{3} + b_{2} - 5b_{1}
     &lt;p&gt;
         &lt;strong&gt;(a)&lt;/strong&gt;
         \( \text{basis}(N(A)) = \left\{\begin{bmatrix}1\\-1/2\\0\\0\end{bmatrix}, \begin{bmatrix}0\\1\\1\\-1\end{bmatrix}\right\} \)
-        [[Choose -&gt; partd_mixup]]
+        [[Choose (a) -&gt; partd_mixup]]
     &lt;/p&gt;
     &lt;p&gt;
         &lt;strong&gt;(b)&lt;/strong&gt;
         \(\text{basis}(N(A)) = \left\{\begin{bmatrix}-2\\0\\0\end{bmatrix}, \begin{bmatrix}-2\\-1\\1\end{bmatrix}\right\}\)
-        [[Choose -&gt; partd_x4_only]]
+        [[Choose (b) -&gt; partd_x4_only]]
     &lt;/p&gt;
     &lt;p&gt;
         &lt;strong&gt;(c)&lt;/strong&gt;
         \( \text{basis}(N(A)) = \left\{\begin{bmatrix}-2\\1\\0\\0\end{bmatrix}, \begin{bmatrix}-2\\0\\-1\\1\end{bmatrix}\right\} \)
-        [[Choose -&gt; partd_correct]]
+        [[Choose (c) -&gt; partd_correct]]
     &lt;/p&gt;
 &lt;&lt;mathjax&gt;&gt; &lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="19" name="partd_correct" tags="" position="1100,225" size="100,100">&lt;center&gt;(a) -- (b) -- (c.i) -- (c.ii) -- &lt;strong&gt;(d)&lt;/strong&gt; &lt;span style=&quot;color: lightgray;&quot;&gt; -- (e.i) -- (e.ii) -- (end) &lt;/span&gt; &lt;/center&gt;
 
@@ -1758,7 +1833,7 @@ what is the particular solution \( \mathbf{x}_P \)?
     &lt;p&gt;
         &lt;strong&gt;(a)&lt;/strong&gt;
         \( \begin{bmatrix} 1 \\ 0 \\ 0 \\ 1 \end{bmatrix} \)
-        &lt;&lt;linkreplace &quot;Choose&quot; t8n&gt;&gt;
+        &lt;&lt;linkreplace &quot;Choose (a)&quot; t8n&gt;&gt;
             &lt;p&gt; Correct! &lt;/p&gt;
             &lt;p&gt; &lt;strong&gt;[[CONTINUE to next part -&gt; parteii]]&lt;/strong&gt; &lt;/p&gt;
         &lt;&lt;mathjax&gt;&gt; &lt;&lt;/linkreplace&gt;&gt;
@@ -1766,7 +1841,7 @@ what is the particular solution \( \mathbf{x}_P \)?
     &lt;p&gt;
         &lt;strong&gt;(b)&lt;/strong&gt;
         \( \begin{bmatrix} a_{1,1} + a_{1,4} \\ a_{2,1} + a_{2,4} \\ a_{3,1} + a_{3,4} \\ \end{bmatrix} \)
-        &lt;&lt;linkreplace &quot;Choose&quot; t8n&gt;&gt;
+        &lt;&lt;linkreplace &quot;Choose (b)&quot; t8n&gt;&gt;
             &lt;p&gt;
                 That is \( \mathbf{b} \), the right-hand side of the equation.
                 &lt;nowiki&gt; $$
@@ -1883,7 +1958,7 @@ $$
     \(
     \begin{bmatrix}-9\\0\\3\\0\end{bmatrix}
     \)
-    [[Choose -&gt; parteii_particular_only]]
+    [[Choose (a) -&gt; parteii_particular_only]]
     &lt;/p&gt;
 
     &lt;p&gt;
@@ -1892,7 +1967,7 @@ $$
     s\begin{bmatrix}-2\\1\\0\\0\end{bmatrix}
     + t\begin{bmatrix}-2\\0\\-1\\1\end{bmatrix}
     \)
-    [[Choose -&gt; parteii_homogeneous_only]]
+    [[Choose (b) -&gt; parteii_homogeneous_only]]
     &lt;/p&gt;
 
     &lt;p&gt;
@@ -1902,7 +1977,7 @@ $$
     + s\begin{bmatrix}-2\\1\\0\\0\end{bmatrix}
     + t\begin{bmatrix}-2\\0\\-1\\1\end{bmatrix}
     \)
-    [[Choose -&gt; parteii_correct]]
+    [[Choose (c) -&gt; parteii_correct]]
     &lt;/p&gt;
 
     &lt;p&gt;
@@ -1912,7 +1987,7 @@ $$
     + s\begin{bmatrix}-2\\1\\0\\0\end{bmatrix}
     + t\begin{bmatrix}-2\\0\\-1\\1\end{bmatrix}
     \)
-    [[Choose -&gt; parteii_sign_error]]
+    [[Choose (d) -&gt; parteii_sign_error]]
     &lt;/p&gt;
 &lt;&lt;mathjax&gt;&gt; &lt;&lt;/linkreplace&gt;&gt;</tw-passagedata><tw-passagedata pid="25" name="parteii_correct" tags="" position="600,350" size="100,100">&lt;center&gt;(a) -- (b) -- (c.i) -- (c.ii) -- (d) -- (e.i) -- &lt;strong&gt;(e.ii)&lt;/strong&gt; &lt;span style=&quot;color: lightgray;&quot;&gt; -- (end) &lt;/span&gt; &lt;/center&gt;
 
