@@ -1347,10 +1347,31 @@ where the pivots have been bolded.
     &lt;&lt;mathjax&gt;&gt; &lt;&lt;/linkreplace&gt;&gt;
     &lt;&lt;linkreplace &quot;&lt;p&gt;How do I determine the dimensionality of the columnspace?&lt;/p&gt;&quot; t8n&gt;&gt; 
         &lt;p&gt;The dimension of the columnspace is the number of basis vectors.&lt;/p&gt;
+        &lt;p&gt;For example, the columnspace below is 2-dimensional (a plane)
+        &lt;nowiki&gt; $$
+            C(A)
+            = \text{span} \left\{
+                \begin{bmatrix} \cdot \\ \cdot \\ \cdot \end{bmatrix}_{\color{red} 1}, 
+                \begin{bmatrix} \cdot \\ \cdot \\ \cdot \end{bmatrix}_{\color{red} 2}
+            \right\}
+        $$
+        &lt;/nowiki&gt; 
+        &lt;/p&gt;
     &lt;&lt;mathjax&gt;&gt; &lt;&lt;/linkreplace&gt;&gt;
     &lt;&lt;linkreplace &quot;&lt;p&gt;How do I determine the dimensionality of the embedding space?&lt;/p&gt;&quot; t8n&gt;&gt; 
         &lt;p&gt;The dimension of the space the columnspace is embedded in 
         is the number of of components of its basis vectors.&lt;/p&gt;
+        &lt;p&gt;For example, the columnspace below is embedded in 3-dimensional space (in \(\mathbb{R}^3\)) 
+        &lt;nowiki&gt; $$
+            C(A)
+            = \text{span} \left\{
+              \begin{matrix} _{\color{red} 1} \\ _{\color{red} 2} \\ _{\color{red} 3} \end{matrix} 
+                \begin{bmatrix} 1 \\ 2 \\ 3 \end{bmatrix},
+                \begin{bmatrix} 4 \\ 5 \\ 6 \end{bmatrix}
+            \right\}
+        $$
+        &lt;/nowiki&gt; 
+        &lt;/p&gt;
     &lt;&lt;mathjax&gt;&gt; &lt;&lt;/linkreplace&gt;&gt;
 &lt;&lt;mathjax&gt;&gt; &lt;&lt;/linkreplace&gt;&gt;
 
@@ -1516,7 +1537,9 @@ b_{3} + b_{2} - 5b_{1}
         &lt;p&gt;&lt;strong&gt;What does &#39;special solutions&#39; mean?&lt;/strong&gt;&lt;p&gt;
         &lt;p&gt;
             &quot;Special solutions&quot; is just another way of saying 
-            &quot;the basis vectors of the nullspace of \(A\) &quot;.
+            &quot;the basis vectors of the nullspace of \(A\)&quot;.
+        &lt;/p&gt;
+        &lt;p&gt;
             They are called special solutions because they can be read off directly using the special-solutions method, 
             without needing to write out the full general solution first.
         &lt;/p&gt;
@@ -1542,34 +1565,72 @@ b_{3} + b_{2} - 5b_{1}
         &lt;/p&gt;
         &lt;p&gt; To find the basis vectors, solve \(A \mathbf{x} = \mathbf{0}\). &lt;/p&gt;
     &lt;&lt;mathjax&gt;&gt; &lt;&lt;/linkreplace&gt;&gt; 
-    &lt;&lt;linkreplace &quot;&lt;p&gt;Show me an overview of how to solve this&lt;/p&gt;&quot; t8n&gt;&gt; 
-        &lt;p&gt;&lt;strong&gt;Solution overview&lt;/strong&gt;&lt;/p&gt;
+    &lt;&lt;linkreplace &quot;&lt;p&gt;Method 1: Show me an overview of how to solve this using the first method we were taught&lt;/p&gt;&quot; t8n&gt;&gt; 
+        &lt;p&gt;&lt;strong&gt;Method 1: First method you were taught&lt;/strong&gt;&lt;/p&gt;
         &lt;p&gt;
-            Solving \(A\mathbf{x} = \mathbf{0}\) gives the equations
-            &lt;nowiki&gt; $$
-            \begin{align*}
-                x_1 + 2x_2 + 3x_3 + 5x_4 &amp;= 0\\
-                2x_3 + 2x_4 &amp;= 0
-            \end{align*}
-            $$ &lt;/nowiki&gt;
-            First, identify which are the free variables
-            (there are two of them corresponding to the non-pivot columns).
+          Solving \(A\mathbf{x} = \mathbf{0}\) gives the equations
+          &lt;nowiki&gt; $$
+          \begin{align*}
+              x_1 + 2x_2 + 3x_3 + 5x_4 &amp;= 0\\
+              2x_3 + 2x_4 &amp;= 0
+          \end{align*}
+          $$ &lt;/nowiki&gt;
+          First, identify which are the free variables
+          (there are two of them corresponding to the non-pivot columns).
         &lt;/p&gt;
         &lt;p&gt;
-            Next, call the free variables \(s\) and \(t\), 
-            write the pivot variables as expressions in terms of \(s\) and \(t\),
-            and write the solution in the form
-            &lt;nowiki&gt; $$
-            \begin{equation}
-                \mathbf{x} 
-                = \begin{bmatrix}x_1\\x_2\\x_3\\x_4\end{bmatrix} 
-                = \begin{bmatrix} \cdot \\ \cdot \\ \cdot \\ \cdot \end{bmatrix} 
-                = s\begin{bmatrix} \cdot \\ \cdot \\ \cdot \\ \cdot \end{bmatrix} + t\begin{bmatrix} \cdot \\ \cdot \\ \cdot \\ \cdot \end{bmatrix}
-            \end{equation}
-            $$ &lt;/nowiki&gt;
-            Those two vectors are the basis vectors of the nullspace of \(A\),
-            also called the special solutions.
+          Next, call the free variables \(s\) and \(t\), 
+          write the pivot variables as expressions in terms of \(s\) and \(t\),
+          and write the solution in the form
+          &lt;nowiki&gt; $$
+          \begin{equation}
+              \mathbf{x} 
+              = \begin{bmatrix}x_1\\x_2\\x_3\\x_4\end{bmatrix} 
+              = \begin{bmatrix} \cdot \\ \cdot \\ \cdot \\ \cdot \end{bmatrix} 
+              = s\begin{bmatrix} \cdot \\ \cdot \\ \cdot \\ \cdot \end{bmatrix} + t\begin{bmatrix} \cdot \\ \cdot \\ \cdot \\ \cdot \end{bmatrix}
+          \end{equation}
+          $$ &lt;/nowiki&gt;
+          Those two vectors are the basis vectors of the nullspace of \(A\),
+          also called the special solutions.
         &lt;/p&gt;
+    &lt;&lt;mathjax&gt;&gt; &lt;&lt;/linkreplace&gt;&gt; 
+    &lt;&lt;linkreplace &quot;&lt;p&gt;Method 2: Show me the first step of the special-solutions method&lt;/p&gt;&quot; t8n&gt;&gt; 
+        &lt;p&gt;&lt;strong&gt;Method 2: Special solutions method&lt;/strong&gt;&lt;/p&gt;
+        &lt;p&gt;
+            Again, start with the equations from the augmented matrix
+            &lt;nowiki&gt; $$
+            \begin{align}
+              x_1 + 2x_2 + 3x_3 + 5x_4 &amp;= 0 \tag{1} \\
+              2x_3 + 2x_4 &amp;= 0 \tag{2}
+            \end{align}
+            $$ &lt;/nowiki&gt;
+            Identify the free variables,
+            which correspond to the non-pivot columns.
+            They are \(x_2\) and \(x_4\).
+        &lt;/p&gt;
+        &lt;p&gt;
+        To perform the special solutions method,
+        for each free variable in turn,
+        we set the focal free variable to 1 and all other free variables to 0 and solve.
+        &lt;/p&gt;
+        &lt;p&gt;
+        &lt;strong&gt;(1)&lt;/strong&gt; Set \(x_2=1\) and \(x_4=0\).
+        &lt;/p&gt;
+        &lt;p&gt;
+        By back-substitution,
+        Eq. 2 gives \(x_3 = 0\), 
+        and Eq. 1 gives \(x_1 = -2\).
+        Therefore, the first special solution is
+        &lt;nowiki&gt;
+        $$
+        \begin{bmatrix}-2\\1\\0\\0\end{bmatrix}
+        $$
+        &lt;/nowiki&gt;
+        &lt;/p&gt;
+        &lt;p&gt;
+        &lt;strong&gt;(2)&lt;/strong&gt; Set \(x_4=1\) and \(x_2=0\).
+        &lt;/p&gt;
+        &lt;p&gt;Now you do the rest...&lt;/p&gt;
     &lt;&lt;mathjax&gt;&gt; &lt;&lt;/linkreplace&gt;&gt; 
 &lt;&lt;mathjax&gt;&gt;&lt;&lt;/linkreplace&gt;&gt; 
 
@@ -1782,7 +1843,7 @@ b_{3} + b_{2} - 5b_{1}
 &lt;&lt;mathjax&gt;&gt; &lt;&lt;/linkreplace&gt;&gt;
 &lt;p&gt; &lt;strong&gt;[[CONTINUE to next part -&gt; partei]]&lt;/strong&gt; &lt;/p&gt;</tw-passagedata><tw-passagedata pid="23" name="partei" tags="" position="350,350" size="100,100">&lt;center&gt;(a) -- (b) -- (c.i) -- (c.ii) -- (d) -- &lt;strong&gt;(e.i)&lt;/strong&gt; &lt;span style=&quot;color: lightgray;&quot;&gt; -- (e.ii) -- (end) &lt;/span&gt; &lt;/center&gt;
 
-&lt;h2&gt;Part e.i&lt;/h2&gt;
+&lt;h2&gt;Part e.i: bonus question&lt;/h2&gt;
 
 &lt;p&gt;
 Consider a system \(A \mathbf{x} = \mathbf{b}\) 
@@ -1796,33 +1857,59 @@ what is the particular solution \( \mathbf{x}_P \)?
 
 &lt;hr&gt;
 
-&lt;&lt;linkreplace &quot;&lt;p&gt;Reveal hints&lt;/p&gt;&quot; t8n&gt;&gt; 
-    &lt;p&gt;&lt;strong&gt;Hints&lt;/strong&gt;&lt;/p&gt;
-    &lt;p&gt;You don&#39;t need to do a Gaussian elimination to solve this problem.&lt;/p&gt;
-    &lt;&lt;linkreplace &quot;&lt;p&gt;Reveal more hint&lt;/p&gt;&quot; t8n&gt;&gt; 
-        &lt;p&gt;
-            Remember that \( A \mathbf{x} \) can be written as a linear combination of its columns 
+&lt;p&gt;&lt;strong&gt;Hints&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;You don&#39;t need to do a Gaussian elimination to solve this problem.&lt;/p&gt;
+
+&lt;&lt;linkreplace &quot;&lt;p&gt;Reveal more hints&lt;/p&gt;&quot; t8n&gt;&gt; 
+    &lt;p&gt;
+        Remember that \( A \mathbf{x} \) can be written as a linear combination of its columns 
+        &lt;nowiki&gt; $$
+        \begin{equation}
+            A \mathbf{x} = 
+            \begin{bmatrix}
+            a_{1,1} &amp; a_{1,2} &amp; a_{1,3} &amp; a_{1,4} \\
+            a_{2,1} &amp; a_{2,2} &amp; a_{2,3} &amp; a_{2,4} \\
+            a_{3,1} &amp; a_{3,2} &amp; a_{3,3} &amp; a_{3,4}
+            \end{bmatrix}
+            \begin{bmatrix} x_{1} \\ x_{2} \\ x_{3} \\ x_{4} \end{bmatrix}
+            =
+            x_1
+            \underbrace{\begin{bmatrix} a_{1,1} \\ a_{2,1} \\ a_{3,1} \end{bmatrix}}_{\text{col. 1}}
+            + x_2
+            \underbrace{\begin{bmatrix} a_{1,2} \\ a_{2,2} \\ a_{3,2} \end{bmatrix}}_{\text{col. 2}}
+            + x_3
+            \underbrace{\begin{bmatrix} a_{1,3} \\ a_{2,3} \\ a_{3,3} \end{bmatrix}}_{\text{col. 3}}
+            + x_4
+            \underbrace{\begin{bmatrix} a_{1,4} \\ a_{2,4} \\ a_{3,4} \end{bmatrix}}_{\text{col. 4}}
+        \end{equation}
+        $$ &lt;/nowiki&gt;
+    &lt;/p&gt;
+    &lt;&lt;linkreplace &quot;&lt;p&gt;Reveal another hint&lt;/p&gt;&quot; t8n&gt;&gt; 
+        &lt;p&gt; 
+            The question tells you that \( \mathbf{b} \) is the sum of the first and fourth columns of \( A \).
+            So
             &lt;nowiki&gt; $$
             \begin{equation}
-                A \mathbf{x} = 
-                \begin{bmatrix}
-                a_{1,1} &amp; a_{1,2} &amp; a_{1,3} &amp; a_{1,4} \\
-                a_{2,1} &amp; a_{2,2} &amp; a_{2,3} &amp; a_{2,4} \\
-                a_{3,1} &amp; a_{3,2} &amp; a_{3,3} &amp; a_{3,4}
-                \end{bmatrix}
-                \begin{bmatrix} x_{1} \\ x_{2} \\ x_{3} \\ x_{4} \end{bmatrix}
+                \overbrace{
+                    x_1
+                    \underbrace{\begin{bmatrix} a_{1,1} \\ a_{2,1} \\ a_{3,1} \end{bmatrix}}_{\text{col. 1}}
+                    + x_2
+                    \underbrace{\begin{bmatrix} a_{1,2} \\ a_{2,2} \\ a_{3,2} \end{bmatrix}}_{\text{col. 2}}
+                    + x_3
+                    \underbrace{\begin{bmatrix} a_{1,3} \\ a_{2,3} \\ a_{3,3} \end{bmatrix}}_{\text{col. 3}}
+                    + x_4
+                    \underbrace{\begin{bmatrix} a_{1,4} \\ a_{2,4} \\ a_{3,4} \end{bmatrix}}_{\text{col. 4}}
+                }^{A \mathbf{x}} 
                 =
-                x_1
-                \begin{bmatrix} a_{1,1} \\ a_{2,1} \\ a_{3,1} \end{bmatrix}
-                + x_2
-                \begin{bmatrix} a_{1,2} \\ a_{2,2} \\ a_{3,2} \end{bmatrix}
-                + x_3
-                \begin{bmatrix} a_{1,3} \\ a_{2,3} \\ a_{3,3} \end{bmatrix}
-                + x_4
-                \begin{bmatrix} a_{1,4} \\ a_{2,4} \\ a_{3,4} \end{bmatrix}
+                \overbrace{
+                    \underbrace{\begin{bmatrix} a_{1,1} \\ a_{2,1} \\ a_{3,1} \end{bmatrix}}_{\text{col. 1}}
+                    +
+                    \underbrace{\begin{bmatrix} a_{1,4} \\ a_{2,4} \\ a_{3,4} \end{bmatrix}}_{\text{col. 4}}
+                }^{\mathbf{b}} 
             \end{equation}
             $$ &lt;/nowiki&gt;
         &lt;/p&gt;
+        &lt;p&gt;What are the values of \(x_1, x_2, \ldots \)?&lt;/p&gt;
     &lt;&lt;mathjax&gt;&gt; &lt;&lt;/linkreplace&gt;&gt; 
 &lt;&lt;mathjax&gt;&gt; &lt;&lt;/linkreplace&gt;&gt; 
 
@@ -1947,6 +2034,10 @@ $$
         &lt;&lt;mathjax&gt;&gt; &lt;&lt;/linkreplace&gt;&gt; 
     &lt;&lt;mathjax&gt;&gt; &lt;&lt;/linkreplace&gt;&gt; 
 &lt;&lt;mathjax&gt;&gt; &lt;&lt;/linkreplace&gt;&gt; 
+
+&lt;hr&gt;
+
+[[Show me step-by-step -&gt; parteii_step_by_step]]
 
 &lt;hr&gt;
 
@@ -2081,7 +2172,256 @@ $$
     \end{equation}
     $$ &lt;/nowiki&gt;
 &lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;[[Redo question -&gt; parteii]]&lt;/strong&gt;&lt;/p&gt;</tw-passagedata><tw-passagedata pid="29" name="parteii_solution" tags="" position="1100,350" size="100,100">&lt;center&gt;(a) -- (b) -- (c.i) -- (c.ii) -- (d) -- (e.i) -- &lt;strong&gt;(e.ii)&lt;/strong&gt; &lt;span style=&quot;color: lightgray;&quot;&gt; -- (end) &lt;/span&gt; &lt;/center&gt;
+&lt;p&gt;&lt;strong&gt;[[Redo question -&gt; parteii]]&lt;/strong&gt;&lt;/p&gt;</tw-passagedata><tw-passagedata pid="29" name="parteii_step_by_step" tags="" position="1100,350" size="100,100">&lt;center&gt;(a) -- (b) -- (c.i) -- (c.ii) -- (d) -- (e.i) -- &lt;strong&gt;(e.ii)&lt;/strong&gt; &lt;span style=&quot;color: lightgray;&quot;&gt; -- (end) &lt;/span&gt; &lt;/center&gt;
+
+&lt;h2&gt;Part e.ii: step-by-step guided solution&lt;/h2&gt;
+
+The system \(A \mathbf{x} = \mathbf{b}\) 
+has the augmented matrix in row-echelon form 
+\([U \mid \mathbf{c}] \)
+
+&lt;nowiki&gt;
+$$\left[ \left. \begin{matrix}
+1 &amp; 2 &amp; 3 &amp; 5 \\
+0 &amp; 0 &amp; 2 &amp; 2 \\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{matrix} \right| \left. \begin{matrix}
+b_{1} \\
+b_{2} - 2b_{1} \\
+b_{3} + b_{2} - 5b_{1}
+\end{matrix} \right. \right]$$
+&lt;/nowiki&gt;
+
+and the nullspace
+&lt;nowiki&gt;
+$$
+\begin{equation}
+\text{basis}(N(A)) = \left\{\begin{bmatrix}-2\\1\\0\\0\end{bmatrix}, \begin{bmatrix}-2\\0\\-1\\1\end{bmatrix}\right\}
+\end{equation}
+$$
+&lt;/nowiki&gt;
+&lt;strong&gt;Question:&lt;/strong&gt; Find a particular solution to \(A\mathbf{x} = \mathbf{b} = (0, 6, -6)\) and then the complete solution.
+
+&lt;hr&gt;
+
+&lt;p&gt;&lt;strong&gt;Guided solution&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt; 
+    The &quot;complete&quot; (or &quot;general&quot;) solution is
+    &lt;nowiki&gt;
+    $$
+    \begin{equation*}
+    \mathbf{x}_G = \mathbf{x}_P + \mathbf{x}_H
+    \end{equation*}
+    $$
+    &lt;/nowiki&gt;
+    where \(\mathbf{x}_P\) is a particular solution and \(\mathbf{x}_H\) is the homogeneous solution.
+    We&#39;ll find each in turn below.
+&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Step 1: Find a particular solution \(\mathbf{x}_P\)&lt;/strong&gt;&lt;/p&gt;
+    &lt;p&gt;
+        A particular solution is &lt;em&gt;any&lt;/em&gt; solution to \(A \mathbf{x} = \mathbf{b}\).
+        In this question, we have a non-trivial nullspace (\(N(A) \neq \mathbf{0}\)),
+        so we have an infinite number of particular solutions.
+        Therefore, we will find the easiest particular solution,
+        which is when all the free variables equal 0.
+    &lt;/p&gt;
+    &lt;p&gt;
+        We have already reduced our system to row-echelon form 
+        \([U \mid \mathbf{c}] \), which will give us our system of equations to solve.
+        When we substitute \(\mathbf{b} = (0, 6, -6)^T\) into our expression for
+        \(\mathbf{c}\) above, we obtain 
+    &lt;/p&gt;
+    &lt;p&gt;
+        &lt;strong&gt;(a)&lt;/strong&gt;
+        \(
+        \mathbf{c} = \begin{bmatrix} 0 \\ 6 \\ 0 \end{bmatrix} 
+        \)
+        &lt;&lt;linkreplace &quot;Choose (a)&quot; t8n&gt;&gt;&lt;&lt;replace &quot;#find_c_wrong&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;run $(&quot;#found_c&quot;).show()&gt;&gt;Correct!&lt;&lt;/linkreplace&gt;&gt;
+    &lt;/p&gt;
+    &lt;span id=&quot;find_c_wrong&quot;&gt;
+        &lt;p&gt;
+            &lt;strong&gt;(b)&lt;/strong&gt;
+            \(
+            \mathbf{c} = \begin{bmatrix} 0 \\ 6 \\ 12 \end{bmatrix} 
+            \)
+            &lt;&lt;linkreplace &quot;Choose (b)&quot; t8n&gt;&gt;
+                &lt;p&gt;Incorrect.&lt;/p&gt;
+                &lt;p&gt;
+                    When \(\mathbf{b} = (0, 6, -6)^T\):
+                    &lt;nowiki&gt; $$
+                    \begin{equation*}
+                        \mathbf{c} = 
+                        \begin{bmatrix}
+                        b_1 \\
+                        b_2 - 2b_1 \\
+                        b_3 + b_2 - 5b_1
+                        \end{bmatrix}
+                        =
+                        \begin{bmatrix}
+                        0 \\
+                        6 - 2(0) \\
+                        -6 + 6 - 5(0)
+                        \end{bmatrix}
+                        =
+                        \ldots ?
+                    \end{equation*}
+                    $$ &lt;/nowiki&gt;
+                &lt;/p&gt;
+            &lt;&lt;mathjax&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;
+        &lt;/p&gt;
+    &lt;/span&gt;
+    &lt;span id=&quot;found_c&quot; style=&quot;display:none&quot;&gt;
+        &lt;p&gt;
+            From \(U\mathbf{x} = \mathbf{c}\)
+            &lt;nowiki&gt; $$
+            \begin{equation*}
+                [\mathbf{U} \mid \mathbf{c}] = 
+                \left[ \left. \begin{matrix}
+                1 &amp; 2 &amp; 3 &amp; 5 \\
+                0 &amp; 0 &amp; 2 &amp; 2 \\
+                0 &amp; 0 &amp; 0 &amp; 0
+                \end{matrix} \right| \left. \begin{matrix}
+                0 \\
+                6 \\
+                0
+                \end{matrix} \right. \right]
+            \end{equation*}
+            $$ &lt;/nowiki&gt;
+            we obtain the simultaneous equations:
+            &lt;nowiki&gt; $$
+            \begin{align*}
+                x_1 + 2x_2 + 3x_3 + 5x_4 &amp;= 0 \quad (1) \\
+                2x_3 + 2x_4 &amp;= 6 \quad (2) \\
+                0 &amp;= 0
+            \end{align*}
+            $$ &lt;/nowiki&gt;
+        &lt;/p&gt;
+        &lt;p&gt;
+            To solve the equations,
+            we will set all the free variables to zero.
+            The free variables are:
+        &lt;/p&gt;
+        &lt;span id=&quot;find_freevar_wrong&quot;&gt;
+            &lt;p&gt;
+                &lt;strong&gt;(a)&lt;/strong&gt; \(x_1\) and \( x_3 \)
+                &lt;&lt;linkreplace &quot;Choose (a)&quot; t8n&gt;&gt;
+                    &lt;p&gt;Incorrect; those are the pivot variables.&lt;/p&gt;
+                    &lt;p&gt;
+                        The free variables are the variables corresponding to the non-pivot columns
+                        &lt;nowiki&gt; $$
+                        \begin{align}
+                            &amp;  \phantom{\bigg[} \left. \begin{matrix}
+                                \text{p} &amp; \text{f} &amp; \text{p} &amp; \text{f} 
+                                \end{matrix} 
+                            \right. \phantom{\bigg]} \\
+                            &amp; 
+                            \left[ \left. \begin{matrix}
+                            1 &amp; 2 &amp; 3 &amp; 5 \\
+                            0 &amp; 0 &amp; 2 &amp; 2 \\
+                            0 &amp; 0 &amp; 0 &amp; 0
+                            \end{matrix} \right| \left. \begin{matrix}
+                            0 \\
+                            6 \\
+                            0
+                            \end{matrix} \right. \right]
+                        \end{align}
+                        $$ &lt;/nowiki&gt;
+                    &lt;/p&gt;
+                &lt;&lt;mathjax&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;
+            &lt;/p&gt;
+        &lt;/span&gt;
+        &lt;p&gt;
+            &lt;strong&gt;(b)&lt;/strong&gt; \(x_2\) and \( x_4 \)
+            &lt;&lt;linkreplace &quot;Choose (b)&quot; t8n&gt;&gt;&lt;&lt;replace &quot;#find_freevar_wrong&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;run $(&quot;#found_freevar&quot;).show()&gt;&gt;Correct!&lt;&lt;/linkreplace&gt;&gt;
+        &lt;/p&gt;
+    &lt;/span&gt;
+    &lt;span id=&quot;found_freevar&quot; style=&quot;display:none&quot;&gt;
+        &lt;p&gt; So we set the free variables \(x_2 = 0 \) and \( x_4 = 0\).&lt;/p&gt;
+        &lt;p&gt;
+            Substituting \( x_2 = x_4 = 0 \) into Eq. 2 above, we obtain
+            &lt;span id=&quot;find_x3_wrong&quot;&gt;
+                &lt;p&gt;
+                    &lt;strong&gt;(a)&lt;/strong&gt; \( x_3 = 2 \)
+                    &lt;&lt;linkreplace &quot;Choose (a)&quot; t8n&gt;&gt;
+                        &lt;p&gt;Incorrect. Remember we have set the free variable \( x_4 = 0 \). &lt;/p&gt;
+                    &lt;&lt;mathjax&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;
+                &lt;/p&gt;
+            &lt;/span&gt;
+            &lt;p&gt;
+                &lt;strong&gt;(b)&lt;/strong&gt; \(x_3 = 3\) 
+                &lt;&lt;linkreplace &quot;Choose (b)&quot; t8n&gt;&gt;&lt;&lt;replace &quot;#find_x3_wrong&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;run $(&quot;#found_x3&quot;).show()&gt;&gt;Correct!&lt;&lt;/linkreplace&gt;&gt;
+            &lt;/p&gt;
+        &lt;/p&gt;
+    &lt;/span&gt;
+    &lt;span id=&quot;found_x3&quot; style=&quot;display:none&quot;&gt;
+        &lt;p&gt;
+            And substituting \( x_2 = x_4 = 0 \) and \(x_3 = 3 \)
+            into Eq. 1 above, we obtain
+            &lt;nowiki&gt;
+            $$
+            \begin{equation*}
+            x_1 + 2(0) + 3(3) + 5(0) = 0 \Rightarrow x_1 = -9
+            \end{equation*}
+            $$
+            &lt;/nowiki&gt;
+            Therefore, the particular solution is
+            &lt;p&gt;
+                &lt;strong&gt;(a)&lt;/strong&gt;
+                \(
+                    \mathbf{x}_P 
+                    = \begin{bmatrix} x_1 \\ x_2 \\ x_3 \\ x_4 \end{bmatrix} 
+                    = \begin{bmatrix}-9\\0\\3\\0\end{bmatrix}
+                \)
+                &lt;&lt;linkreplace &quot;Choose (a)&quot; t8n&gt;&gt;&lt;&lt;replace &quot;#find_xp_wrong&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;run $(&quot;#found_xp&quot;).show()&gt;&gt;Correct!&lt;&lt;/linkreplace&gt;&gt;
+            &lt;/p&gt;
+            &lt;span id=&quot;find_xp_wrong&quot;&gt;
+                &lt;p&gt;
+                    &lt;strong&gt;(b)&lt;/strong&gt;
+                    \(
+                        \mathbf{x}_P 
+                        = \begin{bmatrix} x_1 \\ x_2 \\ x_3 \\ x_4 \end{bmatrix} 
+                        = \begin{bmatrix}-9\\3\\0\\0\end{bmatrix}
+                    \)
+                    &lt;&lt;linkreplace &quot;Choose (b)&quot; t8n&gt;&gt;
+                        &lt;p&gt;Incorrect. You&#39;ve substituted \(x_2\) and \(x_3\) incorrectly.&lt;/p&gt;
+                    &lt;&lt;mathjax&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;
+                &lt;/p&gt;
+            &lt;/span&gt;
+        &lt;/p&gt;
+    &lt;/span&gt;
+    &lt;span id=&quot;found_xp&quot; style=&quot;display:none&quot;&gt;
+        &lt;p&gt;&lt;strong&gt;Step 2: Find the homogeneous solution \(\mathbf{x}_H\)&lt;/strong&gt;&lt;/p&gt;
+        &lt;p&gt;
+            We were given the nullspace basis vectors in the question:
+            &lt;nowiki&gt;
+            $$
+            \begin{equation}
+            \text{basis}(N(A)) = \left\{\begin{bmatrix}-2\\1\\0\\0\end{bmatrix}, \begin{bmatrix}-2\\0\\-1\\1\end{bmatrix}\right\}
+            \end{equation}
+            $$
+            &lt;/nowiki&gt;
+            Therefore the homogeneous solution is
+            &lt;nowiki&gt;
+            $$
+            \mathbf{x}_H = s\begin{bmatrix}-2\\1\\0\\0\end{bmatrix} + t\begin{bmatrix}-2\\0\\-1\\1\end{bmatrix} 
+            $$
+            &lt;/nowiki&gt;
+            The general solution combines the particular and homogeneous solutions: 
+            &lt;nowiki&gt;
+            $$
+            \begin{equation}
+            \mathbf{x}_{G} 
+            = \mathbf{x}_P + \mathbf{x}_H
+            = \begin{bmatrix}-9\\0\\3\\0\end{bmatrix} 
+            + s\begin{bmatrix}-2\\1\\0\\0\end{bmatrix} 
+            + t\begin{bmatrix}-2\\0\\-1\\1\end{bmatrix}
+            \end{equation}
+            $$
+            &lt;/nowiki&gt;
+        &lt;/p&gt;
+        &lt;p&gt; [[Show me the full worked solution on a single page-&gt; parteii_solution]] &lt;/p&gt;
+        &lt;p&gt; &lt;strong&gt;[[CONTINUE to next part -&gt; end]]&lt;/strong&gt; &lt;/p&gt;
+    &lt;/span&gt;</tw-passagedata><tw-passagedata pid="30" name="parteii_solution" tags="" position="1225,350" size="100,100">&lt;center&gt;(a) -- (b) -- (c.i) -- (c.ii) -- (d) -- (e.i) -- &lt;strong&gt;(e.ii)&lt;/strong&gt; &lt;span style=&quot;color: lightgray;&quot;&gt; -- (end) &lt;/span&gt; &lt;/center&gt;
 
 &lt;h2&gt;Part e.ii: Full solution&lt;/h2&gt;
 
@@ -2230,7 +2570,7 @@ $$
     $$
     &lt;/nowiki&gt;
 &lt;/p&gt;
-&lt;p&gt; &lt;strong&gt;[[CONTINUE to next part -&gt; end]]&lt;/strong&gt; &lt;/p&gt;</tw-passagedata><tw-passagedata pid="30" name="end" tags="" position="1225,350" size="100,100">/* &lt;center&gt;(a) -- (b) -- (c.i) -- (c.ii) -- (d) -- (e.i) -- (e.ii) -- &lt;strong&gt;(end)&lt;/strong&gt; &lt;/center&gt; */
+&lt;p&gt; &lt;strong&gt;[[CONTINUE to next part -&gt; end]]&lt;/strong&gt; &lt;/p&gt;</tw-passagedata><tw-passagedata pid="31" name="end" tags="" position="100,475" size="100,100">/* &lt;center&gt;(a) -- (b) -- (c.i) -- (c.ii) -- (d) -- (e.i) -- (e.ii) -- &lt;strong&gt;(end)&lt;/strong&gt; &lt;/center&gt; */
 
 &lt;h1&gt;Congratulations!&lt;/h1&gt;
 
@@ -2243,7 +2583,7 @@ You have completed the questions.
 &lt;hr&gt;
 &lt;p&gt;&lt;a href=&quot;mailto:nadiah@nadiah.org&quot;&gt;Send feedback to: nadiah@nadiah.org&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
-&lt;center&gt;&lt;span style=&quot;color: gray;&quot;&gt;Artist credit: Natii Herrera (NatiiHerre)&lt;/span&gt;&lt;/center&gt;</tw-passagedata><tw-passagedata pid="31" name="Widgets" tags="widget" position="100,475" size="100,100">&lt;&lt;widget &quot;mathjax&quot;&gt;&gt;
+&lt;center&gt;&lt;span style=&quot;color: gray;&quot;&gt;Artist credit: Natii Herrera (NatiiHerre)&lt;/span&gt;&lt;/center&gt;</tw-passagedata><tw-passagedata pid="32" name="Widgets" tags="widget" position="225,475" size="100,100">&lt;&lt;widget &quot;mathjax&quot;&gt;&gt;
   &lt;&lt;run requestAnimationFrame(function() { MathJax.typesetPromise([document.querySelector(&#39;.passage&#39;)]); })&gt;&gt;
 &lt;&lt;/widget&gt;&gt;</tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
