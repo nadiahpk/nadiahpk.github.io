@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Choose your own maths adventure</title>
+<link rel="stylesheet" href="vendor/reveal.css">
+<link rel="stylesheet" href="vendor/theme-white.css">
+<style>
+  /* Make iframes/images fill their wrapper without scrollbars on the slide itself. */
+  /* Override the white theme's all-caps headings; scale h2 down to ~75%. */
+  .reveal h1, .reveal h2 { text-transform: none; }
+  .reveal h2 { font-size: 1.2em; }
+
+  .reveal iframe { border: 1px solid #ddd; background: #fff; }
+  .reveal .stack { position: relative; width: 100%; }
+  .reveal .stack img {
+    position: absolute; inset: 0;
+    width: 100%; height: 100%;
+    object-fit: contain;
+  }
+  .reveal section img { background: none; border: none; box-shadow: none; }
+
+  /* When reveal is in print-pdf mode, auto-swap slide 1a to the screenshot
+     and hide the toggle button. Iframes from cross-origin sites generally
+     don't print, so the screenshot is the right thing to capture in PDF. */
+  html.print-pdf #worksheet-live,
+  html.print-pdf #worksheet-toggle { display: none !important; }
+  html.print-pdf #worksheet-fallback { display: block !important; }
+</style>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+
+<!-- ============ Title ============ -->
+<section>
+  <h1 style="font-size: 1.3em;">Choose your own maths adventure</h1>
+  <p><small>Nadiah Kristensen, Nicholas Buttle</small></p>
+  <img src="figures/the_room.jpg"
+       style="max-width: 100%; max-height: 400px; box-shadow: 0 4px 16px rgba(0,0,0,0.2);">
+  <p><small><em>The Room</em> (Fireproof Games)</small></p>
+</section>
+
+<!-- ============ Slide 1a: What did we do? — worksheet ============ -->
+<!-- slide-in normally (from title), but leave with no animation so 1a+1b read as one slide.
+     The wrapper holds two stacked views:
+       - the live worksheet iframe (visible by default)
+       - the static screenshot (hidden by default, absolutely positioned overlay)
+     A small button in the bottom-right toggles between them — used as a fallback
+     if the live embed fails to load on presentation day. -->
+<section data-transition="slide-in none-out">
+  <h2>1. What did we do?</h2>
+  <div class="r-stretch" style="position: relative; width: 100%;">
+    <div id="worksheet-live" style="width: 100%; height: 100%; overflow-y: auto;">
+      <iframe src="https://nadiah.org/nudge/mxb106/nonhomogeneous_systems.html"
+              style="width: 100%; height: 1200px; display: block;"></iframe>
+    </div>
+    <img id="worksheet-fallback" src="figures/screenshot.png"
+         style="display: none; position: absolute; top: 0; left: 0;
+                width: 100%; height: 100%; object-fit: contain;">
+    <button id="worksheet-toggle" onclick="toggleWorksheet(this)"
+            style="position: absolute; bottom: 8px; right: 8px;
+                   padding: 4px 10px; font-size: 0.4em; cursor: pointer;
+                   background: rgba(0,0,0,0.55); color: #fff;
+                   border: none; border-radius: 4px; z-index: 10;">
+      snapshot
+    </button>
+  </div>
+</section>
+
+<!-- ============ Slide 1b: What did we do? — trace ============ -->
+<!-- appear in place (from 1a), then slide normally on the way out. -->
+<section data-transition="none-in slide-out">
+  <h2>1. What did we do?</h2>
+  <!-- TODO: trace page has generous top padding; may want to tune iframe height or scale. -->
+  <!-- <iframe src="figures/trace-d416eb5f-f198-4c59-a7cd-ae7be14e0ec5.html"
+    style="width: 100%; height: 80vh; display: block;"></iframe> -->
+  <iframe class="r-stretch" src="figures/trace_trimmed.html"
+    style="width: 100%; display: block;"></iframe>
+</section>
+
+<!-- ============ Slide 2a: Who did we reach? — timeline ============ -->
+<section data-transition="slide-in none-out">
+  <h2>2. Who did we reach?</h2>
+  <div class="r-stretch" style="display: flex; align-items: center; justify-content: center;">
+    <img src="figures/timeline.svg" style="max-width: 100%; max-height: 100%;">
+  </div>
+</section>
+
+<!-- ============ Slide 2b: Who did we reach? — hour-of-day ============ -->
+<section data-transition="none-in slide-out">
+  <h2>2. Who did we reach?</h2>
+  <div class="r-stretch" style="display: flex; align-items: center; justify-content: center;">
+    <img src="figures/hour_of_day.svg" style="max-width: 100%; max-height: 100%;">
+  </div>
+</section>
+
+<!-- ============ Slide 3a: Did it work? -- feedback ============ -->
+<!--
+  Aesthetic principles applied here:
+    - <blockquote> instead of <ul><li> — quotes aren't a list, they're set-apart text.
+      The semantic tag also gives us natural styling hooks (no bullets, indentation, etc).
+    - Left rule + italic body signals "this is a quotation" without needing a "Email:" label.
+    - Attribution line ("— unsolicited student email") turns a quote from decoration into evidence.
+    - Visual hierarchy: the long email is the primary, weighty piece of evidence;
+      the two punchy one-liners are smaller, supporting it (and rendered side-by-side).
+    - Short line length (~28em max-width) keeps the quote readable; long lines on slides
+      force the audience's eyes to track too far.
+    - Curly quotes (&ldquo; &rdquo;) and em-dash (&mdash;) — small typographic details
+      that lift the slide above "default browser styling".
+-->
+<section data-transition="slide-in none-out">
+  <h2>3. Did it work?</h2>
+  <div class="r-stretch" style="display: flex; flex-direction: column;
+              align-items: center; justify-content: center; gap: 2em;">
+
+    <blockquote style="margin: 0; max-width: 22em; text-align: left;
+                       font-style: italic; font-size: 0.75em; line-height: 1.5;
+                       border-left: 4px solid #ddd; padding: 0.3em 1em;">
+      &ldquo;I was just emailing you to let you know that I have found the
+      workshop hints to be super informative, intuitive and helpful.
+      It would be awesome if the teaching staff could produce them on a
+      weekly basis.&rdquo;
+      <footer style="font-style: normal; font-size: 0.85em; color: #888;
+                     text-align: right; margin-top: 0.5em;">
+        &mdash; student email to Unit Coordinator
+      </footer>
+    </blockquote>
+
+    <div style="display: flex; gap: 2.5em; font-size: 0.85em;
+                font-style: italic; color: #555;">
+      <span>&ldquo;It read my mind&rdquo;</span>
+      <span>&ldquo;Better than Khan Academy&rdquo;</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ Slide 3b: Did it work? -- marks ============ -->
+<!--
+  Click-cycle through 4 figures at the same position.
+  3 clicks total: p1 -> p2 -> p3 -> p4.
+
+  Fragment mechanics:
+    p1: fade-out at index 0   -> visible at start, hidden after click 1
+    p2: current-visible at 0  -> visible only between clicks 1 and 2
+    p3: current-visible at 1  -> visible only between clicks 2 and 3
+    p4: fragment at index 2   -> appears at click 3 and stays
+-->
+<section data-transition="none-in slide-out">
+  <h2>3. Did it work?</h2>
+  <div class="stack r-stretch">
+    <img src="figures/headline_figure_p1.svg"
+         class="fragment fade-out" data-fragment-index="0">
+    <img src="figures/headline_figure_p2.svg"
+         class="fragment current-visible" data-fragment-index="0">
+    <img src="figures/headline_figure_p3.svg"
+         class="fragment current-visible" data-fragment-index="1">
+    <img src="figures/headline_figure_p4.svg"
+         class="fragment" data-fragment-index="2">
+  </div>
+</section>
+
+</div>
+</div>
+
+<script src="vendor/reveal.js"></script>
+<script>
+  Reveal.initialize({
+    hash: true,
+    slideNumber: true,
+    transition: 'slide',
+  });
+
+  // Swap between the live worksheet iframe and the static screenshot
+  // on slide 1a. Called by the small "snapshot"/"live" button.
+  function toggleWorksheet(btn) {
+    const live = document.getElementById('worksheet-live');
+    const fallback = document.getElementById('worksheet-fallback');
+    if (live.style.display === 'none') {
+      live.style.display = 'block';
+      fallback.style.display = 'none';
+      btn.textContent = 'snapshot';
+    } else {
+      live.style.display = 'none';
+      fallback.style.display = 'block';
+      btn.textContent = 'live';
+    }
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!doctype html>
+<!--
+  Trimmed trace visualisation — keeps only the "Journey sequence — logical flow"
+  chart from the original standalone trace.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Trace — Journey</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="../vendor/tailwind.js"></script>
+
+<style>
+  /* Give every ancestor of the chart an explicit height so the chart
+     can resolve "100%" all the way up. No vh anywhere — the chart's
+     size is purely a function of the iframe size, not the viewport. */
+  html, body { height: 100%; margin: 0; }
+  svg.chart { width: 100%; height: 100%; display: block; }
+  svg.chart text { font-family: inherit; font-size: 12px; fill: #1e293b; }
+  svg.chart .axis path, svg.chart .axis line { stroke: #cbd5e1; }
+  svg.chart .axis text { fill: #475569; }
+
+  .tip {
+    position: fixed; pointer-events: none; background: #fff; color: #0f172a;
+    border: 1px solid #cbd5e1; padding: 6px 10px; border-radius: 6px;
+    font-size: 12px; font-family: ui-sans-serif, system-ui, sans-serif;
+    opacity: 0; transition: opacity .1s; z-index: 100;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.15);
+  }
+</style>
+</head>
+<!-- Flex chain starts at <main>, NOT <body>. Reason: <main> has mx-auto for
+     centering; if <body> were also flex, the auto margins on the flex-item
+     <main> would absorb free space *instead of* stretching to body width,
+     collapsing main to the SVG's intrinsic 300px and squishing the chart.
+     With body as a plain block, mx-auto behaves the normal CSS way.
+     w-full + h-full on <main> make it fill body in both dimensions.
+     min-h-0 lets flex children shrink below content height. -->
+<body class="bg-white">
+
+<main class="max-w-7xl mx-auto w-full h-full px-4 sm:px-6 py-2 flex flex-col">
+
+  <section class="bg-white p-3 flex-1 flex flex-col min-h-0">
+    <h2 class="text-xl font-semibold text-slate-900">One student's journey</h2>
+    <div class="mt-2 flex-1 min-h-0">
+      <svg class="chart" id="chart-journey"></svg>
+    </div>
+  </section>
+
+</main>
+
+<div class="tip" id="tip"></div>
+
+<script id="trace-data" type="application/json">{"sid": "d416eb5f-f198-4c59-a7cd-ae7be14e0ec5", "story": "mxb106_orthogonality", "events": [{"kind": "passage", "passage": "Start", "label": null, "to_passage": null, "ts": "2026-04-30T18:55:47"}, {"kind": "click", "passage": "Start", "label": "I'm ready to answer", "to_passage": null, "ts": "2026-04-30T18:55:58"}, {"kind": "click", "passage": "Start", "label": "Choose (b)", "to_passage": "part1_correct", "ts": "2026-04-30T18:55:59"}, {"kind": "passage", "passage": "part1_correct", "label": null, "to_passage": null, "ts": "2026-04-30T18:55:59"}, {"kind": "click", "passage": "part1_correct", "label": "CONTINUE to next part", "to_passage": "part2", "ts": "2026-04-30T18:56:01"}, {"kind": "passage", "passage": "part2", "label": null, "to_passage": null, "ts": "2026-04-30T18:56:01"}, {"kind": "click", "passage": "part2", "label": "Choose (c)", "to_passage": null, "ts": "2026-04-30T18:56:05"}, {"kind": "click", "passage": "part2", "label": "CONTINUE to next part", "to_passage": "part3", "ts": "2026-04-30T18:56:23"}, {"kind": "passage", "passage": "part3", "label": null, "to_passage": null, "ts": "2026-04-30T18:56:24"}, {"kind": "click", "passage": "part3", "label": "Choose (b)", "to_passage": "part3_correct", "ts": "2026-04-30T18:56:37"}, {"kind": "passage", "passage": "part3_correct", "label": null, "to_passage": null, "ts": "2026-04-30T18:56:37"}, {"kind": "click", "passage": "part3_correct", "label": "CONTINUE to next part", "to_passage": "part4", "ts": "2026-04-30T18:56:41"}, {"kind": "passage", "passage": "part4", "label": null, "to_passage": null, "ts": "2026-04-30T18:56:41"}, {"kind": "click", "passage": "part4", "label": "Reveal hint", "to_passage": null, "ts": "2026-04-30T18:56:46"}, {"kind": "click", "passage": "part4", "label": "Show me step-by-step", "to_passage": "part4_step_by_step", "ts": "2026-04-30T18:57:11"}, {"kind": "passage", "passage": "part4_step_by_step", "label": null, "to_passage": null, "ts": "2026-04-30T18:57:11"}, {"kind": "click", "passage": "part4_step_by_step", "label": "Return to redo question by myself", "to_passage": "part4", "ts": "2026-04-30T18:57:13"}, {"kind": "passage", "passage": "part4", "label": null, "to_passage": null, "ts": "2026-04-30T18:57:13"}, {"kind": "click", "passage": "part4", "label": "Reveal hint", "to_passage": null, "ts": "2026-04-30T18:57:16"}, {"kind": "click", "passage": "part4", "label": "Show me step-by-step", "to_passage": "part4_step_by_step", "ts": "2026-04-30T18:57:54"}, {"kind": "passage", "passage": "part4_step_by_step", "label": null, "to_passage": null, "ts": "2026-04-30T18:57:54"}, {"kind": "click", "passage": "part4_step_by_step", "label": "Return to redo question by myself", "to_passage": "part4", "ts": "2026-04-30T18:57:55"}, {"kind": "passage", "passage": "part4", "label": null, "to_passage": null, "ts": "2026-04-30T18:57:55"}, {"kind": "click", "passage": "part4", "label": "I'm ready to answer", "to_passage": null, "ts": "2026-04-30T18:57:57"}, {"kind": "click", "passage": "part4", "label": "Choose (b)", "to_passage": "part4_incorrect", "ts": "2026-04-30T18:58:01"}, {"kind": "passage", "passage": "part4_incorrect", "label": null, "to_passage": null, "ts": "2026-04-30T18:58:01"}, {"kind": "click", "passage": "part4_incorrect", "label": "Redo question", "to_passage": "part4", "ts": "2026-04-30T18:58:03"}, {"kind": "passage", "passage": "part4", "label": null, "to_passage": null, "ts": "2026-04-30T18:58:03"}, {"kind": "click", "passage": "part4", "label": "I'm ready to answer", "to_passage": null, "ts": "2026-04-30T18:58:07"}, {"kind": "click", "passage": "part4", "label": "Show me step-by-step", "to_passage": "part4_step_by_step", "ts": "2026-04-30T18:58:11"}, {"kind": "passage", "passage": "part4_step_by_step", "label": null, "to_passage": null, "ts": "2026-04-30T18:58:12"}, {"kind": "click", "passage": "part4_step_by_step", "label": "Choose (b)", "to_passage": null, "ts": "2026-04-30T19:00:13"}, {"kind": "click", "passage": "part4_step_by_step", "label": "Continue", "to_passage": null, "ts": "2026-04-30T19:00:16"}, {"kind": "click", "passage": "part4_step_by_step", "label": "Choose (a)", "to_passage": null, "ts": "2026-04-30T19:01:02"}, {"kind": "click", "passage": "part4_step_by_step", "label": "Continue", "to_passage": null, "ts": "2026-04-30T19:01:10"}, {"kind": "click", "passage": "part4_step_by_step", "label": "Choose (a)", "to_passage": null, "ts": "2026-04-30T19:02:26"}, {"kind": "click", "passage": "part4_step_by_step", "label": "Continue", "to_passage": null, "ts": "2026-04-30T19:02:45"}, {"kind": "click", "passage": "part4_step_by_step", "label": "Choose (a)", "to_passage": null, "ts": "2026-04-30T19:03:30"}, {"kind": "click", "passage": "part4_step_by_step", "label": "Continue", "to_passage": null, "ts": "2026-04-30T19:03:32"}, {"kind": "click", "passage": "part4_step_by_step", "label": "CONTINUE to next part", "to_passage": "part5", "ts": "2026-04-30T19:03:58"}, {"kind": "passage", "passage": "part5", "label": null, "to_passage": null, "ts": "2026-04-30T19:03:58"}, {"kind": "click", "passage": "part5", "label": "Reveal.", "to_passage": null, "ts": "2026-04-30T19:04:07"}, {"kind": "click", "passage": "part5", "label": "CONTINUE to next part", "to_passage": "part6", "ts": "2026-04-30T19:16:58"}, {"kind": "passage", "passage": "part6", "label": null, "to_passage": null, "ts": "2026-04-30T19:16:58"}, {"kind": "click", "passage": "part6", "label": "Choose", "to_passage": null, "ts": "2026-04-30T19:17:25"}, {"kind": "click", "passage": "part6", "label": "CONTINUE to next part", "to_passage": "end", "ts": "2026-04-30T19:17:27"}, {"kind": "passage", "passage": "end", "label": null, "to_passage": null, "ts": "2026-04-30T19:17:28"}]}</script>
+<script src="../vendor/d3.min.js"></script>
+
+<script>
+const DATA = JSON.parse(document.getElementById("trace-data").textContent);
+
+const events = DATA.events
+  .map(d => ({ ...d, ts: new Date(d.ts) }))
+  .sort((a, b) => a.ts - b.ts);
+
+const tip = d3.select("#tip");
+const showTip = (html, e) => {
+  tip.html(html)
+     .style("left", (e.clientX + 12) + "px")
+     .style("top",  (e.clientY + 12) + "px")
+     .style("opacity", 1);
+};
+const hideTip = () => tip.style("opacity", 0);
+
+function escapeHtml(s) {
+  if (s == null) return "";
+  return String(s).replace(/[&<>"']/g, c => ({
+    "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+  }[c]));
+}
+
+function svgSize(sel) {
+  const el = sel.node();
+  return { width: el.clientWidth || 900, height: el.clientHeight || 520 };
+}
+
+const VISIT_GAP_MS = 10 * 60 * 1000;
+
+function splitIntoVisits(evs) {
+  if (!evs.length) return [];
+  const visits = [[]];
+  evs.forEach((d, i) => {
+    if (i > 0 && d.ts - evs[i - 1].ts > VISIT_GAP_MS) visits.push([]);
+    visits[visits.length - 1].push(d);
+  });
+  return visits;
+}
+
+function renderJourney() {
+  const svg = d3.select("#chart-journey");
+  svg.selectAll("*").remove();
+  if (!events.length) return;
+  const { width, height } = svgSize(svg);
+
+  const passageOrder = [...new Set(
+    events.flatMap(d => [d.passage, d.to_passage]).filter(Boolean)
+  )];
+
+  const margin = { top: 30, right: 40, bottom: 50, left: 160 };
+  const innerW = width - margin.left - margin.right;
+  const innerH = height - margin.top - margin.bottom;
+  const g = svg.append("g").attr("transform", `translate(${margin.left},${margin.top})`);
+
+  const colY = d3.scaleBand().domain(passageOrder).range([0, innerH]).padding(0.4);
+  const x = d3.scaleLinear().domain([0, Math.max(events.length - 1, 1)]).range([0, innerW]);
+
+  passageOrder.forEach(p => {
+    g.append("line")
+      .attr("x1", 0).attr("x2", innerW)
+      .attr("y1", colY(p) + colY.bandwidth() / 2).attr("y2", colY(p) + colY.bandwidth() / 2)
+      .attr("stroke", "#eef2f7");
+  });
+
+  g.append("g").attr("class", "axis").call(d3.axisLeft(colY).tickSize(0));
+  const bottomTicks = Math.min(events.length, 20);
+  g.append("g").attr("class", "axis").attr("transform", `translate(0,${innerH})`)
+    .call(d3.axisBottom(x).ticks(bottomTicks).tickFormat(d3.format("d")));
+  svg.append("text")
+    .attr("x", margin.left + innerW / 2).attr("y", height - 8)
+    .style("text-anchor", "middle").style("font-size", "11px").style("fill", "#64748b")
+    .text("step (event index)");
+
+  const points = events.map((d, i) => ({
+    x: x(i), y: colY(d.passage || d.to_passage) + colY.bandwidth() / 2, d, i
+  }));
+
+  const line = d3.line().x(p => p.x).y(p => p.y).curve(d3.curveStepAfter);
+
+  const visits = splitIntoVisits(events);
+  let cursor = 0;
+  visits.forEach((visit, vi) => {
+    const segPoints = points.slice(cursor, cursor + visit.length);
+    g.append("path").datum(segPoints)
+      .attr("fill", "none")
+      .attr("stroke", "#f4a261").attr("stroke-width", 2.5).attr("stroke-opacity", 0.85)
+      .attr("d", line);
+
+    if (vi > 0) {
+      const prevLast = points[cursor - 1];
+      const curFirst = points[cursor];
+      g.append("path")
+        .attr("d", `M${prevLast.x},${prevLast.y} L${curFirst.x},${prevLast.y} L${curFirst.x},${curFirst.y}`)
+        .attr("fill", "none")
+        .attr("stroke", "#c0c0c0").attr("stroke-width", 1.5)
+        .attr("stroke-dasharray", "3,4");
+      const gapMs = visit[0].ts - events[cursor - 1].ts;
+      g.append("text")
+        .attr("x", (prevLast.x + curFirst.x) / 2).attr("y", prevLast.y - 8)
+        .style("text-anchor", "middle").style("font-size", "10px")
+        .style("fill", "#b07a3a")
+        .text(`↯ ${Math.round(gapMs / 60000)} min away`);
+    }
+    cursor += visit.length;
+  });
+
+  const sym = d3.symbol().size(160);
+  g.selectAll(".pt").data(points).join("path")
+    .attr("transform", p => `translate(${p.x},${p.y})`)
+    .attr("d", p => sym.type(p.d.kind === "passage" ? d3.symbolCircle : d3.symbolTriangle)())
+    .attr("fill", p => p.d.kind === "passage" ? "#2a9d8f" : "#e63946")
+    .attr("stroke", "#fff").attr("stroke-width", 1.5)
+    .on("mousemove", (e, p) => {
+      const tgt = p.d.to_passage ? ` → ${p.d.to_passage}` : "";
+      const lbl = p.d.label ? `<br/>"${escapeHtml(p.d.label)}"` : "";
+      showTip(
+        `step ${p.i}: <b>${p.d.kind}</b> @ ${escapeHtml(p.d.passage || "?")}${escapeHtml(tgt)}${lbl}<br/>` +
+        d3.timeFormat("%H:%M:%S")(p.d.ts),
+        e
+      );
+    })
+    .on("mouseleave", hideTip);
+}
+
+// ResizeObserver fires once after the browser does its first layout pass
+// (by which time Tailwind has applied its classes) and again on any later
+// size change — iframe resize, fullscreen toggle, window resize, etc.
+// This replaces the previous immediate-render + window.resize listener,
+// which would draw the chart before Tailwind's classes took effect.
+let resizeTimer = null;
+const reRender = () => {
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(renderJourney, 50);
+};
+new ResizeObserver(reRender).observe(document.getElementById("chart-journey"));
+</script>
+</body>
+</html>
