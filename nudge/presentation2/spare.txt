@@ -1,0 +1,50 @@
+
+
+<!-- ============ What did we do? — worksheet ============ -->
+<!-- slide-in normally (from title), but leave with no animation so 1a+1b read as one slide.
+     The wrapper holds two stacked views:
+       - the live worksheet iframe (visible by default)
+       - the static screenshot (hidden by default, absolutely positioned overlay)
+     A small button in the bottom-right toggles between them — used as a fallback
+     if the live embed fails to load on presentation day. -->
+<section data-transition="none-in none-out">
+  <h2>What did we do?</h2>
+  <div class="r-stretch" style="position: relative; width: 100%;">
+    <!-- Scale the embedded page down to 70% so its text/content is smaller and fits more.
+         Can't touch the cross-origin page's CSS, but we can scale the iframe element:
+           - width/height 142.857% (= 1/0.7) makes it bigger first,
+           - transform: scale(0.7) shrinks it back so it fills the box at 70% content size,
+           - transform-origin pins the shrink to the top-left corner.
+         The worksheet scrolls inside the iframe if it's taller than the box. -->
+    <div id="worksheet-live" style="width: 100%; height: 100%; overflow: hidden;
+                display: flex; justify-content: center;">
+      <iframe src="https://nadiah.org/nudge/mxb106/abbreviated.html"
+              style="width: 142.857%; height: 1200px; flex: none; transform: scale(0.7);
+                     transform-origin: top center; display: block; border: 0;"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ============ What did we do? — worksheet ============ -->
+<!-- slide-in normally (from title), but leave with no animation so 1a+1b read as one slide.
+     The wrapper holds two stacked views:
+       - the live worksheet iframe (visible by default)
+       - the static screenshot (hidden by default, absolutely positioned overlay)
+     A small button in the bottom-right toggles between them — used as a fallback
+     if the live embed fails to load on presentation day. -->
+<section data-transition="none-in none-out">
+  <h2>What did we do?</h2>
+  <div class="r-stretch" style="position: relative; width: 100%;">
+    <!-- Scale the embedded page down to 70% so its text/content is smaller and fits more.
+         Can't touch the cross-origin page's CSS, but we can scale the iframe element:
+           - width/height 142.857% (= 1/0.7) makes it bigger first,
+           - transform: scale(0.7) shrinks it back so it fills the box at 70% content size,
+           - transform-origin pins the shrink to the top-left corner.
+         The worksheet scrolls inside the iframe if it's taller than the box. -->
+    <div id="worksheet-live" style="width: 100%; height: 100%; overflow: hidden;">
+      <iframe src="https://nadiah.org/nudge/mxb106/abbreviated.html"
+              style="width: 142.857%; height: 142.857%; transform: scale(0.7);
+                     transform-origin: top left; display: block; border: 0;"></iframe>
+    </div>
+  </div>
+</section>
