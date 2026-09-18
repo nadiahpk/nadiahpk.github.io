@@ -10,7 +10,7 @@ categories:
   - cooperation
 ---
 
-In a [a recent paper](https://nadiah.org/wp-content/uploads/2025/03/Kristensen25-Many_strategy_group_games_with_relatives_and_coordinated_cooperation.pdf)
+In [a recent paper](https://nadiah.org/wp-content/uploads/2025/03/Kristensen25-Many_strategy_group_games_with_relatives_and_coordinated_cooperation.pdf)
 (Kristensen, Chisholm, & Ohtsuki 2025),
 we developed the mathematical tools needed to describe the evolution of discrete strategies 
 in a many-player game with a nonlinear benefits function and relatedness between the players.
@@ -155,7 +155,7 @@ $$
     = \underbrace{c_{(2, 0)}}_{3} g_{1}^2 
      + \underbrace{c_{(1, 1)}}_{4} g_{1} g_{2} 
      + \underbrace{c_{(1, 0)}}_{-3} g_{1} 
-     + \underbrace{c_{(0, 2)}}_{5} g_{2}^2,
+     + \underbrace{c_{(0, 2)}}_{5} g_{2}^2
      + \underbrace{c_{(0, 1)}}_{3} g_{2} 
      + \underbrace{c_{(0, 0)}}_{9} \\
 $$
@@ -215,9 +215,9 @@ $$
 " %}
 
 We now consider the situation where,
-instead of the focal playing all $$n-1$$ nonfocals individuals in a single $$n$$-player encounter,
+instead of the focal playing all $$n-1$$ nonfocal individuals in a single $$n$$-player encounter,
 the focal plays a $$\nu$$-player game with every $$\nu-1$$ subset of nonfocals
-in $$\binom{n-1}{\nu-1}$$ in separate encounters.
+in $$\binom{n-1}{\nu-1}$$ separate encounters.
 
 In the full $$n$$-player game,
 the nonfocal strategy composition is $$\boldsymbol{g}$$ with 
@@ -370,7 +370,7 @@ for all focal strategies $$x$$ and nonfocal compositions $$\boldsymbol{g}$$.
 We wish to show that,
 if $$\boldsymbol{\pi}_n = A \boldsymbol{c}$$,
 then $$\boldsymbol{\pi}_n = B \boldsymbol{\pi}_{\nu}$$ has a solution.
-This is also columnspace containment problem:
+This is also a columnspace containment problem:
 we wish to show that
 $$\boldsymbol{\pi}_n \in \text{col}(A) \implies \boldsymbol{\pi}_n \in \text{col}(B)$$,
 or $$\text{col}(A) \subseteq \text{col}(B)$$.
@@ -386,7 +386,7 @@ $$
 
 We wish to relate columns of $$A$$ with elements of the form $$\prod g_j^{k_j}$$ 
 to columns of $$B$$ with elements of the form $$\prod \binom{g_j}{\gamma_j}$$.
-The monomials in $$A$$ can be expressed a sum of falling factorials
+The monomials in $$A$$ can be expressed as a sum of falling factorials
 
 $$
   g_j^{k_j} = \sum_{r=0}^{k_j} S(k_j, r)\, r!\, \binom{g_j}{r}
@@ -430,7 +430,7 @@ so there is a `gap' of $$\nu - 1 - s$$ that we need to bridge.
 We can resolve this by treating the $$\boldsymbol{r}$$ as fixed,
 and considering all possible $$\boldsymbol{\ell}$$ additional players we could choose 
 that complete the choice to obtain a valid $$\boldsymbol{\gamma}$$.
-Using the generalisation of Vandermonde's identity allows us distribute the 
+Using the generalisation of Vandermonde's identity allows us to distribute the 
 remaining $$\nu - 1 - s$$ choices across the $$m$$ components of the remaining $$\boldsymbol{g} - \boldsymbol{r}$$
 (see Example 4 for a concrete illustration).
 
@@ -639,7 +639,7 @@ $$
 
 which matches our first calculation.
 Importantly, the $$B_{\boldsymbol{g},\boldsymbol{\gamma}}$$ terms match the entries of $$B$$ from Example 3
-(row 2 columns 1 and 2) illustrating how this producedure obtains the matrix factorisation $$A = BC$$.
+(row 2 columns 1 and 2) illustrating how this procedure obtains the matrix factorisation $$A = BC$$.
 " %}
 
 We can now obtain an explicit matrix $$C$$.
@@ -670,9 +670,9 @@ which is a matrix product.
 
 We can tidy the expression for $$C_{\gamma, k}$$ using the following:
 - Recall $$r_m \equiv 0$$, 
-  so $$\binom{\gamma_m}{r_m} \binom{\gamma_m}{0} = 1$$,
+  so $$\binom{\gamma_m}{r_m} = \binom{\gamma_m}{0} = 1$$,
   and the $$\prod_{j=1}^m \binom{\gamma_j}{r_j}$$ term can be truncated and
-  brought into Stirling product.
+  brought into the Stirling product.
 - By defining $$h_j \equiv \text{min}(k_j, \gamma_j)$$
   and $$\boldsymbol{h} = (h_1, \ldots, h_{m-1})$$,
       the two conditions $$\boldsymbol{r} \leq \boldsymbol{k}$$ 
@@ -747,7 +747,7 @@ in reverse lexicographical order.
 So the rows of $$C$$ from top to bottom are $$\boldsymbol{\gamma}$$ equals:
 
 $$
-      (2,0,0), (1,1,0), (1,0,0), (0,2,0), (0,1,1), (1,0,2)
+      (2,0,0), (1,1,0), (1,0,1), (0,2,0), (0,1,1), (0,0,2)
 $$
 
 And the columns of $$C$$ from left to right are $$\boldsymbol{k}$$ equals
