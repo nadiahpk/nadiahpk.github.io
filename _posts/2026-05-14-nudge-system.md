@@ -62,24 +62,37 @@ where they clicked, and when --- so I could watch exactly how it worked.
     caption="Detailed tracking data for one student. Red triangles are clicks on hints and within-page questions and answers. This student was progressing rapidly until part 4, where they got stuck. They took two quick peeks at the step-by-step guide, but decided to answer the question alone and got it wrong. They were then sent back and spent around 5 minutes progressing through the step-by-step guide until they got the answer right. They then rewarded themselves with a 13 minute break before rapidly finishing the rest of the worksheet."
 %}
 
-Remember my main goal was to reach students who are unable to attend in-person workshops.
-As luck would have it, in the second week of the trial, the Monday workshop was cancelled due to ANZAC Day-- 
-and that's where he had our second-largest spike of activity.
-When students couldn't get to their workshop, they used the interactive online version instead.
+The detailed tracking data also allowed me to distinguish between "curiosity clicking" 
+and engagement with the worksheet (answered 1 or more questions correctly).
+In the first week, the main spikes of engaged activity occurred during workshop hours,
+when we introduced students to the online worksheets and encouraged their use.
+In the second week,
+more online-worksheet use occurred outside workshop hours,
+particularly in the lead-up to the assignment due date.
 
 {%
     include figure.html
-    src="/wp-content/uploads/2026/05/timeline.svg"
-    caption="The timeline of events leading up to the assignment showing interactions with the Week 8 and Week 9 worksheets. In-person workshop hours are shaded in red, and the first spike of activity occurs during the first workshop. In the second week, the Monday workshop was cancelled due to ANZAC Day (in yellow), and that was where the second spike of activity occurred. When students were unable to attend their in-person workshop, they used the online worksheet instead."
+    src="/wp-content/uploads/2026/05/timeline.png"
+    caption="The timeline of engaged events leading up to the assignment showing interactions with the Week 8 and Week 9 worksheets. In-person workshop hours are shaded in pink. The first spike of activity occurred during the first workshop, when we introduced students to the IOWs and encouraged their use. In the second week, more activity occurred outside the workshop hours."
 %}
 
-With the detailed tracking data, I was able to focus in on students who fully engaged with the worksheets and worked outside workshop hours.
-In the first week, 40% worked outside workshop hours; in the second week, 85% did.
+I was particularly interested in those who worked outside workshop hours.
+In the first week, 42% worked outside workshop hours; in the second week, 75% did.
+Looking at the hours when they were working, we saw some students doing linear algebra at 
+1 am in the morning.
 
-I could also see the hours when they were working. We had some students doing linear algebra at 1 am in the morning.
+{%
+    include figure.html
+    src="/wp-content/uploads/2026/05/hour_of_day.png"
+    caption="Hour-of-day histogram for engaged students (answered 1 or more questions) 
+    excluding events that fell inside in-person workshop time windows.
+    Hours outside normal working hours are shaded in pink."
+%}
 
-When I tightened the data again to look at those working *exclusively* outside workshop hours and *deeply* engaged, 
-I estimate we picked up about 45 students, which is equivalent to about 2 or 3 in-person workshops.
+Remember my main goal was to reach students who are unable to attend in-person workshops.
+When I tightened the data again to look at those working *exclusively* outside workshop hours 
+and *deeply* engaged (answering half or more of the worksheet),
+I counted 45 students, which is equivalent to about 2 or 3 in-person workshops.
 
 But did it work?
 
@@ -104,7 +117,12 @@ and the in-person feedback was positive as well.
 
 So it seems the online worksheets not only improved marks, students also found them valuable.
 
-### Further reading
+**Update (October 2026):** In the Student Voice Survey following the pilot, 
+19% of students who left written feedback ($$n=36$$) mentioned the online worksheets,
+and every one of these comments was positive,
+including 3 who asked for more online worksheets.
 
-I presented talk today at the Faculty Learning & Teaching Colloquium about the worksheets.
-A link to the presentation slides is [here](https://nadiah.org/nudge/presentation/).
+**Note:** An earlier version of this blog post said there was a public holiday 
+during the trial. This was an error; the public holiday was the following week.
+This post has been updated to correct the error, 
+including the previous over-estimate of online-worksheet use outside in-person workshop hours.
