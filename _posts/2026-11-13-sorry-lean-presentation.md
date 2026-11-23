@@ -22,7 +22,7 @@ I gave an informal presentation to the applied maths group at Griffith Universit
 %}
 
 I started learning Lean a few months ago after [Carlo](https://carlo-hamalainen.net/) 
-conducted an AI experiment with one of my [previously published papers](http://127.0.0.1:4000/wp-content/uploads/2025/03/Kristensen25-Many_strategy_group_games_with_relatives_and_coordinated_cooperation.pdf).
+conducted an AI experiment with one of my [previously published papers](https://nadiah.org/wp-content/uploads/2025/03/Kristensen25-Many_strategy_group_games_with_relatives_and_coordinated_cooperation.pdf).
 Carlo heard the news about the Navier-Stokes Millenium Problem
 and was curious what AI+Lean could do,
 so he took my paper plus a recent [proof sketch](https://nadiah.org/2025/03/19/degree-theorem-sketch)
@@ -186,7 +186,7 @@ use N
 
 We passed the $$\forall n > N$$ with `intro n n_gt_N` like before,
 and then we were left with the goal: `|b n - L| < ε`.
-Now was the opportunity to introduce MathLib.
+Now was the opportunity to introduce [Mathlib](https://mathlib.org).
 
 In the proof sketch,
 I jumped straight from $$\lvert b_n - L\rvert < \varepsilon$$ to the two inequalities.
@@ -257,7 +257,7 @@ and we can tell Lean by applying a transitivity theorem:
 
 Here was an opportunity to demonstrate another practical use of `sorry`.
 I know that $$N \geq N_a$$ because it's the maximum,
-but maybe I don't know what the name of that MathLib theorem is.
+but maybe I don't know what the name of that Mathlib theorem is.
 So I put in a placeholder `sorry` to return to later.
 ```lean
     have n_gt_Na : n > Na := by
@@ -475,7 +475,7 @@ but some proportion of students in every subject are not interested in that subj
 it is simply a step on their way to where they want to go.
 I agree that's valid, and this depth of learning is overkill for those students.
 
-So perhaps it could be a useful pedagogical tool for an enthusiastic late-course student or for HDRs,
+So perhaps it could be a useful pedagogical tool for an enthusiastic late-course student or for research students,
 but it is probably a learning tool best suited for self-directed learning.
 
 
